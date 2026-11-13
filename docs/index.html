@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paris Sportif – Calendrier</title>
+<meta name="description" content="Le calendrier de tous les événements sportifs à Paris : matchs, courses à pied, vélo, sport entreprise, tournois amateurs, grands événements…">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏅</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo">🏅</span>
+    <div>
+      <h1>Paris Sportif</h1>
+      <p class="sub">Tous les événements sportifs de Paris et du Grand Paris</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <button id="themeBtn" class="icon-btn" title="Thème clair / sombre" aria-label="Changer de thème">🌓</button>
+    <button id="filtersBtn" class="btn ghost only-mobile" aria-controls="filters">Filtres <span id="activeFilters" class="pill"></span></button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="filters" class="filters" aria-label="Filtres">
+    <div class="filters-head only-mobile">
+      <strong>Filtres</strong>
+      <button id="closeFilters" class="icon-btn" aria-label="Fermer">✕</button>
+    </div>
+
+    <label class="field">
+      <span class="label">Recherche</span>
+      <input id="q" type="search" placeholder="PSG, marathon, Bercy, padel…" autocomplete="off">
+    </label>
+
+    <div class="field">
+      <span class="label">Période</span>
+      <div class="chips" id="periodChips">
+        <button data-period="all" class="chip">Tout</button>
+        <button data-period="today" class="chip">Aujourd'hui</button>
+        <button data-period="weekend" class="chip">Ce week-end</button>
+        <button data-period="7" class="chip">7 jours</button>
+        <button data-period="30" class="chip">30 jours</button>
+        <button data-period="90" class="chip">3 mois</button>
+      </div>
+      <div class="dates">
+        <input id="from" type="date" aria-label="Du">
+        <span>→</span>
+        <input id="to" type="date" aria-label="Au">
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="label-row"><span class="label">Type d'événement</span><button class="link" data-clear="category">tout</button></div>
+      <div id="categoryList" class="checklist"></div>
+    </div>
+
+    <div class="field">
+      <div class="label-row"><span class="label">Sport</span><button class="link" data-clear="sport">tout</button></div>
+      <input id="sportSearch" type="search" placeholder="Filtrer les sports…" class="mini">
+      <div id="sportList" class="checklist scroll"></div>
+    </div>
+
+    <div class="field">
+      <div class="label-row"><span class="label">Ville</span><button class="link" data-clear="city">tout</button></div>
+      <div id="cityList" class="checklist scroll short"></div>
+    </div>
+
+    <div class="field toggles">
+      <label class="switch"><input type="checkbox" id="freeOnly"><span>Gratuit uniquement</span></label>
+      <label class="switch"><input type="checkbox" id="showRecurring"><span>Inclure les activités régulières (cours, initiations hebdo)</span></label>
+      <label class="switch"><input type="checkbox" id="hideTentative"><span>Masquer les dates non confirmées</span></label>
+    </div>
+
+    <button id="resetBtn" class="btn ghost wide">Réinitialiser les filtres</button>
+    <p class="note">Sources : open data Ville de Paris (mis à jour automatiquement chaque jour), sites officiels des clubs, ligues, fédérations et organisateurs. Les dates marquées <span class="badge tentative">à confirmer</span> suivent le calendrier habituel de l'événement.</p>
+  </aside>
+
+  <main class="main">
+    <section class="stats" id="stats"></section>
+
+    <div class="toolbar">
+      <div class="tabs" role="tablist">
+        <button role="tab" data-view="list" class="tab">☰ Liste</button>
+        <button role="tab" data-view="calendar" class="tab">▦ Calendrier</button>
+        <button role="tab" data-view="map" class="tab">⌖ Carte</button>
+      </div>
+      <div class="toolbar-right">
+        <label class="sort">Trier
+          <select id="sort">
+            <option value="date">Date (plus proche)</option>
+            <option value="date-desc">Date (plus lointaine)</option>
+            <option value="sport">Sport (A→Z)</option>
+            <option value="title">Nom (A→Z)</option>
+            <option value="category">Type</option>
+          </select>
+        </label>
+        <button id="icsAll" class="btn ghost" title="Télécharger les événements filtrés au format agenda">⤓ .ics</button>
+      </div>
+    </div>
+
+    <p id="resultCount" class="result-count" aria-live="polite"></p>
+
+    <section id="listView" class="view"></section>
+    <section id="calendarView" class="view" hidden></section>
+    <section id="mapView" class="view" hidden><div id="map"></div><p class="note" id="mapNote"></p></section>
+  </main>
+</div>
+
+<dialog id="modal" class="modal">
+  <div id="modalBody"></div>
+</dialog>
+
+<footer class="foot">
+  <span id="updated"></span> · <a href="https://github.com/KBenjaminPajusco/Paris-Sportif" target="_blank" rel="noopener">Code source</a> · Un oubli ? Ajoutez-le dans <code>data/curated/</code>.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

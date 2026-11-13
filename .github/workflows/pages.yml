@@ -1,0 +1,45 @@
+name: Mise à jour & déploiement
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  schedule:
+    - cron: "17 5 * * *"   # chaque jour : rafraîchit l'open data de la Ville de Paris
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer l'open data (Que faire à Paris)
+        run: python scripts/fetch_opendata.py || echo "open data indisponible, on garde la version du dépôt"
+      - name: Construire events.json
+        run: python scripts/build.py
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
