@@ -93,6 +93,7 @@ def load_json(p: Path):
 
 def main():
     venues = json.loads(VENUES.read_text()) if VENUES.exists() else {}
+    cities = json.loads((ROOT / "data" / "cities.json").read_text())
     venue_index = {norm_key(k): v for k, v in venues.items()}
 
     events = []
@@ -154,6 +155,8 @@ def main():
             if v:
                 ev["lat"], ev["lon"] = v["lat"], v["lon"]
                 ev["city"] = ev["city"] or v.get("city")
+        if ev["lat"] is None and ev["city"] in cities:
+            ev["lat"], ev["lon"] = cities[ev["city"]]
         if not ev["id"]:
             ev["id"] = "ev-" + hashlib.sha1(f"{title}|{start}|{ev['venue']}".encode()).hexdigest()[:10]
         # Dédoublonnage : même jour + titre proche
