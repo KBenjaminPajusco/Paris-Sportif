@@ -183,6 +183,15 @@ def main():
 
     for ev in out:
         ev.pop("_origin", None)
+    try:
+        from affluence import Affluence
+        aff = Affluence()
+        for ev in out:
+            a = aff.compute(ev)
+            if a:
+                ev["aff"] = a
+    except Exception as exc:  # l'indicateur ne doit jamais casser le build
+        print("! affluence :", exc)
     out.sort(key=lambda e: (e["start"], e["title"]))
     meta = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

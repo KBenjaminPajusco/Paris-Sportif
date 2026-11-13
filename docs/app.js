@@ -99,6 +99,21 @@
     $("#sort").value = state.sort;
   }
 
+  // ---------- affluence ----------
+  const fmtN = n => n >= 10000 ? Math.round(n / 1000) + "k" : n >= 1000 ? (n / 1000).toFixed(1).replace(".0", "").replace(".", ",") + "k" : String(n);
+  const fullN = n => Math.round(n).toLocaleString("fr-FR");
+  function gauge(a, big) {
+    if (!a || !a.level) return "";
+    const bars = [1, 2, 3, 4, 5].map(i => `<i class="${i <= a.level ? "on l" + a.level : ""}"></i>`).join("");
+    return `<span class="gauge ${big ? "big" : ""}" title="Affluence attendue : ${a.n ? "≈ " + fullN(a.n) + " " + a.unit : "—"}${a.cap ? " · capacité " + fullN(a.cap) : ""}"><span class="bars">${bars}</span>${a.n ? `<b>${fmtN(a.n)}</b>` : ""}</span>`;
+  }
+  function availability(a) {
+    if (!a || !a.fill) return "";
+    if (a.fill >= .95) return `<span class="tag full">Complet probable</span>`;
+    if (a.fill >= .8) return `<span class="tag hot">Places rares</span>`;
+    return `<span class="tag ok">Places dispo</span>`;
+  }
+
   // ---------- ligne de programme ----------
   function split(e) {
     if (e.category !== "Match pro") return null;
@@ -120,7 +135,7 @@
       <span class="mid">
         <span class="comp"><span class="s">${icon(e.sport)} ${esc(e.sport)}</span>${e.competition ? `· ${esc(e.competition)}` : ""} ${tags}</span>
         <span class="teams">${teams ? `<span class="h">${esc(teams[0])}</span><span class="a">${esc(teams[1])}</span>` : `<span class="solo">${esc(e.title)}</span>`}</span>
-        <span class="place">📍 ${esc(e.venue || e.city || "Paris")}${e.city && e.city !== "Paris" && !(e.venue || "").includes(e.city) ? " · " + esc(e.city) : ""}</span>
+        <span class="place"><span class="pl">📍 ${esc(e.venue || e.city || "Paris")}${e.city && e.city !== "Paris" && !(e.venue || "").includes(e.city) ? " · " + esc(e.city) : ""}</span>${gauge(e.aff)}${availability(e.aff)}</span>
       </span>
       <span class="go">›</span>
     </button>`;
@@ -143,9 +158,9 @@
         html += rowHTML(e);
       });
     } else {
-      const key = state.sort === "sport" ? (e => e.sport) : (e => e.venue || e.city);
+      const key = state.sort === "sport" ? (e => e.sport) : state.sort === "aff" ? (e => ["", "Moins de 1 000", "1 000 – 5 000", "5 000 – 15 000", "15 000 – 40 000", "Plus de 40 000"][e.aff?.level || 0] || "Affluence inconnue") : (e => e.venue || e.city);
       let cur = null;
-      sl.forEach(e => { const k = key(e); if (k !== cur) { cur = k; html += `<div class="dayhead">${state.sort === "sport" ? icon(k) + " " : "📍 "}${esc(k)}</div>`; } html += rowHTML(e); });
+      sl.forEach(e => { const k = key(e); if (k !== cur) { cur = k; html += `<div class="dayhead">${state.sort === "sport" ? icon(k) + " " : state.sort === "aff" ? "👥 " : "📍 "}${esc(k)}</div>`; } html += rowHTML(e); });
     }
     if (shown.length > state.limit) html += `<button class="more" id="more">Voir ${Math.min(60, shown.length - state.limit)} de plus · ${shown.length - state.limit} restants</button>`;
     el.innerHTML = html;
@@ -163,7 +178,7 @@
     $("#feature").innerHTML = `<button class="feat" data-id="${esc(pick.id)}" data-v="${esc(pick._vkey || "")}">
       <span class="k">★ À la une</span><span class="cd">${cd}</span>
       <span class="t">${esc(pick.title)}</span>
-      <span class="m">${esc(dayLabel(pick._day))}${hasTime(pick.start) ? " · " + hhmm(pick.start) : ""} · ${esc(pick.venue || pick.city)}</span>
+      <span class="m">${esc(dayLabel(pick._day))}${hasTime(pick.start) ? " · " + hhmm(pick.start) : ""} · ${esc(pick.venue || pick.city)}${pick.aff?.n ? ` · ≈ ${fullN(pick.aff.n)} ${esc(pick.aff.unit)}` : ""}</span>
     </button>`;
   }
 
@@ -265,6 +280,12 @@
         <span class="comp">${icon(e.sport)} ${esc(e.sport)}${e.competition ? " · " + esc(e.competition) : ""}</span>
         ${teams ? `<div class="m-vs"><span>${esc(teams[0])}</span><span class="vs">VS</span><span class="a">${esc(teams[1])}</span></div>` : `<h2>${esc(e.title)}</h2>`}
       </div>
+      ${e.aff ? `<div class="m-aff">
+        <div class="k">Affluence attendue</div>
+        <div class="row-aff">${gauge(e.aff, true)}<div><div class="v">${e.aff.n ? `≈ ${fullN(e.aff.n)} <small>${esc(e.aff.unit)}</small>` : "—"}</div>
+        ${e.aff.cap ? `<div class="capbar"><span style="width:${Math.round((e.aff.fill || 0) * 100)}%"></span></div><div class="cap">Capacité ${fullN(e.aff.cap)} places${e.aff.fill ? ` · remplissage estimé ${Math.round(e.aff.fill * 100)} %` : ""} ${availability(e.aff)}</div>` : ""}</div></div>
+        <div class="basis">${e.aff.basis ? "Base : " + esc(e.aff.basis) + (e.aff.approx ? " (approx.)" : "") : "Capacité du lieu uniquement"}${e.aff.src ? ` · <a href="${esc(e.aff.src)}" target="_blank" rel="noopener">source</a>` : ""}. Estimation : le nombre exact de places restantes n'est pas publié, vérifiez sur la billetterie.</div>
+      </div>` : ""}
       <div class="m-grid">
         <div class="m-cell"><div class="k">Date</div><div class="v">${esc(dayLabel(e.start.slice(0, 10)))}${multi ? `<small>jusqu'au ${esc(dayLabel(e.end.slice(0, 10)))}</small>` : ""}</div></div>
         <div class="m-cell"><div class="k">Heure</div><div class="v">${hasTime(e.start) ? hhmm(e.start) : "—"}${e.tentative ? `<small><span class="tag tbc">Date à confirmer</span></small>` : ""}</div></div>
@@ -291,6 +312,7 @@
     date: (a, b) => a._sortKey.localeCompare(b._sortKey),
     sport: (a, b) => a.sport.localeCompare(b.sport, "fr") || a._sortKey.localeCompare(b._sortKey),
     venue: (a, b) => (a.venue || a.city).localeCompare(b.venue || b.city, "fr") || a._sortKey.localeCompare(b._sortKey),
+    aff: (a, b) => ((b.aff?.n || 0) - (a.aff?.n || 0)) || a._sortKey.localeCompare(b._sortKey),
   };
   function render() {
     current = ALL.filter(e => base(e)).sort(SORTS[state.sort] || SORTS.date);

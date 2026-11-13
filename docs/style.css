@@ -209,3 +209,31 @@ input, select { font: inherit; color: var(--text); }
   .ticker { position: sticky; bottom: 0; height: 36px; }
   .feat .t { font-size: 26px; }
 }
+
+/* ---------- Affluence ---------- */
+.row .place { display: flex; align-items: center; gap: 8px; }
+.row .place .pl { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.gauge { flex: none; display: inline-flex; align-items: center; gap: 5px; margin-left: auto; font: 800 13px var(--head); color: var(--text); }
+.gauge .bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 14px; }
+.gauge i { width: 4px; background: var(--line); }
+.gauge i:nth-child(1) { height: 30%; } .gauge i:nth-child(2) { height: 47%; } .gauge i:nth-child(3) { height: 64%; } .gauge i:nth-child(4) { height: 82%; } .gauge i:nth-child(5) { height: 100%; }
+.gauge i.on { background: var(--green); }
+.gauge i.on.l4 { background: var(--yellow); }
+.gauge i.on.l5 { background: var(--red); }
+.gauge.big .bars { height: 40px; gap: 4px; }
+.gauge.big i { width: 10px; }
+.gauge.big b { display: none; }
+.tag.full { background: var(--red); color: #fff; }
+.tag.hot { background: var(--yellow); color: var(--ink); }
+.tag.ok { background: var(--green-d); color: #fff; }
+.m-aff { padding: 14px 18px; border-bottom: 1px solid var(--line); background: var(--ink); }
+.m-aff .k { font: 700 11px var(--head); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.row-aff { display: flex; gap: 14px; align-items: center; }
+.row-aff > div:last-child { flex: 1; min-width: 0; }
+.m-aff .v { font: italic 900 32px/1 var(--head); }
+.m-aff .v small { font: 700 14px var(--head); font-style: normal; text-transform: uppercase; color: var(--muted); }
+.capbar { height: 8px; background: var(--panel-2); margin: 8px 0 6px; }
+.capbar span { display: block; height: 100%; background: linear-gradient(90deg, var(--green), var(--yellow) 75%, var(--red)); }
+.m-aff .cap { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.m-aff .basis { margin-top: 8px; font-size: 12px; color: var(--muted); }
+.m-aff .basis a { color: var(--green); }
