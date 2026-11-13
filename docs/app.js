@@ -312,7 +312,7 @@
         html: `<div class="map-pin" style="--cat:${catColor(e0.category)}">${sportIcon(e0.sport)}${evs.length > 1 ? `<span class="map-count">${evs.length}</span>` : ""}</div>` });
       const popup = `<b>${esc(e0.venue || "")}</b><br>${evs.slice(0, 8).map(e => `<a href="#" data-id="${esc(e.id)}">${e.recurring ? "" : esc(fmtShort(e._sortStart)) + " – "}${esc(e.title)}</a>`).join("<br>")}${evs.length > 8 ? `<br>… et ${evs.length - 8} autres` : ""}`;
       L.marker([e0.lat, e0.lon], { icon }).bindPopup(popup, { maxWidth: 300 }).addTo(mapLayer);
-      bounds.push([e0.lat, e0.lon]);
+      if (Math.abs(e0.lat - 48.8566) < 0.09 && Math.abs(e0.lon - 2.3422) < 0.14) bounds.push([e0.lat, e0.lon]);
     });
     if (bounds.length) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
     $("#mapNote").textContent = `${list.length - missing} événements localisés${missing ? ` · ${missing} sans coordonnées (non affichés)` : ""}.`;
