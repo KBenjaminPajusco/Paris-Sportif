@@ -123,13 +123,16 @@ class Tickets:
                 st = "soon"
             res = {"status": st, "opens": tm.get("sale_start", "")[:10] or None, "url": tm.get("url"), "note": "Statut officiel Ticketmaster", "src": tm.get("url"), "how": "ticketmaster"}
         if not res:
-            pool = self.races if is_race else self.events
             best = None
-            for name, e in pool.items():
+            for name, e, race in [(n, x, True) for n, x in self.races.items()] + [(n, x, False) for n, x in self.events.items()]:
+                years = set(re.findall(r"20\d\d", name)) | {"20" + y for y in re.findall(r"20\d\d/(\d\d)", name)}
+                if years and str(start.year) not in years:
+                    continue  # infos valables pour une autre édition
                 m = _rx(e.get("match") or name, title)
                 if m and (not best or len(m.group(0)) > best[0]):
-                    best = (len(m.group(0)), e)
+                    best = (len(m.group(0)), e, race)
             if best:
+                is_race = best[2]
                 res = self._from_entry(best[1], is_race)
         if not res and cat == "Match pro":
             for name, c in self.clubs.items():

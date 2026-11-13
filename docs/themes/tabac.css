@@ -1,0 +1,40 @@
+/* Proposition 2 — TABAC : l'enseigne néon du bar-tabac PMU (noir, rouge brique, vert néon, police large) */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,700&display=swap");
+:root[data-ui="tabac"] {
+  --green: #16a35a; --green-d: #0e7a42; --red: #d7262b; --red-d: #a8181c; --yellow: #ffcf3f;
+  --ink: #080808; --bg: #0d0d0d; --panel: #141414; --panel-2: #1d1d1d; --line: #2c2c2c; --text: #f4efe6; --muted: #9b958a;
+  --head: "Rubik Mono One", "Arial Black", sans-serif; --body: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+[data-ui="tabac"] .logo { font: 400 22px/1 var(--head); }
+[data-ui="tabac"] .logo-g, [data-ui="tabac"] .logo-r { clip-path: none; background: none; margin: 0; padding: 0 10px !important; }
+[data-ui="tabac"] .logo-g { color: #4dff9a; text-shadow: 0 0 6px #16a35a, 0 0 18px #16a35a; }
+[data-ui="tabac"] .logo-r { color: #ff5a5f; text-shadow: 0 0 6px #d7262b, 0 0 18px #d7262b; border: 2px solid #ff5a5f; box-shadow: 0 0 10px #d7262b, inset 0 0 10px #d7262b; margin: 10px 0 !important; }
+[data-ui="tabac"] .bar { border-bottom: 2px solid var(--red); }
+[data-ui="tabac"] .mode, [data-ui="tabac"] .sport, [data-ui="tabac"] .day, [data-ui="tabac"] .dayhead, [data-ui="tabac"] .board-head h2, [data-ui="tabac"] .ticker-tag { font-family: var(--head); font-weight: 400; letter-spacing: .02em; }
+[data-ui="tabac"] .mode { font-size: 13px; }
+[data-ui="tabac"] .sport { font-size: 12px; }
+[data-ui="tabac"] .day { font-size: 11px; }
+[data-ui="tabac"] .mode.active { color: #ff5a5f; text-shadow: 0 0 8px #d7262b; background: none; }
+[data-ui="tabac"] .sport.active { background: none; color: #4dff9a; box-shadow: inset 0 -3px 0 var(--green); text-shadow: 0 0 8px var(--green); }
+[data-ui="tabac"] .sport.active .n { background: var(--green); }
+[data-ui="tabac"] .day.active { background: var(--red); color: #fff; }
+[data-ui="tabac"] .leaflet-tile-pane { filter: invert(1) grayscale(1) brightness(.62) contrast(1.25); }
+[data-ui="tabac"] .pin { font: 400 12px/1 var(--head); }
+[data-ui="tabac"] .pin.red { box-shadow: 0 0 12px rgba(215, 38, 43, .9); }
+[data-ui="tabac"] .pin.green { box-shadow: 0 0 12px rgba(22, 163, 90, .9); }
+[data-ui="tabac"] .feat { background: var(--ink); border-bottom: 2px solid var(--red); }
+[data-ui="tabac"] .feat::before { background: radial-gradient(circle at 85% 20%, rgba(215, 38, 43, .35), transparent 55%), radial-gradient(circle at 10% 90%, rgba(22, 163, 90, .3), transparent 55%); }
+[data-ui="tabac"] .feat .t { font: 400 22px/1.15 var(--head); text-shadow: none; }
+[data-ui="tabac"] .feat .cd { font: 400 26px/1 var(--head); color: #ff5a5f; text-shadow: 0 0 10px #d7262b; }
+[data-ui="tabac"] .feat .k { background: var(--green); color: #fff; }
+[data-ui="tabac"] .row .when { font: 400 14px var(--head); }
+[data-ui="tabac"] .row .teams { font: 700 17px/1.2 var(--body); text-transform: none; }
+[data-ui="tabac"] .row .comp { font-family: var(--body); letter-spacing: .04em; }
+[data-ui="tabac"] .dayhead { font-size: 12px; }
+[data-ui="tabac"] .ticker-move { font: 700 15px var(--body); text-transform: none; }
+[data-ui="tabac"] .m-top { background: var(--ink); border-bottom: 2px solid var(--red); }
+[data-ui="tabac"] .m-top h2, [data-ui="tabac"] .m-vs { font: 400 24px/1.15 var(--head); }
+[data-ui="tabac"] .m-vs .vs { background: var(--red); color: #fff; }
+[data-ui="tabac"] .m-aff .v, [data-ui="tabac"] .m-cell .v, [data-ui="tabac"] .m-tk .lab { font-family: var(--head); font-weight: 400; font-style: normal; font-size: 18px; }
+[data-ui="tabac"] .btn, [data-ui="tabac"] .tool, [data-ui="tabac"] .tk, [data-ui="tabac"] .tag { font-family: var(--body); font-weight: 700; }
+[data-ui="tabac"] .board-head h2 { font-size: 14px; } [data-ui="tabac"] .board-tools .tool, [data-ui="tabac"] .board-tools select { font-size: 11px; }

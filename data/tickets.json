@@ -1,0 +1,464 @@
+{
+ "_meta": {
+  "researched_on": "2026-11-13",
+  "conventions": "weeks_before=null means no sourced figure; 'verified' false means the URL or rule comes from the official domain or secondary sources and was not confirmed on the live page (403, queue or not fetched)."
+ },
+ "clubs": {
+  "PSG": {
+   "match": "^(PSG|Paris Saint-Germain|Paris SG)(?!.*(F[ée]minines|Handball|Hand\\b))",
+   "url": "https://billetterie.psg.fr",
+   "rule": "weeks_before",
+   "weeks_before": null,
+   "presale_note": "~36 000 abonnés; seulement 9-10 000 places à l'unité par match. Ordre: abonnés (2 places max), puis membres My Paris / Rouge & Bleu, puis grand public s'il reste des places. Prévente inscrits 24-72 h avant la vente générale (LdC).",
+   "usually_sold_out": true,
+   "verified": false,
+   "source": "https://abargenteuil.fr/blog/psg-leipzig-billetterie/"
+  },
+  "PSG Féminines": {
+   "match": "^(PSG|Paris Saint-Germain|Paris SG) F[ée]minines",
+   "url": "https://billetterie.psg.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Même plateforme que les hommes. Aucune règle de mise en vente trouvée: la règle est supposée et doit être vérifiée.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://billetterie.psg.fr"
+  },
+  "Paris FC": {
+   "match": "^Paris FC(?! F[ée]minines)",
+   "url": "https://billetterie.parisfc.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Vente en ligne sur billetterie.parisfc.fr; abonnements 2026-27 (CGV du 30/04/2026). Jean-Bouin: capacité commerciale 19 600. Aucune date d'ouverture de vente à l'unité trouvée, règle à vérifier.",
+   "usually_sold_out": null,
+   "verified": false,
+   "source": "https://footballgroundguide.com/leagues/stade-jean-bouin-paris-fc.html"
+  },
+  "Paris FC Féminines": {
+   "match": "^Paris FC F[ée]minines",
+   "url": "https://billetterie.parisfc.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune information spécifique trouvée; même plateforme que l'équipe masculine (supposé).",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://abonnements.parisfc.fr/media/2026/04/20260430_cgv_abonnements_2627.pdf"
+  },
+  "Red Star": {
+   "match": "^Red Star",
+   "url": "https://billetterie.redstar.fr",
+   "rule": "weeks_before",
+   "weeks_before": null,
+   "presale_note": "Tarifs et disponibilités affichés match par match. D'après un fil de supporters de 2022, la vente n'ouvre que quelques semaines avant le match; aucun chiffre précis.",
+   "usually_sold_out": null,
+   "verified": false,
+   "source": "https://www.jds.fr/artistes/red-star-fc-31066_N"
+  },
+  "Stade Français Paris": {
+   "match": "^Stade Fran[çc]ais",
+   "url": "https://billetterie.stade.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune date de mise en vente trouvée pour 2026-27. Un match de Top 14 est délocalisé au Stade de France. L'URL et la règle sont à vérifier.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/331008-stade-francais-at-stade-jean-bouin-the-upcoming-rugby-matches-schedule-and-tv-channel"
+  },
+  "Racing 92": {
+   "match": "^Racing 92",
+   "url": "https://tickets.racing92.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Saison 2026-27 éclatée: 4 matchs à la Plenitude Arena (jusqu'à fin décembre), 3 à Yves-du-Manoir (printemps 2027), le reste à Créteil ou délocalisé. Abonnements Mêlée Ciel & Blanc (60 à 480 €). Billets à l'unité sur tickets.racing92.fr, sans date d'ouverture publiée.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://www.defense-92.fr/sport/entre-delocalisations-matchs-a-la-plenitude-arena-et-retour-a-yves-du-manoir-le-racing-92-lance-sa-campagne-dabonnement-pour-la-saison-2026-2027-88381"
+  },
+  "Paris Basketball": {
+   "match": "^Paris Basket(ball)?",
+   "url": "https://billetterie.parisbasketball.com",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Vente aussi sur adidas arena, Fnac et Ticketmaster; le club recommande sa propre billetterie (file d'attente Queue-it). Abonnés: prévente à tarif réduit pour les playoffs, annoncée par newsletter. Matchs de septembre 2026 « réservables dès maintenant ».",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://parisbasketball.com/en/2026/09/find-out-about-paris-basketballs-first-home-matches/"
+  },
+  "Nanterre 92": {
+   "match": "^Nanterre( 92)?",
+   "url": "https://www.nanterre92.com/billetterie",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune info billetterie 2026-27 trouvée. Domicile: Palais des sports Maurice-Thorez, avec des matchs ponctuels à la Plenitude Arena vendus via son site. URL et règle non vérifiées.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://lnb.fr/en/news/le-calendrier-de-la-betclic-elite-20262027-est-connu"
+  },
+  "PSG Handball": {
+   "match": "^(PSG|Paris Saint-Germain|Paris SG) Hand(ball)?",
+   "url": "https://billetterie.psg.fr",
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Même plateforme que le PSG football (page en 403 pour l'outil). Règle supposée, à vérifier.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://billetterie.psg.fr"
+  },
+  "Paris Volley": {
+   "match": "^Paris Volley",
+   "url": null,
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune billetterie 2026-27 trouvée. Saison 2025-26 jouée au gymnase Charpy (13e). Règle supposée.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://www.paris.fr/evenements/paris-volley-le-calendrier-complet-des-matchs-a-domicile-76412"
+  },
+  "Plessis-Robinson Volley": {
+   "match": "^(Plessis[- ]Robinson|PRVB)",
+   "url": null,
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune donnée trouvée (lacune de recherche). Règle supposée.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://www.paris.fr/evenements/paris-volley-le-calendrier-complet-des-matchs-a-domicile-76412"
+  },
+  "Mariannes 92": {
+   "match": "^Mariannes 92",
+   "url": null,
+   "rule": "all_announced",
+   "weeks_before": null,
+   "presale_note": "Aucune donnée trouvée (lacune de recherche). Règle supposée.",
+   "usually_sold_out": false,
+   "verified": false,
+   "source": "https://www.paris.fr/evenements/paris-volley-le-calendrier-complet-des-matchs-a-domicile-76412"
+  },
+  "France rugby (XV de France)": {
+   "match": "^France\\s*[-–]\\s*(Galles|Pays de Galles|[ÉE]cosse|Angleterre|Irlande|Italie)",
+   "url": "https://billetterie.ffr.fr",
+   "rule": "weeks_before",
+   "weeks_before": null,
+   "status": "not_open",
+   "presale_note": "Six Nations 2027 au Stade de France: France–Galles le 6/02, France–Écosse le 21/02. Au 13/11/2026, pas encore en vente: le Stade de France propose seulement une alerte. La FFR ouvre d'abord aux licenciés et clubs, puis au grand public.",
+   "usually_sold_out": true,
+   "verified": true,
+   "source": "https://www.stadefrance.com/en/ticket/france-wales-2027"
+  },
+  "Finale Coupe de France": {
+   "match": "^Finale (de la )?Coupe de France(?! f[ée]minine)",
+   "url": "https://www.fff.fr/article/16780-finale-informations-billetterie.html",
+   "rule": "weeks_before",
+   "weeks_before": null,
+   "status": "not_open",
+   "presale_note": "Places réservées en priorité aux clubs finalistes (abonnés, supporters), puis vente grand public par la FFF. Le calendrier dépend des finalistes. Date 2027 non confirmée officiellement (15/05/2027 selon une source tierce).",
+   "usually_sold_out": true,
+   "verified": false,
+   "source": "https://www.fff.fr/article/16780-finale-informations-billetterie.html"
+  }
+ },
+ "events": {
+  "Roland-Garros 2027": {
+   "match": "Roland[- ]Garros",
+   "status": "not_open",
+   "opens": "2026-12-03",
+   "url": "https://tickets.rolandgarros.com",
+   "note": "Inscription au tirage au sort du 3 au 17 décembre 2026 (actu RG « Billetterie 2027 » du 12/11). Pas encore de vente à l'unité. Tournoi du 17/05 au 06/06/2027.",
+   "source": "https://www.rolandgarros.com/fr-fr/article/edition-2027-billetterie-vente-unite-offres-sites-frauduleux-vigilance"
+  },
+  "Rolex Paris Masters 2027": {
+   "match": "(Rolex )?Paris Masters",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://www.rolexparismasters.com",
+   "note": "Aucune date 2027. Pour 2026: licenciés FFT le 24/06, grand public le 1/07, et des packs de Noël ouverts le 10/12 de l'année précédente.",
+   "source": "https://info.fr/rolex-paris-masters-2026-billetterie-licencies-mercredi-24/"
+  },
+  "Prix d'Amérique 2027": {
+   "match": "Prix d'Am[ée]rique",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://www.prixdameriqueraces.com/billetterie",
+   "note": "Festival du 29 au 31/01/2027 à Vincennes. Billetterie et tarifs « annoncés ultérieurement ». Entrée payante d'habitude (2025: 10 €, gratuit pour les moins de 18 ans), pas de gratuité annoncée.",
+   "source": "https://www.jds.fr/paris/manifestations/prix-d-amerique-festival-a-l-hippodrome-de-paris-vincennes-1337212_A"
+  },
+  "Arc de Triomphe 2027": {
+   "match": "Arc de Triomphe",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://billetterie.france-galop.com",
+   "note": "Aucune info 2027. Billetterie officielle France Galop, à partir de 10 €. En 2025, la vente était déjà ouverte en août.",
+   "source": "https://billetterie.france-galop.com/app/uploads/2025/09/Dossier-de-Presse-2025-du-Qatar-Prix-de-lArc-de-Triomphe-1.pdf"
+  },
+  "Grand Steeple-Chase 2027": {
+   "match": "Grand Steeple[- ]Chase",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://billetterie.france-galop.com",
+   "note": "France Galop annonce « rendez-vous en mai 2027 », sans date précise. Tarifs non communiqués.",
+   "source": "https://www.jds.fr/paris/sports/matchs/grand-steeple-chase-de-paris-1431794_A"
+  },
+  "Meeting de Paris 2027 (Diamond League)": {
+   "match": "Meeting de Paris(?! Indoor)",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://paris.diamondleague.com",
+   "note": "25/06/2027 à Charléty. Billetterie « bientôt ouverte », de 13 à 65 € (article mis à jour le 21/10/2026).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/133712-paris-2027-the-dates-for-the-next-athletics-meet-at-stade-charlety"
+  },
+  "Meeting de Paris Indoor 2027": {
+   "match": "Meeting de Paris Indoor",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://billetterie.athle.fr",
+   "note": "Ni date ni billetterie 2027 trouvées. Édition 2026 le 25/01 à l'Accor Arena (17,5 à 50 €).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/288293-paris-indoor-meeting-must-see-athletics-competition-accor-arena"
+  },
+  "Paris Grand Slam judo 2027": {
+   "match": "(Paris )?Grand Slam (de )?judo|Judo.*Grand Slam",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://www.parisgrandslamjudo.fr",
+   "note": "Du 5 au 7/02/2027 à l'Accor Arena. Aucune info billetterie 2027 (en 2026, à partir de 27 €).",
+   "source": "https://allsportdb.com/Competitions/Judo-Grand-Slam-356?year=2027"
+  },
+  "Saut Hermès 2027": {
+   "match": "Saut Herm[èe]s",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://www.sauthermes.com",
+   "note": "Ni date ni billetterie 2027 publiées. Édition 2026 du 20 au 22/03 au Grand Palais.",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/47137-saut-hermes-at-the-grand-palais-in-paris"
+  },
+  "Longines Eiffel Jumping 2027": {
+   "match": "Eiffel Jumping",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://www.pariseiffeljumping.com/en/billetterie",
+   "note": "Du 18 au 20/06/2027 au Champ-de-Mars. La page billetterie affiche l'édition 2027 et ses tribunes; programme « bientôt ». Vente ouverte non confirmée. Village et paddock gratuits.",
+   "source": "https://www.pariseiffeljumping.com/en/billetterie"
+  },
+  "Supercross Paris 2026": {
+   "match": "Supercross",
+   "status": "open",
+   "opens": null,
+   "url": "https://www.supercrossparis.com/billetterie",
+   "note": "21-22/11/2026 à la Plenitude Arena. Places encore disponibles, mais la soirée du samedi est presque complète.",
+   "source": "https://www.defense-92.fr/sport/supercross-de-paris-2026-il-reste-encore-des-places-mais-plus-trop-pour-la-soiree-du-samedi-88489"
+  },
+  "NBA Paris Game 2027": {
+   "match": "NBA Paris|Spurs.*Pelicans|Pelicans.*Spurs",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://www.accorarena.com",
+   "note": "Spurs–Pelicans le 14/01/2027 à l'Accor Arena (~16 500 places). Environ 1 million de préinscriptions pour Paris et Manchester. Date de vente non trouvée.",
+   "source": "https://www.abola.pt/noticias/pensa-ir-ver-wemby-a-paris-ou-a-manchester-ha-um-milhao-de-pessoas-na-fila-2026092220210273779"
+  },
+  "LNB All Star Game 2026/27": {
+   "match": "All[- ]Star Game LNB|LNB All[- ]Star",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://www.fnacspectacles.com/event/all-star-game-lnb-2027-accor-arena-21891829/",
+   "note": "24e édition à l'Accor Arena, annoncée le 2/01/2027 par Paris je t'aime. La fiche Fnac indique « pas encore en vente ».",
+   "source": "https://www.fnacspectacles.com/event/all-star-game-lnb-2027-accor-arena-21891829/"
+  },
+  "Championnats du monde de Breaking 2026": {
+   "match": "(Championnats? du monde|Mondiaux).*(Breaking|Hip[- ]Hop)|Breaking.*World",
+   "status": "open",
+   "opens": null,
+   "url": "https://www.fest.fr/cm-breaking-hip-hop-freestyle-2026---wdsf-world-championship-2731689.html",
+   "note": "Du 4 au 6/12/2026 (les dates varient selon les sources) à l'Adidas Arena. En vente, à partir de 15-30 €; e-billets téléchargeables depuis le 9/11.",
+   "source": "https://www.fest.fr/cm-breaking-hip-hop-freestyle-2026---wdsf-world-championship-2731689.html"
+  },
+  "Holiday on Ice 2027": {
+   "match": "Holiday on Ice",
+   "status": "open",
+   "opens": null,
+   "url": "https://www.zenith-paris.com",
+   "note": "« Cinema of Dreams » du 11 au 14/02/2027 au Zénith de Paris. Billets disponibles, de 39 à 89 €.",
+   "source": "https://uk.tourisme93.com/holiday-on-ice.html"
+  },
+  "Finale Top 14 2027": {
+   "match": "Finale (du )?Top ?14",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://www.stadefrance.com",
+   "note": "Stade de France, 26/06/2027 (27/06 selon certaines sources). Vente non annoncée; la LNR ouvre historiquement en novembre. Demi-finales les 18-19/06 à Bordeaux.",
+   "source": "https://radiosports.fr/?p=18893"
+  },
+  "Tour de France – Champs-Élysées": {
+   "match": "Tour de France",
+   "status": "free",
+   "opens": null,
+   "url": null,
+   "note": "Arrivée gratuite au bord de la route.",
+   "source": "https://www.letour.fr"
+  },
+  "Open de France golf 2027": {
+   "match": "Open de France",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://www.golf-national.com",
+   "note": "Du 9 au 12/09/2027 au Golf National (nouvelles dates). Pas d'info billetterie 2027. En 2026: early bird dès 20 €, gratuit pour les moins de 18 ans.",
+   "source": "https://www.golfmagic.com/tour/dp-world-tour/dp-world-tour-schedule-2027"
+  },
+  "HYROX Paris (déc. 2026)": {
+   "match": "HYROX Paris(?! Grand[- ]Palais)",
+   "status": "unknown",
+   "opens": null,
+   "url": "https://france.hyrox.com/event/hyrox-paris-season-26-27-hfkuj6",
+   "note": "Du 12-13 puis 16 au 20/12/2026 à Paris Expo Porte de Versailles (pas au Grand Palais). La page officielle indique « Sale starts soon » (peut-être en cache), alors qu'un agrégateur montre des catégories en vente.",
+   "source": "https://www.redbull.com/fr-fr/hyrox-paris-guide"
+  },
+  "HYROX Paris Grand Palais (avr. 2027)": {
+   "match": "HYROX.*Grand[- ]Palais",
+   "status": "not_open",
+   "opens": null,
+   "url": "https://hyrox.com/event/hyrox-paris-grand-palais-s26-27/",
+   "note": "Du 8 au 12/04/2027 au Grand Palais. « Ticket sales start soon », liste d'attente ouverte.",
+   "source": "https://hyrox.com/event/hyrox-paris-grand-palais-s26-27/"
+  },
+  "Horse GP Paris 2026": {
+   "match": "Horse GP",
+   "status": "unknown",
+   "opens": null,
+   "url": null,
+   "note": "1-2/12/2026 à l'Accor Arena. Aucune info billetterie trouvée.",
+   "source": "https://parisjetaime.com/eng/event/horse-gp-paris-e2580"
+  },
+  "Paris Nautic Show 2026": {
+   "match": "Paris Nautic Show|Salon Nautique",
+   "status": "open",
+   "opens": null,
+   "url": null,
+   "note": "Du 25 au 29/11/2026 au Parc des Expositions du Bourget (et non plus à Porte de Versailles). Réservation en ligne conseillée; tarifs non trouvés.",
+   "source": "https://www.jds.fr/paris/foires-et-salons/foires/paris-nautic-show-2026-1501629_A"
+  },
+  "Salon du Cheval 2026": {
+   "match": "Salon du Cheval",
+   "status": "open",
+   "opens": null,
+   "url": "https://www.billetweb.fr/salon-du-cheval-de-paris-2026",
+   "note": "Du 4 au 6/12/2026 à Paris Expo Porte de Versailles (et non à Villepinte). Billetterie Billetweb / salon-cheval.fr.",
+   "source": "https://www.billetweb.fr/salon-du-cheval-de-paris-2026"
+  },
+  "Mondiaux UCI piste 2027 (SQY)": {
+   "match": "(Championnats du monde|Mondiaux).*(piste|cyclisme)|UCI.*Track",
+   "status": "unknown",
+   "opens": null,
+   "url": null,
+   "note": "Piste élite du 26 au 30/08/2027 au Vélodrome national de SQY, para-piste du 1er au 5/09. Aucune billetterie trouvée.",
+   "source": "https://radiosports.fr/?p=20872"
+  }
+ },
+ "races": {
+  "Marathon de Paris 2027": {
+   "match": "Marathon de Paris",
+   "status": "closed",
+   "opens": "2026-09-08",
+   "closes": "2026-09-30",
+   "url": null,
+   "note": "4/04/2027, 50e édition. Tirage au sort (nouvel organisateur Cadence) clos le 30/09, avec 166 000 candidatures.",
+   "source": "https://stadion-actu.fr/marathon-de-paris-2027-166-000-coureurs-en-lice-pour-decrocher-leur-dossard/"
+  },
+  "Semi de Paris 2027": {
+   "match": "Semi(-| )?(Marathon )?de Paris",
+   "status": "closed",
+   "opens": "2026-09-08",
+   "closes": "2026-09-30",
+   "url": null,
+   "note": "7/03/2027. Tirage au sort clos, résultats à partir du 1/10; dossard à 79 €, 72 h pour payer.",
+   "source": "https://reference-trail.fr/semi-marathon-de-paris-2027-inscriptions-des-le-8-septembre-et-nouvelle-loterie/"
+  },
+  "adidas 10K Paris 2027": {
+   "match": "adidas 10K",
+   "status": "not_open",
+   "opens": null,
+   "closes": null,
+   "url": "https://www.adidas10kparis.fr/en/participate/register",
+   "note": "23/05/2027 (9e édition). Préinscription ouverte, date d'inscription officielle non publiée. En 2026: ouverture le 22/01, 44 000 dossards partis en 19 jours.",
+   "source": "https://www.adidas10kparis.fr/en/participate/register"
+  },
+  "20 km de Paris 2027": {
+   "match": "20 ?km de Paris",
+   "status": "unknown",
+   "opens": null,
+   "closes": null,
+   "url": "https://harmonie-mutuelle.20kmparis.com/",
+   "note": "10/10/2027. Statut d'inscription non affiché. Pour l'édition 2026, ouverture le 31/10/2025.",
+   "source": "https://harmonie-mutuelle.20kmparis.com/"
+  },
+  "Paris-Versailles 2027": {
+   "match": "Paris[- ]Versailles",
+   "status": "not_open",
+   "opens": null,
+   "closes": null,
+   "url": null,
+   "note": "Fin septembre 2027. En 2026: ouverture le 11/04 à 10 h, 25 000 dossards complets en 4 jours.",
+   "source": "https://www.infosyvelines.fr/articles/versailles-25-000-dossards-du-paris-versailles-sold-out-en-4-jours-record-absolu"
+  },
+  "EcoTrail Paris 2027": {
+   "match": "Eco ?Trail(?!.*Automne)",
+   "status": "open",
+   "opens": null,
+   "closes": null,
+   "url": "https://en.ecotrailparis.com/course/trail-80-km",
+   "note": "20-21/03/2027. Inscriptions ouvertes depuis juillet 2026; remplissage lent, mais au moins un format (45 km) est complet.",
+   "source": "https://www2.u-trail.com/pourquoi-lecotrail-paris-narrive-pas-a-se-remplir-cette-annee/"
+  },
+  "Saucony 10 km Tour Eiffel 2026": {
+   "match": "10 ?km (de la )?Tour Eiffel",
+   "status": "open",
+   "opens": "2026-05-05",
+   "closes": "2026-12-01",
+   "url": "https://fr.milesrepublic.com/event/10-km-sonic-tour-eiffel-9896",
+   "note": "6/12/2026 (le 7/12 selon une source). Inscriptions jusqu'au 1/12 à 23 h 59, sous réserve de places.",
+   "source": "https://fr.milesrepublic.com/event/10-km-sonic-tour-eiffel-9896"
+  },
+  "Corrida de Noël d'Issy 2026": {
+   "match": "Corrida (de No[ëe]l)?.*Issy",
+   "status": "unknown",
+   "opens": null,
+   "closes": null,
+   "url": "https://fr.milesrepublic.com/event/corrida-de-noel-d-issy-les-moulineaux-5891",
+   "note": "13/12/2026, 10 km des Pères Noël et 5 km des Rennes (23 €). Statut d'inscription non confirmé.",
+   "source": "https://fr.milesrepublic.com/event/corrida-de-noel-d-issy-les-moulineaux-5891"
+  },
+  "Cross du Figaro 2026": {
+   "match": "Cross du Figaro",
+   "status": "unknown",
+   "opens": null,
+   "closes": null,
+   "url": "https://fr.milesrepublic.com/event/le-cross-du-figaro-nordictrack-11092",
+   "note": "27-29/11/2026 au Domaine de Saint-Cloud (nocturne le vendredi). Fenêtre 2026 non trouvée; en 2025, inscriptions ouvertes jusqu'au jour de la course.",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/72513-figaro-cross-2026-races-and-a-night-edition-for-the-telethon-at-saint-cloud"
+  },
+  "Urban Trail Paris 2027 (Tempo Urban Trail La Villette)": {
+   "match": "Tempo Urban Trail|Urban Trail inédit",
+   "status": "open",
+   "opens": "2026-10-27",
+   "closes": null,
+   "url": "https://tempo-urban-trail.com",
+   "note": "27/02/2027 de nuit à La Villette, 9 km à partir de 29 €. Inscriptions ouvertes depuis le 27/10/2026.",
+   "source": "https://www2.u-trail.com/?p=569590"
+  },
+  "Grande Course du Grand Paris 2027": {
+   "match": "Grande Course (RATP )?du Grand Paris",
+   "status": "unknown",
+   "opens": null,
+   "closes": null,
+   "url": "https://lagrandecourse.fr",
+   "note": "Date contradictoire: 14/03/2027 selon Sortiraparis, 3/04/2027 selon TrainerDay. Arrivée au Stade de France. Inscriptions possibles jusqu'à la veille (CGV 2026).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/135931-grand-paris-grand-run-2027-half-marathon-10km-and-5km-on-march-14"
+  },
+  "Ekiden de Paris 2027": {
+   "match": "Ekiden",
+   "status": "unknown",
+   "opens": null,
+   "closes": null,
+   "url": "https://fr.milesrepublic.com/event/ekiden-du-stade-francais-paris-7542",
+   "note": "Pas d'édition « Ekiden de Paris 2027 » trouvée (le MAIF Ekiden a eu lieu en novembre 2026). L'Ekiden du Stade Français est prévu le 20/06/2027 à Jean-Bouin.",
+   "source": "https://fr.milesrepublic.com/event/ekiden-du-stade-francais-paris-7542"
+  }
+ }
+}

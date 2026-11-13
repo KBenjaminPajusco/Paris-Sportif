@@ -64,7 +64,8 @@ def norm_category(c):
 
 
 def tokens(title):
-    return {w for w in norm_key(title).split() if w not in STOP and len(w) > 1}
+    t = norm_key(title).replace("semi marathon", "semi")
+    return {w for w in t.split() if w not in STOP and len(w) > 1}
 
 
 def norm_date(s):

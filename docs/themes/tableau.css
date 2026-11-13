@@ -1,0 +1,44 @@
+/* Proposition 3 — TABLEAU : le panneau LED des cotes / le tableau d'affichage du stade */
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Chivo+Mono:ital,wght@0,400;0,600;0,800;1,800&display=swap");
+:root[data-ui="tableau"] {
+  --green: #2bd96b; --green-d: #179c4b; --red: #ff3b3b; --red-d: #c41f1f; --yellow: #ffb000;
+  --ink: #000; --bg: #030503; --panel: #070a07; --panel-2: #0e140f; --line: #1c2a1f; --text: #e6ffe9; --muted: #6f8f75;
+  --head: "VT323", "Courier New", monospace; --body: "Chivo Mono", ui-monospace, monospace;
+}
+[data-ui="tableau"] body { font-size: 14px; }
+[data-ui="tableau"] .app::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 2000; background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .18) 0 1px, transparent 1px 3px); }
+[data-ui="tableau"] .logo { font: 400 40px/1 var(--head); }
+[data-ui="tableau"] .logo-g, [data-ui="tableau"] .logo-r { clip-path: none; margin: 0; padding: 0 12px !important; background: var(--ink); }
+[data-ui="tableau"] .logo-g { color: var(--green); text-shadow: 0 0 8px var(--green); }
+[data-ui="tableau"] .logo-r { color: var(--red); text-shadow: 0 0 8px var(--red); }
+[data-ui="tableau"] .bar { border-bottom: 1px solid var(--green); }
+[data-ui="tableau"] .mode, [data-ui="tableau"] .sport, [data-ui="tableau"] .day, [data-ui="tableau"] .dayhead, [data-ui="tableau"] .board-head h2, [data-ui="tableau"] .ticker-tag, [data-ui="tableau"] .ticker-move { font-family: var(--head); font-weight: 400; letter-spacing: .06em; }
+[data-ui="tableau"] .mode { font-size: 24px; }
+[data-ui="tableau"] .sport { font-size: 22px; }
+[data-ui="tableau"] .day { font-size: 19px; }
+[data-ui="tableau"] .mode.active { color: var(--yellow); text-shadow: 0 0 8px var(--yellow); border-bottom-color: var(--yellow); background: none; }
+[data-ui="tableau"] .sport.active { background: none; color: var(--green); text-shadow: 0 0 8px var(--green); box-shadow: inset 0 0 0 1px var(--green); }
+[data-ui="tableau"] .day.active { background: var(--yellow); color: #000; }
+[data-ui="tableau"] .leaflet-tile-pane { filter: invert(1) grayscale(1) sepia(1) hue-rotate(75deg) saturate(2.2) brightness(.45) contrast(1.4); }
+[data-ui="tableau"] .pin { font: 400 20px/1 var(--head); background: #000; }
+[data-ui="tableau"] .pin.red { background: #000; color: var(--red); border-color: var(--red); text-shadow: 0 0 6px var(--red); }
+[data-ui="tableau"] .pin.green { background: #000; color: var(--green); border-color: var(--green); text-shadow: 0 0 6px var(--green); }
+[data-ui="tableau"] .pin.white { background: #000; color: var(--yellow); border-color: var(--yellow); }
+[data-ui="tableau"] .feat { background: #000; border-bottom: 1px solid var(--line); }
+[data-ui="tableau"] .feat::before { display: none; }
+[data-ui="tableau"] .feat .k { background: none; border: 1px solid var(--yellow); }
+[data-ui="tableau"] .feat .t { font: 400 34px/1 var(--head); color: var(--yellow); text-shadow: 0 0 10px rgba(255, 176, 0, .6); }
+[data-ui="tableau"] .feat .cd { font: 400 48px/1 var(--head); color: var(--red); text-shadow: 0 0 10px var(--red); }
+[data-ui="tableau"] .row .when { font: 400 26px var(--head); color: var(--yellow); text-shadow: 0 0 6px rgba(255, 176, 0, .5); }
+[data-ui="tableau"] .row .teams { font: 400 25px/1 var(--head); letter-spacing: .03em; }
+[data-ui="tableau"] .row .teams .h { color: var(--green); }
+[data-ui="tableau"] .row .teams .a { color: var(--red); }
+[data-ui="tableau"] .row .comp { font: 600 11px var(--body); }
+[data-ui="tableau"] .dayhead { font-size: 20px; background: #000; color: var(--yellow); }
+[data-ui="tableau"] .dayhead.today { background: var(--red); color: #000; }
+[data-ui="tableau"] .ticker-move { font-size: 22px; }
+[data-ui="tableau"] .m-top { background: #000; border-bottom: 1px solid var(--green); }
+[data-ui="tableau"] .m-top h2, [data-ui="tableau"] .m-vs { font: 400 38px/1 var(--head); }
+[data-ui="tableau"] .m-vs span:first-child { color: var(--green); } [data-ui="tableau"] .m-vs .a { color: var(--red); }
+[data-ui="tableau"] .m-aff .v, [data-ui="tableau"] .m-cell .v, [data-ui="tableau"] .m-tk .lab { font-family: var(--head); font-weight: 400; font-style: normal; font-size: 26px; }
+[data-ui="tableau"] .btn, [data-ui="tableau"] .tool { font: 400 20px var(--head); }
