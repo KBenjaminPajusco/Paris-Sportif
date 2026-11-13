@@ -1,26 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-ui="olympia">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paris Sportif – Le programme</title>
 <meta name="description" content="Tous les matchs et grands événements sportifs à voir à Paris : Ligue 1, Top 14, Betclic Élite, EuroLeague, Roland-Garros, Prix d'Amérique… sur une carte.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2300a651'/><rect x='50' width='50' height='100' fill='%23e30613'/><text x='50' y='70' font-size='56' font-family='Arial' font-weight='900' fill='white' text-anchor='middle'>PS</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&family=Barlow:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="preload" href="fonts/sportschrift-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/sportschrift-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
-<script>
-  /* Propositions d'UI : ?ui=turf|tabac|tableau|stade|helvetica|maillot|varsity|olympia (mémorisé) */
-  (function () {
-    var ok = ["turf", "tabac", "tableau", "stade", "helvetica", "maillot", "varsity", "olympia"], q = new URLSearchParams(location.search).get("ui"), ui;
-    try { ui = q !== null ? q : localStorage.getItem("ui"); if (q !== null) localStorage.setItem("ui", q); } catch (e) { ui = q; }
-    if (ok.indexOf(ui) >= 0) {
-      document.documentElement.setAttribute("data-ui", ui);
-      document.write('<link rel="stylesheet" href="themes/' + ui + '.css">');
-    }
-  })();
-</script>
+<link rel="stylesheet" href="themes/olympia.css">
 </head>
 <body>
 <div class="app">
@@ -83,24 +73,6 @@
   </footer>
 </div>
 
-<nav class="ui-pick" aria-label="Propositions d'interface">
-  <span>Propositions</span>
-  <a href="?ui=" data-ui="">0 · Actuel</a>
-  <a href="?ui=turf" data-ui="turf">1 · Turf</a>
-  <a href="?ui=tabac" data-ui="tabac">2 · Tabac</a>
-  <a href="?ui=tableau" data-ui="tableau">3 · Tableau</a>
-  <a href="?ui=stade" data-ui="stade">4 · Stade</a>
-  <a href="?ui=helvetica" data-ui="helvetica">5 · Helvetica</a>
-  <a href="?ui=maillot" data-ui="maillot">6 · Maillot</a>
-  <a href="?ui=varsity" data-ui="varsity">7 · Varsity</a>
-  <a href="?ui=olympia" data-ui="olympia">8 · Olympia</a>
-</nav>
-<script>
-  document.querySelectorAll(".ui-pick a").forEach(function (a) {
-    if ((document.documentElement.getAttribute("data-ui") || "") === a.dataset.ui) a.classList.add("on");
-    a.addEventListener("click", function (e) { e.preventDefault(); location.href = "?ui=" + a.dataset.ui + location.hash; });
-  });
-</script>
 
 <dialog id="modal" class="modal"><div id="modalBody"></div></dialog>
 

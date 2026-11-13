@@ -6,7 +6,8 @@ Le calendrier de **tous les événements sportifs à Paris et dans le Grand Pari
 
 ## Fonctionnalités
 
-- **Carte de Paris plein écran** au centre, épinglée par stade ; programme façon « tableau de paris » (domicile / extérieur), bandeau défilant, « À la une » avec compte à rebours
+- **Carte de Paris plein écran** au centre, en couleur : arrondissements en aplats pastel (palette Munich 72), halos colorés proportionnels à l'affluence, épingles par stade ; programme façon « tableau de paris », bandeau défilant, « À la une » avec compte à rebours
+- Identité « Olympia » : police Sumpfdeutschen Sportschrift (Tup Wanders, OFL), vert / rouge / bleu nuit
 - Mode **À voir** (matchs pro, grands événements, spectacles) ou **Tout le sport** ; onglets par sport, filtre par jour / mois, recherche, tri
 - Tri : date, sport, nom, type
 - Fiche détaillée avec lien officiel, ajout Google Agenda, export `.ics` (un événement ou toute la sélection), itinéraire

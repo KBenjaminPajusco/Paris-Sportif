@@ -33,7 +33,7 @@
   const shortDay = d => parse(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short" }).replace(".", "");
 
   const state = { mode: "spect", sport: "", period: "all", q: "", venue: "", sort: "date", limit: 60, onsale: false };
-  let ALL = [], current = [], map, markers = {}, VENUES = {};
+  let ALL = [], current = [], map, markers = {}, VENUES = {}, haloLayer;
 
   // ---------- état <-> URL ----------
   function readHash() {
@@ -205,11 +205,27 @@
       maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     map.on("click", () => { if (state.venue) selectVenue(""); });
+    // couleur : arrondissements en aplats pastel (palette Munich 72) + numéros géants
+    map.createPane("arr"); map.getPane("arr").style.zIndex = 350;
+    map.createPane("halo"); map.getPane("halo").style.zIndex = 380;
+    haloLayer = L.layerGroup().addTo(map);
+    fetch("arrondissements.geojson").then(r => r.json()).then(geo => {
+      const PAL = ["#3aa86b", "#6cb8e6", "#f5b83d", "#ef4a3c", "#9b7fd1", "#2fb5a8"];
+      L.geoJSON(geo, {
+        pane: "arr", interactive: false,
+        style: f => ({ color: "#ffffff", weight: 2, opacity: .9, fillColor: PAL[(f.properties.n * 7) % PAL.length], fillOpacity: .2 }),
+        onEachFeature: (f, layer) => {
+          const c = layer.getBounds().getCenter(), n = f.properties.n;
+          L.marker(c, { pane: "arr", interactive: false, icon: L.divIcon({ className: "arr-num", html: `<span style="color:${PAL[(n * 7) % PAL.length]}">${n}<sup>${n === 1 ? "er" : "e"}</sup></span>`, iconSize: null }) }).addTo(map);
+        },
+      }).addTo(map);
+    }).catch(() => {});
   }
   function renderMap(list) {
     if (!map) return;
     Object.values(markers).forEach(m => m.remove());
     markers = {};
+    haloLayer && haloLayer.clearLayers();
     const groups = {};
     list.forEach(e => { if (e._vkey) (groups[e._vkey] = groups[e._vkey] || []).push(e); });
     const max = Math.max(1, ...Object.values(groups).map(g => g.length));
@@ -226,6 +242,10 @@
       mk.on("mouseover", () => hoverVenue(k, true)); mk.on("mouseout", () => hoverVenue(k, false));
       mk.addTo(map);
       markers[k] = mk;
+      // halo coloré proportionnel à l'affluence attendue la plus forte du lieu
+      const peak = Math.max(0, ...evs.map(e => e.aff?.n || 0));
+      if (haloLayer) L.circle([v.lat, v.lon], { pane: "halo", interactive: false, radius: 120 + Math.sqrt(peak || 400) * 4.5, stroke: true, weight: 2, opacity: .55,
+        color: pro ? "#ef4a3c" : big ? "#3aa86b" : "#6cb8e6", fillColor: pro ? "#ef4a3c" : big ? "#3aa86b" : "#6cb8e6", fillOpacity: hot ? .32 : .18 }).addTo(haloLayer);
     });
   }
   function hoverVenue(k, on) {

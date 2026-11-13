@@ -26,7 +26,7 @@
 [data-ui="olympia"] .days { background: var(--bg); border-top: 0; }
 [data-ui="olympia"] .day { color: var(--ink); border-right: 0; font-size: 14px; }
 [data-ui="olympia"] .day.active { background: var(--green); color: #fff; }
-[data-ui="olympia"] .leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.1); }
+[data-ui="olympia"] .leaflet-tile-pane { filter: saturate(.75) contrast(.92) brightness(1.06); }
 [data-ui="olympia"] .mapzone::after { box-shadow: none; }
 [data-ui="olympia"] .pin { font-weight: 700; font-size: 14px; border-radius: 99px !important; padding: 4px 10px 4px 6px; box-shadow: none; }
 [data-ui="olympia"] .pin::after { display: none; }
@@ -76,3 +76,11 @@
 [data-ui="olympia"] .feat, [data-ui="olympia"] .feat .t, [data-ui="olympia"] .feat .m { color: #fff; }
 [data-ui="olympia"] .ticker, [data-ui="olympia"] .ticker-move button { color: #fff; }
 [data-ui="olympia"] .m-top, [data-ui="olympia"] .m-top h2, [data-ui="olympia"] .m-vs { color: #fff; }
+
+/* Carte en couleur : numéros d'arrondissements */
+.arr-num { pointer-events: none; }
+.arr-num span { display: block; transform: translate(-50%, -50%); font: 700 34px/1 "Sportschrift", sans-serif; opacity: .55; white-space: nowrap; text-shadow: 0 0 6px #fff, 0 0 2px #fff; }
+.arr-num sup { font-size: 14px; }
+.leaflet-zoom-anim .arr-num span, .leaflet-zoom-hide { }
+[data-ui="olympia"] .map-legend .sq.white { background: #6cb8e6; }
+[data-ui="olympia"] .pin.white { background: #6cb8e6; border-color: #6cb8e6; color: #fff; }
