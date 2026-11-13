@@ -2,7 +2,7 @@
 
 Le calendrier de **tous les événements sportifs à Paris et dans le Grand Paris** : matchs des clubs pro, courses à pied, vélo, triathlon, grands événements internationaux, sport entreprise, sport universitaire, tournois amateurs, activités gratuites de la Ville…
 
-👉 **Site : https://kbenjaminpajusco.github.io/Paris-Sportif/**
+👉 **Site : https://benjamin.pajusco.fr/Paris-Sportif/**
 
 ## Fonctionnalités
 
