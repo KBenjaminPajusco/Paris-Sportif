@@ -1,480 +1,344 @@
-/* Paris Sportif – calendrier des événements sportifs à Paris */
+/* Paris Sportif – le programme sur la carte */
 (() => {
   "use strict";
 
-  const CATEGORIES = {
-    "Match pro": { color: "--c-pro", order: 1 },
-    "Grand événement": { color: "--c-big", order: 2 },
-    "Course / épreuve participative": { color: "--c-race", order: 3 },
-    "Sport entreprise": { color: "--c-corp", order: 4 },
-    "Sport universitaire": { color: "--c-uni", order: 5 },
-    "Tournoi amateur": { color: "--c-amateur", order: 6 },
-    "Événement communautaire": { color: "--c-community", order: 7 },
-    "Spectacle sportif": { color: "--c-show", order: 8 },
-    "Salon": { color: "--c-salon", order: 9 },
-    "Activité / initiation": { color: "--c-activity", order: 10 },
-  };
-  const SPORT_ICONS = [
-    [/course à pied|running|marathon/i, "🏃"], [/trail/i, "⛰️"], [/marche/i, "🚶"], [/futsal|football/i, "⚽"],
-    [/rugby/i, "🏉"], [/basket/i, "🏀"], [/hand/i, "🤾"], [/volley/i, "🏐"], [/hockey/i, "🏒"],
-    [/tennis de table|ping/i, "🏓"], [/padel|squash/i, "🎾"], [/tennis/i, "🎾"], [/badminton/i, "🏸"],
-    [/triathlon/i, "🏊"], [/natation|water|plong/i, "🏊"], [/cycl|vélo|bmx/i, "🚴"], [/aviron|nautis|voile|kayak|canoë|rame/i, "🚣"],
-    [/roller|skate/i, "🛼"], [/escalade/i, "🧗"], [/judo|karat|arts martiaux|taekwondo|capoeira/i, "🥋"],
-    [/boxe|mma|combat|catch|lutte/i, "🥊"], [/escrime/i, "🤺"], [/golf/i, "⛳"], [/équitation|hippisme|hippique|cheval/i, "🏇"],
-    [/athl/i, "🏅"], [/gym/i, "🤸"], [/yoga|bien-être|pilates/i, "🧘"], [/fitness|hyrox|crossfit|obstacle/i, "💪"],
-    [/patin|glace/i, "⛸️"], [/ski|snow/i, "🏂"], [/pétanque|boule/i, "🎯"], [/esport/i, "🎮"], [/mécaniques|moto|auto|kart/i, "🏁"],
-    [/danse|breaking/i, "💃"], [/échecs/i, "♟️"], [/parkour/i, "🤸"], [/tir/i, "🎯"], [/ultimate|frisbee/i, "🥏"],
+  const SPECT_CATS = new Set(["Match pro", "Grand événement", "Spectacle sportif"]);
+  const BIG_RACES = /marathon de paris|semi de paris|semi-marathon de paris|20 ?km de paris|paris-versailles|tour de france|ekiden de paris|10 ?km paris centre/i;
+  const isSpect = e => SPECT_CATS.has(e.category) || (e.category === "Course / épreuve participative" && BIG_RACES.test(e.title));
+
+  const ICONS = [
+    [/course à pied|marathon|trail|marche/i, "🏃"], [/futsal|football/i, "⚽"], [/rugby/i, "🏉"], [/basket/i, "🏀"],
+    [/hand/i, "🤾"], [/volley/i, "🏐"], [/hockey/i, "🏒"], [/tennis de table/i, "🏓"], [/padel|tennis/i, "🎾"],
+    [/badminton/i, "🏸"], [/natation|triathlon/i, "🏊"], [/cycl|vélo/i, "🚴"], [/aviron|nautis/i, "🚣"],
+    [/roller|skate/i, "🛼"], [/escalade/i, "🧗"], [/judo|karat|arts martiaux/i, "🥋"], [/boxe|mma|combat|catch/i, "🥊"],
+    [/escrime/i, "🤺"], [/golf/i, "⛳"], [/équitation|hippisme/i, "🏇"], [/athl/i, "🏅"], [/gym/i, "🤸"],
+    [/fitness|hyrox/i, "💪"], [/patin|glace/i, "⛸️"], [/esport/i, "🎮"], [/mécaniques|moto|kart/i, "🏁"], [/danse/i, "💃"], [/échecs/i, "♟️"],
   ];
-  const sportIcon = s => (SPORT_ICONS.find(([re]) => re.test(s || "")) || [0, "🏅"])[1];
-  const catColor = c => `var(${(CATEGORIES[c] || { color: "--c-community" }).color})`;
+  const icon = s => (ICONS.find(([re]) => re.test(s || "")) || [0, "🏅"])[1];
 
   const $ = s => document.querySelector(s);
   const $$ = s => [...document.querySelectorAll(s)];
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-
-  // Dates « naïves » heure de Paris
   const pad = n => String(n).padStart(2, "0");
   const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-  const parse = s => { if (!s) return null; const [d, t] = s.split("T"); const [y, m, dd] = d.split("-").map(Number); const [h, mi] = (t || "0:0").split(":").map(Number); return new Date(y, m - 1, dd, h, mi); };
+  const parse = s => { const [d, t] = s.split("T"); const [y, m, dd] = d.split("-").map(Number); const [h, mi] = (t || "0:0").split(":").map(Number); return new Date(y, m - 1, dd, h, mi); };
   const hasTime = s => !!s && s.includes("T");
-  const fmtTime = s => hasTime(s) ? s.slice(11, 16).replace(":", "h") : "";
-  const DOW = ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."];
-  const fmtLong = s => parse(s).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-  const fmtShort = s => parse(s).toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
-  const TODAY = ymd(new Date());
+  const hhmm = s => hasTime(s) ? s.slice(11, 16).replace(":", "h") : "";
   const addDays = (s, n) => { const d = parse(s.slice(0, 10)); d.setDate(d.getDate() + n); return ymd(d); };
+  const TODAY = ymd(new Date());
+  const TOMORROW = addDays(TODAY, 1);
+  const endDay = e => (e.end || e.start).slice(0, 10);
+  const dayLabel = d => d === TODAY ? "Aujourd'hui" : d === TOMORROW ? "Demain" : parse(d).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
+  const shortDay = d => parse(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short" }).replace(".", "");
 
-  const state = {
-    q: "", period: "all", from: "", to: "", categories: new Set(), sports: new Set(), cities: new Set(),
-    free: false, recurring: false, hideTentative: false, sort: "date", view: "list", calMonth: TODAY.slice(0, 7), limit: 150,
-  };
-  let ALL = [], META = {}, map, mapLayer;
+  const state = { mode: "spect", sport: "", period: "all", q: "", venue: "", sort: "date", limit: 60 };
+  let ALL = [], current = [], map, markers = {}, VENUES = {};
 
-  // ---------- URL <-> état ----------
+  // ---------- état <-> URL ----------
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
-    state.q = p.get("q") || "";
-    state.period = p.get("p") || (p.get("from") || p.get("to") ? "custom" : "all");
-    state.from = p.get("from") || ""; state.to = p.get("to") || "";
-    state.categories = new Set((p.get("cat") || "").split("|").filter(Boolean));
-    state.sports = new Set((p.get("sport") || "").split("|").filter(Boolean));
-    state.cities = new Set((p.get("city") || "").split("|").filter(Boolean));
-    state.free = p.get("free") === "1"; state.recurring = p.get("rec") === "1"; state.hideTentative = p.get("conf") === "1";
-    state.sort = p.get("sort") || "date"; state.view = p.get("view") || "list";
-    if (p.get("m")) state.calMonth = p.get("m");
+    state.mode = p.get("mode") === "all" ? "all" : "spect";
+    state.sport = p.get("sport") || ""; state.period = p.get("p") || "all";
+    state.q = p.get("q") || ""; state.venue = p.get("lieu") || ""; state.sort = p.get("tri") || "date";
   }
   function writeHash() {
     const p = new URLSearchParams();
+    if (state.mode !== "spect") p.set("mode", state.mode);
+    if (state.sport) p.set("sport", state.sport);
+    if (state.period !== "all") p.set("p", state.period);
     if (state.q) p.set("q", state.q);
-    if (state.period !== "all" && state.period !== "custom") p.set("p", state.period);
-    if (state.period === "custom") { if (state.from) p.set("from", state.from); if (state.to) p.set("to", state.to); }
-    if (state.categories.size) p.set("cat", [...state.categories].join("|"));
-    if (state.sports.size) p.set("sport", [...state.sports].join("|"));
-    if (state.cities.size) p.set("city", [...state.cities].join("|"));
-    if (state.free) p.set("free", "1"); if (state.recurring) p.set("rec", "1"); if (state.hideTentative) p.set("conf", "1");
-    if (state.sort !== "date") p.set("sort", state.sort);
-    if (state.view !== "list") p.set("view", state.view);
-    if (state.view === "calendar" && state.calMonth !== TODAY.slice(0, 7)) p.set("m", state.calMonth);
+    if (state.venue) p.set("lieu", state.venue);
+    if (state.sort !== "date") p.set("tri", state.sort);
     const h = p.toString();
-    history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+    history.replaceState(null, "", h ? "#" + h : location.pathname);
   }
 
-  // ---------- Filtrage ----------
-  function periodRange() {
-    const t = TODAY;
+  // ---------- filtres ----------
+  function range() {
     switch (state.period) {
-      case "today": return [t, t];
-      case "weekend": {
-        const d = parse(t); const dow = d.getDay();
-        if (dow === 0) return [t, t];
-        const sat = addDays(t, (6 - dow + 7) % 7);
-        return [dow === 5 ? t : sat, addDays(sat, 1)];
-      }
-      case "7": return [t, addDays(t, 6)];
-      case "30": return [t, addDays(t, 29)];
-      case "90": return [t, addDays(t, 89)];
-      case "custom": return [state.from || t, state.to || "9999-12-31"];
-      default: return [t, "9999-12-31"];
+      case "today": return [TODAY, TODAY];
+      case "tomorrow": return [TOMORROW, TOMORROW];
+      case "weekend": { const dow = parse(TODAY).getDay(); if (dow === 0) return [TODAY, TODAY]; const sat = addDays(TODAY, 6 - dow); return [dow === 5 ? TODAY : sat, addDays(sat, 1)]; }
+      case "7": return [TODAY, addDays(TODAY, 6)];
+      case "30": return [TODAY, addDays(TODAY, 29)];
+      default:
+        if (/^\d{4}-\d{2}$/.test(state.period)) return [state.period + "-01", state.period + "-31"];
+        return [TODAY, "9999-12-31"];
     }
   }
-  const endDay = e => (e.end || e.start).slice(0, 10);
-
-  function matches(e, skip) {
-    const [from, to] = periodRange();
-    if (e.recurring) {
-      if (!state.recurring) return false;
-      if (e.occurrences && e.occurrences.length) {
-        if (!e.occurrences.some(([s, en]) => (en || s).slice(0, 10) >= from && s.slice(0, 10) <= to)) return false;
-      } else if (endDay(e) < from || e.start.slice(0, 10) > to) return false;
-    } else if (endDay(e) < from || e.start.slice(0, 10) > to) return false;
-    if (skip !== "category" && state.categories.size && !state.categories.has(e.category)) return false;
-    if (skip !== "sport" && state.sports.size && !state.sports.has(e.sport)) return false;
-    if (skip !== "city" && state.cities.size && !state.cities.has(e.city)) return false;
-    if (state.free && e.price !== "Gratuit") return false;
-    if (state.hideTentative && e.tentative) return false;
-    if (state.q) {
-      const words = norm(state.q).split(/\s+/).filter(Boolean);
-      if (!words.every(w => e._search.includes(w))) return false;
-    }
+  function base(e, skipSport) {
+    if (e.recurring) return false;
+    if (state.mode === "spect" && !e._spect) return false;
+    const [a, b] = range();
+    if (endDay(e) < a || e.start.slice(0, 10) > b) return false;
+    if (!skipSport && state.sport && e.sport !== state.sport) return false;
+    if (state.q) { const w = norm(state.q).split(/\s+/).filter(Boolean); if (!w.every(x => e._search.includes(x))) return false; }
     return true;
   }
 
-  const sorters = {
-    date: (a, b) => a._sortStart.localeCompare(b._sortStart) || a.title.localeCompare(b.title, "fr"),
-    "date-desc": (a, b) => b._sortStart.localeCompare(a._sortStart) || a.title.localeCompare(b.title, "fr"),
-    sport: (a, b) => a.sport.localeCompare(b.sport, "fr") || a._sortStart.localeCompare(b._sortStart),
-    title: (a, b) => a.title.localeCompare(b.title, "fr"),
-    category: (a, b) => ((CATEGORIES[a.category]?.order ?? 99) - (CATEGORIES[b.category]?.order ?? 99)) || a._sortStart.localeCompare(b._sortStart),
-  };
-
-  // ---------- Rendu des filtres ----------
-  function renderFacet(container, key, field, values, withDot) {
-    const base = ALL.filter(e => matches(e, key));
+  // ---------- rail ----------
+  function renderRail() {
+    $$(".mode").forEach(m => m.classList.toggle("active", m.dataset.mode === state.mode));
+    const pool = ALL.filter(e => base(e, true));
     const counts = {};
-    base.forEach(e => { counts[e[field]] = (counts[e[field]] || 0) + 1; });
-    const set = state[key === "category" ? "categories" : key === "sport" ? "sports" : "cities"];
-    const filter = key === "sport" ? norm($("#sportSearch").value) : "";
-    container.innerHTML = values
-      .filter(v => !filter || norm(v).includes(filter))
-      .map(v => {
-        const n = counts[v] || 0;
-        return `<label class="check ${n ? "" : "zero"}"><input type="checkbox" value="${esc(v)}" ${set.has(v) ? "checked" : ""}>
-          ${withDot ? `<span class="dot" style="background:${catColor(v)}"></span>` : `<span>${sportIconFor(key, v)}</span>`}
-          <span>${esc(v)}</span><span class="n">${n}</span></label>`;
-      }).join("");
-    container.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
-      inp.checked ? set.add(inp.value) : set.delete(inp.value);
-      state.limit = 150; update();
-    }));
-  }
-  const sportIconFor = (key, v) => key === "sport" ? sportIcon(v) : "📍";
+    pool.forEach(e => counts[e.sport] = (counts[e.sport] || 0) + 1);
+    const sports = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+    if (state.sport && !counts[state.sport]) sports.unshift(state.sport);
+    $("#sports").innerHTML = `<button class="sport ${!state.sport ? "active" : ""}" data-sport="">Tous <span class="n">${pool.length}</span></button>` +
+      sports.map(s => `<button class="sport ${state.sport === s ? "active" : ""}" data-sport="${esc(s)}"><span>${icon(s)}</span>${esc(s)} <span class="n">${counts[s] || 0}</span></button>`).join("");
+    $$("#sports .sport").forEach(b => b.onclick = () => { state.sport = b.dataset.sport; state.limit = 60; update(); });
 
-  function renderFilters() {
-    const cats = Object.keys(CATEGORIES).filter(c => ALL.some(e => e.category === c));
-    ALL.forEach(e => { if (!cats.includes(e.category)) cats.push(e.category); });
-    renderFacet($("#categoryList"), "category", "category", cats, true);
-    const sports = [...new Set(ALL.map(e => e.sport))].sort((a, b) => a.localeCompare(b, "fr"));
-    renderFacet($("#sportList"), "sport", "sport", sports, false);
-    const cityCount = {};
-    ALL.forEach(e => cityCount[e.city] = (cityCount[e.city] || 0) + 1);
-    const cities = Object.keys(cityCount).sort((a, b) => (a === "Paris" ? -1 : b === "Paris" ? 1 : a.localeCompare(b, "fr")));
-    renderFacet($("#cityList"), "city", "city", cities, false);
-
-    $$("#periodChips .chip").forEach(c => c.classList.toggle("active", c.dataset.period === state.period));
-    const [from, to] = periodRange();
-    $("#from").value = state.period === "custom" ? state.from : (state.period === "all" ? "" : from);
-    $("#to").value = state.period === "custom" ? state.to : (state.period === "all" ? "" : to);
-    $("#q").value !== state.q && ($("#q").value = state.q);
-    $("#freeOnly").checked = state.free; $("#showRecurring").checked = state.recurring; $("#hideTentative").checked = state.hideTentative;
+    const months = [];
+    for (let i = 0; i < 8; i++) { const d = new Date(); d.setDate(1); d.setMonth(d.getMonth() + i); months.push(`${d.getFullYear()}-${pad(d.getMonth() + 1)}`); }
+    const opts = [["all", "Tout", "à venir"], ["today", "Aujourd'hui", shortDay(TODAY)], ["tomorrow", "Demain", shortDay(TOMORROW)], ["weekend", "Ce week-end", ""], ["7", "7 jours", ""], ["30", "30 jours", ""],
+      ...months.map(m => [m, parse(m + "-01").toLocaleDateString("fr-FR", { month: "long" }), m.slice(0, 4)])];
+    $("#days").innerHTML = opts.map(([k, l, s]) => `<button class="day ${state.period === k ? "active" : ""}" data-p="${k}">${esc(l)}${s ? `<small>${esc(s)}</small>` : ""}</button>`).join("");
+    $$("#days .day").forEach(b => b.onclick = () => { state.period = b.dataset.p; state.limit = 60; update(); });
+    if ($("#q").value !== state.q) $("#q").value = state.q;
     $("#sort").value = state.sort;
-    $$(".tab").forEach(t => t.classList.toggle("active", t.dataset.view === state.view));
-    const active = state.categories.size + state.sports.size + state.cities.size + (state.q ? 1 : 0) + (state.period !== "all" ? 1 : 0) + state.free + state.hideTentative;
-    $("#activeFilters").textContent = active || "";
   }
 
-  // ---------- Vues ----------
-  function cardHTML(e, showDate) {
-    const time = e.recurring ? "" : fmtTime(e.start);
-    const range = e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? `jusqu'au ${fmtShort(e.end)}` : "";
-    return `<button class="card" data-id="${esc(e.id)}" style="--cat:${catColor(e.category)}">
-      <span class="ico" aria-hidden="true">${sportIcon(e.sport)}</span>
-      <span>
-        <h3>${esc(e.title)}</h3>
-        <span class="meta">
-          <span>${esc(e.sport)}${e.competition ? " · " + esc(e.competition) : ""}</span>
-          ${e.venue ? `<span>📍 ${esc(e.venue)}${e.city && e.city !== "Paris" ? ", " + esc(e.city) : ""}</span>` : ""}
-          ${showDate ? `<span>🗓 ${esc(fmtShort(e.start))}</span>` : ""}
-          ${range ? `<span>${esc(range)}</span>` : ""}
-          ${e.recurring && e.schedule ? `<span>${esc(e.schedule.slice(0, 110))}</span>` : ""}
-        </span>
+  // ---------- ligne de programme ----------
+  function split(e) {
+    if (e.category !== "Match pro") return null;
+    const parts = e.title.split(/\s+[–—-]\s+|\s+vs\.?\s+/i);
+    return parts.length === 2 ? parts.map(t => t.replace(/\s*\([^)]*\)\s*$/, "")) : null;
+  }
+  function rowHTML(e) {
+    const teams = split(e);
+    const cls = e.category === "Match pro" ? "cat-pro" : e.category === "Grand événement" ? "cat-big" : "";
+    const multi = e.end && e.end.slice(0, 10) !== e.start.slice(0, 10);
+    const when = hasTime(e.start) ? `${hhmm(e.start)}<small>${multi ? "→ " + shortDay(e.end) : ""}</small>` : `<small>${multi ? "jusqu'au" : "journée"}</small>${multi ? `<span style="font-size:14px">${shortDay(e.end)}</span>` : ""}`;
+    const tags = [
+      e.tentative ? `<span class="tag tbc">À confirmer</span>` : "",
+      (e.tags || []).some(t => /europe/i.test(t)) || /champions|euroleague|ehf|cup/i.test(e.competition || "") ? `<span class="tag eu">Europe</span>` : "",
+      e.price === "Gratuit" ? `<span class="tag free">Gratuit</span>` : "",
+    ].join("");
+    return `<button class="row ${cls}" data-id="${esc(e.id)}" data-v="${esc(e._vkey || "")}">
+      <span class="when">${when}</span>
+      <span class="mid">
+        <span class="comp"><span class="s">${icon(e.sport)} ${esc(e.sport)}</span>${e.competition ? `· ${esc(e.competition)}` : ""} ${tags}</span>
+        <span class="teams">${teams ? `<span class="h">${esc(teams[0])}</span><span class="a">${esc(teams[1])}</span>` : `<span class="solo">${esc(e.title)}</span>`}</span>
+        <span class="place">📍 ${esc(e.venue || e.city || "Paris")}${e.city && e.city !== "Paris" && !(e.venue || "").includes(e.city) ? " · " + esc(e.city) : ""}</span>
       </span>
-      <span class="right">
-        ${time ? `<span class="time">${time}</span>` : ""}
-        <span class="badge cat">${esc(e.category)}</span>
-        ${e.price === "Gratuit" ? `<span class="badge free">Gratuit</span>` : ""}
-        ${e.tentative ? `<span class="badge tentative">à confirmer</span>` : ""}
-      </span>
+      <span class="go">›</span>
     </button>`;
   }
 
   function renderList(list) {
-    const el = $("#listView");
-    const dated = list.filter(e => !e.recurring);
-    const rec = list.filter(e => e.recurring);
-    if (!list.length) { el.innerHTML = `<div class="empty">Aucun événement ne correspond à ces filtres.<br><br><button class="btn ghost" id="emptyReset">Réinitialiser</button></div>`; $("#emptyReset").onclick = reset; return; }
+    const el = $("#list");
+    const shown = state.venue ? list.filter(e => e._vkey === state.venue) : list;
+    $("#boardTitle").innerHTML = `${state.mode === "spect" ? "À l'affiche" : "Programme"} <span>${shown.length}</span>`;
+    $("#venueFilter").innerHTML = state.venue && VENUES[state.venue] ? `<div class="vf">📍 ${esc(VENUES[state.venue].name)} <button id="clearVenue">✕ Tous les lieux</button></div>` : "";
+    const cv = $("#clearVenue"); if (cv) cv.onclick = () => selectVenue("");
+    if (!shown.length) { el.innerHTML = `<div class="empty">Rien au programme<br><small>Élargissez la période ou passez en « Tout le sport »</small></div>`; return; }
     let html = "";
-    const shown = dated.slice(0, state.limit);
-    if (state.sort.startsWith("date")) {
-      let curMonth = "", curDay = "", open = false;
-      shown.forEach(e => {
-        const d = e._sortStart.slice(0, 10), m = d.slice(0, 7);
-        if (m !== curMonth) {
-          if (open) { html += "</div></div>"; open = false; }
-          curMonth = m; curDay = "";
-          html += `<h2 class="month-title">${parse(d).toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}</h2>`;
-        }
-        if (d !== curDay) {
-          if (open) html += "</div></div>";
-          curDay = d; open = true;
-          const dt = parse(d);
-          html += `<div class="day"><div class="daybox ${d === TODAY ? "today" : ""}"><div class="dow">${DOW[dt.getDay()]}</div><div class="num">${dt.getDate()}</div><div class="mon">${dt.toLocaleDateString("fr-FR", { month: "short" })}</div></div><div class="events">`;
-        }
-        html += cardHTML(e, false);
+    const sl = shown.slice(0, state.limit);
+    if (state.sort === "date") {
+      let cur = "";
+      sl.forEach(e => {
+        const d = e._day;
+        if (d !== cur) { cur = d; const n = shown.filter(x => x._day === d).length; html += `<div class="dayhead ${d === TODAY ? "today" : ""}">${esc(dayLabel(d))}<span>${n} évt${n > 1 ? "s" : ""}</span></div>`; }
+        html += rowHTML(e);
       });
-      if (open) html += "</div></div>";
     } else {
-      html += `<div class="events">${shown.map(e => cardHTML(e, true)).join("")}</div>`;
+      const key = state.sort === "sport" ? (e => e.sport) : (e => e.venue || e.city);
+      let cur = null;
+      sl.forEach(e => { const k = key(e); if (k !== cur) { cur = k; html += `<div class="dayhead">${state.sort === "sport" ? icon(k) + " " : "📍 "}${esc(k)}</div>`; } html += rowHTML(e); });
     }
-    if (dated.length > state.limit) html += `<button class="btn ghost more" id="moreBtn">Afficher plus (${dated.length - state.limit} restants)</button>`;
-    if (rec.length) {
-      html += `<div class="recurring-block"><h2>Activités régulières (${rec.length})</h2><p>Cours, initiations et créneaux hebdomadaires, souvent gratuits, proposés par la Ville de Paris et les associations.</p><div class="events">${rec.slice().sort(sorters.sport).map(e => cardHTML(e, false)).join("")}</div></div>`;
-    }
-    if (!dated.length && !rec.length) html = `<div class="empty">Aucun événement.</div>`;
+    if (shown.length > state.limit) html += `<button class="more" id="more">Voir ${Math.min(60, shown.length - state.limit)} de plus · ${shown.length - state.limit} restants</button>`;
     el.innerHTML = html;
-    const more = $("#moreBtn"); if (more) more.onclick = () => { state.limit += 200; render(); };
+    const m = $("#more"); if (m) m.onclick = () => { state.limit += 60; renderList(current); };
   }
 
-  function eventsByDay(list, from, to) {
-    const map = {};
-    const push = (d, e, time) => { (map[d] = map[d] || []).push({ e, time }); };
-    list.forEach(e => {
-      if (e.recurring && e.occurrences?.length) {
-        e.occurrences.forEach(([s]) => { const d = s.slice(0, 10); if (d >= from && d <= to) push(d, e, fmtTime(s)); });
-        return;
-      }
-      if (e.recurring) return; // pas de créneaux connus → pas sur la grille
-      let d = e.start.slice(0, 10); const end = endDay(e);
-      let guard = 0;
-      while (d <= end && guard++ < 62) { if (d >= from && d <= to) push(d, e, d === e.start.slice(0, 10) ? fmtTime(e.start) : ""); d = addDays(d, 1); }
-    });
-    Object.values(map).forEach(arr => arr.sort((a, b) => (a.e.recurring - b.e.recurring) || (a.time || "99").localeCompare(b.time || "99")));
-    return map;
+  // ---------- à la une ----------
+  function renderFeature(list) {
+    const STAR = /\bPSG\b(?! (handball|f[ée]minines))|paris saint-germain|^france –|roland-garros|marathon de paris|tour de france|arc de triomphe|prix d'am[ée]rique|\bNBA\b|grand slam|diamond league|meeting de paris|six nations|finale|euroleague/i;
+    const soon = list.filter(e => !e.tentative && e._day <= addDays(TODAY, 45));
+    const pick = soon.find(e => STAR.test(e.title) || STAR.test(e.competition || "")) || list.find(e => e.category === "Grand événement" && !e.tentative) || list[0];
+    if (!pick) { $("#feature").innerHTML = ""; return; }
+    const days = Math.round((parse(pick.start.slice(0, 10)) - parse(TODAY)) / 864e5);
+    const cd = days <= 0 ? `LIVE<small>${days === 0 ? "aujourd'hui" : "en cours"}</small>` : `J-${days}<small>${days === 1 ? "demain" : "jours"}</small>`;
+    $("#feature").innerHTML = `<button class="feat" data-id="${esc(pick.id)}" data-v="${esc(pick._vkey || "")}">
+      <span class="k">★ À la une</span><span class="cd">${cd}</span>
+      <span class="t">${esc(pick.title)}</span>
+      <span class="m">${esc(dayLabel(pick._day))}${hasTime(pick.start) ? " · " + hhmm(pick.start) : ""} · ${esc(pick.venue || pick.city)}</span>
+    </button>`;
   }
 
-  function renderCalendar(list) {
-    const [y, m] = state.calMonth.split("-").map(Number);
-    const first = new Date(y, m - 1, 1);
-    const startOffset = (first.getDay() + 6) % 7;
-    const gridStart = new Date(y, m - 1, 1 - startOffset);
-    const days = [];
-    for (let i = 0; i < 42; i++) { const d = new Date(gridStart); d.setDate(gridStart.getDate() + i); days.push(ymd(d)); }
-    if (days[35].slice(0, 7) !== state.calMonth) days.length = 35;
-    const byDay = eventsByDay(list, days[0], days[days.length - 1]);
-    const maxPer = window.innerWidth < 900 ? 4 : 3;
-    let html = `<div class="cal-head"><h2>${first.toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}</h2>
-      <div class="cal-nav"><button class="btn ghost" data-cal="-1" aria-label="Mois précédent">‹</button><button class="btn ghost" data-cal="0">Aujourd'hui</button><button class="btn ghost" data-cal="1" aria-label="Mois suivant">›</button></div></div>
-      <div class="cal">${["lun", "mar", "mer", "jeu", "ven", "sam", "dim"].map(d => `<div class="dow">${d}</div>`).join("")}`;
-    days.forEach(d => {
-      const evs = byDay[d] || [];
-      html += `<div class="cell ${d.slice(0, 7) !== state.calMonth ? "out" : ""} ${d === TODAY ? "today" : ""}"><span class="dnum">${Number(d.slice(8))}</span>
-        ${evs.slice(0, maxPer).map(({ e, time }) => `<button class="ev" data-id="${esc(e.id)}" style="--cat:${catColor(e.category)}" title="${esc((time ? time + " " : "") + e.title)}">${sportIcon(e.sport)} ${time ? time + " " : ""}${esc(e.title)}</button>`).join("")}
-        ${evs.length > maxPer ? `<button class="ev more-ev" data-day="${d}">+${evs.length - maxPer} autres</button>` : ""}</div>`;
-    });
-    html += "</div>";
-    $("#calendarView").innerHTML = html;
-    $$("[data-cal]").forEach(b => b.onclick = () => {
-      const k = Number(b.dataset.cal);
-      if (k === 0) state.calMonth = TODAY.slice(0, 7);
-      else { const d = new Date(y, m - 1 + k, 1); state.calMonth = `${d.getFullYear()}-${pad(d.getMonth() + 1)}`; }
-      writeHash(); render();
-    });
-    $$(".more-ev").forEach(b => b.onclick = ev => { ev.stopPropagation(); showDay(b.dataset.day, byDay[b.dataset.day]); });
+  // ---------- carte ----------
+  function initMap() {
+    if (!window.L) return;
+    map = L.map("map", { zoomControl: false, attributionControl: true, minZoom: 9 }).setView([48.862, 2.33], 12);
+    L.control.zoom({ position: "topright" }).addTo(map);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+    map.on("click", () => { if (state.venue) selectVenue(""); });
   }
-
-  function showDay(d, items) {
-    const seen = new Set();
-    const html = `<div class="m-hero" style="--cat:var(--accent)"><button class="icon-btn close" data-close>✕</button><span class="badge">${items.length} événements</span><h2 style="text-transform:capitalize">${fmtLong(d)}</h2></div>
-      <div class="m-body"><div class="events">${items.filter(({ e }) => !seen.has(e.id) && seen.add(e.id)).map(({ e }) => cardHTML(e, false)).join("")}</div></div>`;
-    openModal(html);
-  }
-
   function renderMap(list) {
-    if (!window.L) { $("#mapNote").textContent = "La carte n'a pas pu être chargée."; return; }
-    if (!map) {
-      map = L.map("map", { scrollWheelZoom: true }).setView([48.8566, 2.3422], 12);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(map);
-      mapLayer = L.layerGroup().addTo(map);
-    }
-    setTimeout(() => map.invalidateSize(), 50);
-    mapLayer.clearLayers();
+    if (!map) return;
+    Object.values(markers).forEach(m => m.remove());
+    markers = {};
     const groups = {};
-    let missing = 0;
-    list.forEach(e => {
-      if (e.lat == null || e.lon == null) { missing++; return; }
-      const k = e.lat.toFixed(4) + "," + e.lon.toFixed(4);
-      (groups[k] = groups[k] || []).push(e);
+    list.forEach(e => { if (e._vkey) (groups[e._vkey] = groups[e._vkey] || []).push(e); });
+    const max = Math.max(1, ...Object.values(groups).map(g => g.length));
+    Object.entries(groups).forEach(([k, evs]) => {
+      const v = VENUES[k];
+      const pro = evs.some(e => e.category === "Match pro"), big = evs.some(e => e.category === "Grand événement");
+      const color = pro ? "red" : big ? "green" : "white";
+      const hot = evs.some(e => e._day <= TOMORROW);
+      const sports = [...new Set(evs.map(e => e.sport))];
+      const cls = `pin ${color} ${hot ? "hot" : ""} ${evs.length >= Math.max(4, max * .25) ? "big" : ""} ${state.venue === k ? "sel" : ""}`;
+      const html = `<div class="${cls}" data-v="${esc(k)}"><span class="em">${sports.slice(0, 2).map(icon).join("")}</span>${evs.length}<span class="lbl">${esc(v.name)}</span></div>`;
+      const mk = L.marker([v.lat, v.lon], { icon: L.divIcon({ className: "pin-wrap", html, iconSize: null }), riseOnHover: true, zIndexOffset: evs.length * 10 + (hot ? 500 : 0) });
+      mk.on("click", ev => { L.DomEvent.stopPropagation(ev); selectVenue(state.venue === k ? "" : k); });
+      mk.on("mouseover", () => hoverVenue(k, true)); mk.on("mouseout", () => hoverVenue(k, false));
+      mk.addTo(map);
+      markers[k] = mk;
     });
-    const bounds = [];
-    Object.values(groups).forEach(evs => {
-      const e0 = evs[0];
-      const icon = L.divIcon({ className: "", iconSize: [30, 30], iconAnchor: [15, 15],
-        html: `<div class="map-pin" style="--cat:${catColor(e0.category)}">${sportIcon(e0.sport)}${evs.length > 1 ? `<span class="map-count">${evs.length}</span>` : ""}</div>` });
-      const popup = `<b>${esc(e0.venue || "")}</b><br>${evs.slice(0, 8).map(e => `<a href="#" data-id="${esc(e.id)}">${e.recurring ? "" : esc(fmtShort(e._sortStart)) + " – "}${esc(e.title)}</a>`).join("<br>")}${evs.length > 8 ? `<br>… et ${evs.length - 8} autres` : ""}`;
-      L.marker([e0.lat, e0.lon], { icon }).bindPopup(popup, { maxWidth: 300 }).addTo(mapLayer);
-      if (Math.abs(e0.lat - 48.8566) < 0.09 && Math.abs(e0.lon - 2.3422) < 0.14) bounds.push([e0.lat, e0.lon]);
-    });
-    if (bounds.length) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
-    $("#mapNote").textContent = `${list.length - missing} événements localisés${missing ? ` · ${missing} sans coordonnées (non affichés)` : ""}.`;
+  }
+  function hoverVenue(k, on) {
+    $$(`.row[data-v="${CSS.escape(k)}"]`).forEach(r => r.classList.toggle("hover", on));
+    const el = markers[k]?.getElement()?.querySelector(".pin"); if (el) el.classList.toggle("hover", on);
+  }
+  function selectVenue(k, fly = true) {
+    state.venue = k; state.limit = 60;
+    const card = $("#venueCard");
+    if (k && VENUES[k]) {
+      const v = VENUES[k];
+      const evs = current.filter(e => e._vkey === k);
+      card.innerHTML = `<div class="vc-head"><div><h3>${esc(v.name)}</h3><p>${esc(v.city)} · ${evs.length} événement${evs.length > 1 ? "s" : ""} · ${[...new Set(evs.map(e => icon(e.sport)))].join(" ")}</p></div><button class="x" data-close-venue aria-label="Fermer">✕</button></div>
+        ${evs.slice(0, 6).map(rowHTML).join("")}${evs.length > 6 ? `<div class="empty" style="padding:10px;font-size:14px">+ ${evs.length - 6} dans le programme →</div>` : ""}`;
+      card.hidden = false;
+      card.querySelector("[data-close-venue]").onclick = () => selectVenue("");
+      if (map && fly) map.flyTo([v.lat, v.lon], Math.max(map.getZoom(), 14), { duration: .6 });
+    } else card.hidden = true;
+    Object.entries(markers).forEach(([kk, m]) => m.getElement()?.querySelector(".pin")?.classList.toggle("sel", kk === k));
+    renderList(current); writeHash();
+    if (fly && window.innerWidth <= 820 && k) $("#board").scrollIntoView({ behavior: "smooth" });
   }
 
-  // ---------- Détail / export ----------
-  function gcalLink(e) {
-    const f = s => hasTime(s) ? s.replace(/[-:]/g, "") + "00" : s.replace(/-/g, "");
-    let start = f(e.start), end;
-    if (hasTime(e.start)) end = e.end && hasTime(e.end) ? f(e.end) : f(ymd(parse(e.start)) + "T" + pad(Math.min(23, parse(e.start).getHours() + 2)) + ":" + pad(parse(e.start).getMinutes()));
-    else end = f(addDays(endDay(e), 1));
-    const p = new URLSearchParams({ action: "TEMPLATE", text: e.title, dates: `${start}/${end}`, details: (e.description || "") + (e.url ? "\n" + e.url : ""), location: [e.venue, e.address || e.city].filter(Boolean).join(", "), ctz: "Europe/Paris" });
-    return "https://calendar.google.com/calendar/render?" + p;
+  // ---------- ticker ----------
+  function renderTicker(list) {
+    const items = list.filter(e => e._day >= TODAY).slice(0, 18);
+    const html = items.map(e => `<button data-id="${esc(e.id)}"><b>${esc(e._day === TODAY ? "Auj." : shortDay(e._day))}${hasTime(e.start) ? " " + hhmm(e.start) : ""}</b>${icon(e.sport)} ${esc(e.title)}</button>`).join("");
+    $("#ticker").innerHTML = html + html;
   }
-  function icsFor(list) {
-    const icsEsc = s => String(s || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/[,;]/g, m => "\\" + m);
+
+  // ---------- détail ----------
+  function gcal(e) {
+    const f = s => hasTime(s) ? s.replace(/[-:]/g, "") + "00" : s.replace(/-/g, "");
+    let end;
+    if (hasTime(e.start)) { const d = parse(e.start); d.setHours(d.getHours() + 2); end = e.end && hasTime(e.end) ? f(e.end) : f(ymd(d) + "T" + pad(d.getHours()) + ":" + pad(d.getMinutes())); }
+    else end = f(addDays(endDay(e), 1));
+    return "https://calendar.google.com/calendar/render?" + new URLSearchParams({ action: "TEMPLATE", text: e.title, dates: `${f(e.start)}/${end}`, details: [e.competition, e.url].filter(Boolean).join("\n"), location: [e.venue, e.address || e.city].filter(Boolean).join(", "), ctz: "Europe/Paris" });
+  }
+  function ics(list) {
+    const x = s => String(s || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/[,;]/g, m => "\\" + m);
     const f = s => s.replace(/[-:]/g, "") + (hasTime(s) ? "00" : "");
     const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
-    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Paris Sportif//FR", "CALSCALE:GREGORIAN", "X-WR-CALNAME:Paris Sportif"];
-    list.filter(e => !e.recurring).forEach(e => {
-      lines.push("BEGIN:VEVENT", `UID:${e.id}@paris-sportif`, `DTSTAMP:${stamp}`);
-      if (hasTime(e.start)) {
-        lines.push(`DTSTART;TZID=Europe/Paris:${f(e.start)}`);
-        const end = e.end && hasTime(e.end) ? e.end : (() => { const d = parse(e.start); d.setHours(d.getHours() + 2); return ymd(d) + "T" + pad(d.getHours()) + ":" + pad(d.getMinutes()); })();
-        lines.push(`DTEND;TZID=Europe/Paris:${f(end)}`);
-      } else {
-        lines.push(`DTSTART;VALUE=DATE:${f(e.start.slice(0, 10))}`, `DTEND;VALUE=DATE:${f(addDays(endDay(e), 1))}`);
-      }
-      lines.push(`SUMMARY:${icsEsc((e.tentative ? "[à confirmer] " : "") + e.title)}`, `LOCATION:${icsEsc([e.venue, e.address || e.city].filter(Boolean).join(", "))}`,
-        `DESCRIPTION:${icsEsc([e.sport, e.competition, e.description, e.url].filter(Boolean).join("\n"))}`, `CATEGORIES:${icsEsc(e.sport)}`);
-      if (e.url) lines.push(`URL:${e.url}`);
-      lines.push("END:VEVENT");
+    const L2 = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Paris Sportif//FR", "X-WR-CALNAME:Paris Sportif"];
+    list.forEach(e => {
+      L2.push("BEGIN:VEVENT", `UID:${e.id}@paris-sportif`, `DTSTAMP:${stamp}`);
+      if (hasTime(e.start)) { const d = parse(e.start); d.setHours(d.getHours() + 2); const en = e.end && hasTime(e.end) ? e.end : ymd(d) + "T" + pad(d.getHours()) + ":" + pad(d.getMinutes()); L2.push(`DTSTART;TZID=Europe/Paris:${f(e.start)}`, `DTEND;TZID=Europe/Paris:${f(en)}`); }
+      else L2.push(`DTSTART;VALUE=DATE:${f(e.start.slice(0, 10))}`, `DTEND;VALUE=DATE:${f(addDays(endDay(e), 1))}`);
+      L2.push(`SUMMARY:${x((e.tentative ? "[à confirmer] " : "") + e.title)}`, `LOCATION:${x([e.venue, e.address || e.city].filter(Boolean).join(", "))}`, `DESCRIPTION:${x([e.sport, e.competition, e.url].filter(Boolean).join("\n"))}`);
+      if (e.url) L2.push(`URL:${e.url}`);
+      L2.push("END:VEVENT");
     });
-    lines.push("END:VCALENDAR");
-    return lines.join("\r\n");
+    L2.push("END:VCALENDAR");
+    return L2.join("\r\n");
   }
   function download(name, text) {
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([text], { type: "text/calendar;charset=utf-8" }));
-    a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/calendar;charset=utf-8" })); a.download = name; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   }
-
-  function openModal(html) {
-    $("#modalBody").innerHTML = html;
-    const dlg = $("#modal");
-    if (!dlg.open) dlg.showModal();
-    dlg.querySelectorAll("[data-close]").forEach(b => b.onclick = () => dlg.close());
-  }
-  function showEvent(id) {
+  function show(id) {
     const e = ALL.find(x => x.id === id); if (!e) return;
-    const when = e.recurring ? (e.schedule || "Activité régulière")
-      : `${fmtLong(e.start)}${hasTime(e.start) ? " à " + fmtTime(e.start) : ""}${e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? ` → ${fmtLong(e.end)}` : ""}`;
-    const nextOcc = e.recurring && e.occurrences?.length ? e.occurrences.filter(([s]) => s.slice(0, 10) >= TODAY).slice(0, 6) : [];
-    openModal(`
-      ${e.image ? `<img class="m-img" src="${esc(e.image)}" alt="" loading="lazy" onerror="this.remove()">` : ""}
-      <div class="m-hero" style="--cat:${catColor(e.category)}">
-        <button class="icon-btn close" data-close aria-label="Fermer">✕</button>
-        <span class="badge cat" style="--cat:${catColor(e.category)}">${esc(e.category)}</span>
-        ${e.tentative ? `<span class="badge tentative">date à confirmer</span>` : ""}
-        ${e.price === "Gratuit" ? `<span class="badge free">Gratuit</span>` : ""}
-        <h2>${sportIcon(e.sport)} ${esc(e.title)}</h2>
+    const teams = split(e);
+    const multi = e.end && e.end.slice(0, 10) !== e.start.slice(0, 10);
+    $("#modalBody").innerHTML = `
+      <div class="m-top">
+        <button class="x" data-close aria-label="Fermer">✕</button>
+        <span class="comp">${icon(e.sport)} ${esc(e.sport)}${e.competition ? " · " + esc(e.competition) : ""}</span>
+        ${teams ? `<div class="m-vs"><span>${esc(teams[0])}</span><span class="vs">VS</span><span class="a">${esc(teams[1])}</span></div>` : `<h2>${esc(e.title)}</h2>`}
       </div>
-      <div class="m-body">
-        <div class="m-row"><span>🗓</span><span style="text-transform:none">${esc(when)}</span></div>
-        ${nextOcc.length ? `<div class="m-row"><span>⏱</span><span>Prochains créneaux : ${nextOcc.map(([s]) => esc(fmtShort(s) + (hasTime(s) ? " " + fmtTime(s) : ""))).join(", ")}</span></div>` : ""}
-        <div class="m-row"><span>🏷</span><span>${esc(e.sport)}${e.competition ? " · " + esc(e.competition) : ""}${e.federation ? " · " + esc(e.federation) : ""}</span></div>
-        ${e.venue || e.address ? `<div class="m-row"><span>📍</span><span>${esc(e.venue || "")}${e.address ? `<br><small>${esc(e.address)}</small>` : e.city ? `<br><small>${esc(e.city)}</small>` : ""}</span></div>` : ""}
-        ${e.price && e.price !== "Gratuit" ? `<div class="m-row"><span>🎟</span><span>${esc(e.price)}</span></div>` : ""}
-        ${e.tags?.length ? `<div class="m-row"><span>#</span><span>${e.tags.map(t => `<span class="badge">${esc(t)}</span>`).join(" ")}</span></div>` : ""}
-        ${e.description ? `<p class="m-desc">${esc(e.description)}</p>` : ""}
-        <div class="m-actions">
-          ${e.url ? `<a class="btn" href="${esc(e.url)}" target="_blank" rel="noopener">Site officiel ↗</a>` : ""}
-          ${!e.recurring ? `<a class="btn ghost" href="${esc(gcalLink(e))}" target="_blank" rel="noopener">+ Google Agenda</a><button class="btn ghost" id="icsOne">⤓ .ics</button>` : ""}
-          ${e.venue || e.address ? `<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([e.venue, e.address || e.city].filter(Boolean).join(", "))}">Itinéraire</a>` : ""}
-        </div>
-        <p class="note">Source : ${esc(e.source || "—")}</p>
-      </div>`);
-    const b = $("#icsOne"); if (b) b.onclick = () => download(`${norm(e.title).replace(/[^a-z0-9]+/g, "-").slice(0, 50)}.ics`, icsFor([e]));
+      <div class="m-grid">
+        <div class="m-cell"><div class="k">Date</div><div class="v">${esc(dayLabel(e.start.slice(0, 10)))}${multi ? `<small>jusqu'au ${esc(dayLabel(e.end.slice(0, 10)))}</small>` : ""}</div></div>
+        <div class="m-cell"><div class="k">Heure</div><div class="v">${hasTime(e.start) ? hhmm(e.start) : "—"}${e.tentative ? `<small><span class="tag tbc">Date à confirmer</span></small>` : ""}</div></div>
+        <div class="m-cell"><div class="k">Lieu</div><div class="v">${esc(e.venue || e.city)}${e.address ? `<small>${esc(e.address)}</small>` : ""}</div></div>
+        <div class="m-cell"><div class="k">Organisation</div><div class="v">${esc(e.federation || e.category)}${e.price ? `<small>${esc(e.price)}</small>` : ""}</div></div>
+      </div>
+      ${e.description ? `<p class="m-desc">${esc(e.description)}</p>` : ""}
+      <div class="m-act">
+        ${e.url ? `<a class="btn go" href="${esc(e.url)}" target="_blank" rel="noopener">Billets / infos ↗</a>` : ""}
+        <a class="btn" href="${esc(gcal(e))}" target="_blank" rel="noopener">+ Agenda</a>
+        <button class="btn" id="icsOne">ICS ⤓</button>
+        ${e._vkey ? `<button class="btn" id="onMap">Sur la carte</button>` : ""}
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent([e.venue, e.address || e.city].filter(Boolean).join(", "))}">Itinéraire</a>
+      </div>
+      <p class="m-src">Source : ${esc(e.source || "—")}</p>`;
+    const dlg = $("#modal"); if (!dlg.open) dlg.showModal();
+    dlg.querySelector("[data-close]").onclick = () => dlg.close();
+    $("#icsOne").onclick = () => download(norm(e.title).replace(/[^a-z0-9]+/g, "-").slice(0, 50) + ".ics", ics([e]));
+    const om = $("#onMap"); if (om) om.onclick = () => { dlg.close(); selectVenue(e._vkey); if (window.innerWidth <= 820) $(".mapzone").scrollIntoView({ behavior: "smooth" }); };
   }
 
-  // ---------- Stats ----------
-  function renderStats(list) {
-    const dated = list.filter(e => !e.recurring);
-    const wkEnd = addDays(TODAY, 6);
-    const week = dated.filter(e => e.start.slice(0, 10) <= wkEnd && endDay(e) >= TODAY).length;
-    const sports = new Set(list.map(e => e.sport)).size;
-    const free = list.filter(e => e.price === "Gratuit").length;
-    $("#stats").innerHTML = [
-      [dated.length, "événements datés"], [week, "dans les 7 prochains jours"], [sports, "sports différents"], [free, "gratuits"],
-    ].map(([n, l]) => `<div class="stat"><b>${n.toLocaleString("fr-FR")}</b><span>${l}</span></div>`).join("");
-  }
-
-  // ---------- Boucle principale ----------
-  let current = [];
+  // ---------- boucle ----------
+  const SORTS = {
+    date: (a, b) => a._sortKey.localeCompare(b._sortKey),
+    sport: (a, b) => a.sport.localeCompare(b.sport, "fr") || a._sortKey.localeCompare(b._sortKey),
+    venue: (a, b) => (a.venue || a.city).localeCompare(b.venue || b.city, "fr") || a._sortKey.localeCompare(b._sortKey),
+  };
   function render() {
-    const list = ALL.filter(e => matches(e)).sort(sorters[state.sort] || sorters.date);
-    current = list;
-    const nDated = list.filter(e => !e.recurring).length, nRec = list.length - nDated;
-    $("#resultCount").textContent = `${nDated} événement${nDated > 1 ? "s" : ""}${nRec ? ` + ${nRec} activités régulières` : ""}`;
-    renderStats(list);
-    $("#listView").hidden = state.view !== "list";
-    $("#calendarView").hidden = state.view !== "calendar";
-    $("#mapView").hidden = state.view !== "map";
-    if (state.view === "list") renderList(list);
-    else if (state.view === "calendar") renderCalendar(list);
-    else renderMap(list);
+    current = ALL.filter(e => base(e)).sort(SORTS[state.sort] || SORTS.date);
+    if (state.venue && !current.some(e => e._vkey === state.venue)) { state.venue = ""; $("#venueCard").hidden = true; }
+    const today = current.filter(e => e._day === TODAY).length;
+    $("#liveCount").innerHTML = `<span class="dot"></span><b>${today}</b> aujourd'hui`;
+    renderFeature(current.slice().sort(SORTS.date));
+    renderList(current);
+    renderMap(current);
+    renderTicker(current.slice().sort(SORTS.date));
+    if (state.venue) selectVenue(state.venue, false);
   }
-  function update() { renderFilters(); render(); writeHash(); }
-  function reset() {
-    Object.assign(state, { q: "", period: "all", from: "", to: "", categories: new Set(), sports: new Set(), cities: new Set(), free: false, recurring: false, hideTentative: false, limit: 150 });
-    $("#sportSearch").value = ""; update();
-  }
+  function update() { renderRail(); render(); writeHash(); }
 
   function bind() {
-    let qTimer;
-    $("#q").addEventListener("input", e => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = e.target.value.trim(); state.limit = 150; update(); }, 150); });
-    $$("#periodChips .chip").forEach(c => c.onclick = () => { state.period = c.dataset.period; state.from = state.to = ""; update(); });
-    ["from", "to"].forEach(id => $("#" + id).addEventListener("change", () => { state.period = "custom"; state.from = $("#from").value; state.to = $("#to").value; update(); }));
-    $("#freeOnly").onchange = e => { state.free = e.target.checked; update(); };
-    $("#showRecurring").onchange = e => { state.recurring = e.target.checked; update(); };
-    $("#hideTentative").onchange = e => { state.hideTentative = e.target.checked; update(); };
+    $$(".mode").forEach(m => m.onclick = () => { state.mode = m.dataset.mode; state.sport = ""; state.limit = 60; update(); });
+    let t; $("#q").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); state.limit = 60; update(); }, 160); });
     $("#sort").onchange = e => { state.sort = e.target.value; update(); };
-    $("#sportSearch").addEventListener("input", renderFilters);
-    $$("[data-clear]").forEach(b => b.onclick = () => { const k = b.dataset.clear; state[k === "category" ? "categories" : k === "sport" ? "sports" : "cities"].clear(); update(); });
-    $$(".tab").forEach(t => t.onclick = () => { state.view = t.dataset.view; update(); });
-    $("#resetBtn").onclick = reset;
-    $("#icsAll").onclick = () => download("paris-sportif.ics", icsFor(current));
-    $("#filtersBtn").onclick = () => $("#filters").classList.add("open");
-    $("#closeFilters").onclick = () => $("#filters").classList.remove("open");
-    document.addEventListener("click", e => {
-      const t = e.target.closest("[data-id]");
-      if (t) { e.preventDefault(); showEvent(t.dataset.id); }
-    });
-    $("#modal").addEventListener("click", e => { if (e.target === $("#modal")) $("#modal").close(); });
-    $("#themeBtn").onclick = () => {
-      const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      const next = cur === "dark" ? "light" : "dark";
-      document.documentElement.dataset.theme = next;
-      try { localStorage.setItem("theme", next); } catch (_) {}
-    };
-    window.addEventListener("hashchange", () => { readHash(); renderFilters(); render(); });
+    $("#icsAll").onclick = () => download("paris-sportif.ics", ics(state.venue ? current.filter(e => e._vkey === state.venue) : current));
+    $("#boardToggle").onclick = () => $("#board").scrollIntoView({ behavior: "smooth" });
+    document.addEventListener("click", ev => { const r = ev.target.closest("[data-id]"); if (r) { ev.preventDefault(); show(r.dataset.id); } });
+    document.addEventListener("mouseover", ev => { const r = ev.target.closest(".row[data-v], .feat[data-v]"); if (r && r.dataset.v) hoverVenue(r.dataset.v, true); });
+    document.addEventListener("mouseout", ev => { const r = ev.target.closest(".row[data-v], .feat[data-v]"); if (r && r.dataset.v) hoverVenue(r.dataset.v, false); });
+    $("#modal").addEventListener("click", ev => { if (ev.target === $("#modal")) $("#modal").close(); });
+    $(".logo").onclick = ev => { ev.preventDefault(); Object.assign(state, { mode: "spect", sport: "", period: "all", q: "", venue: "", sort: "date", limit: 60 }); update(); map && map.flyTo([48.862, 2.33], 12); };
   }
 
   async function init() {
-    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
-    readHash(); bind();
-    try {
-      const res = await fetch("events.json", { cache: "no-cache" });
-      const data = await res.json();
-      META = data.meta || {}; ALL = data.events || [];
-    } catch (err) {
-      $("#listView").innerHTML = `<div class="empty">Impossible de charger les événements.</div>`; return;
-    }
+    readHash(); bind(); initMap();
+    let data;
+    try { data = await (await fetch("events.json", { cache: "no-cache" })).json(); }
+    catch (_) { $("#list").innerHTML = `<div class="empty">Impossible de charger le programme</div>`; return; }
+    ALL = data.events || [];
     ALL.forEach(e => {
-      e._search = norm([e.title, e.sport, e.category, e.competition, e.federation, e.venue, e.city, e.address, (e.tags || []).join(" "), e.description].join(" "));
-      // pour un événement en cours (commencé avant aujourd'hui), on le range à aujourd'hui
-      let s = e.start;
-      if (e.recurring && e.occurrences?.length) { const nx = e.occurrences.find(([a, b]) => (b || a).slice(0, 10) >= TODAY); if (nx) s = nx[0]; }
-      e._sortStart = s.slice(0, 10) < TODAY && endDay(e) >= TODAY ? TODAY + (hasTime(s) ? s.slice(10) : "") : s;
+      e._spect = isSpect(e);
+      e._search = norm([e.title, e.sport, e.category, e.competition, e.federation, e.venue, e.city, (e.tags || []).join(" ")].join(" "));
+      e._day = e.start.slice(0, 10) < TODAY && endDay(e) >= TODAY ? TODAY : e.start.slice(0, 10);
+      e._sortKey = e._day + (hasTime(e.start) ? e.start.slice(10) : "T99");
+      if (e.lat != null && e.lon != null && !/pr[ée]ciser/i.test(e.venue || "")) {
+        const k = e.lat.toFixed(3) + "," + e.lon.toFixed(3);
+        e._vkey = k;
+        if (!VENUES[k]) VENUES[k] = { name: e.venue || e.city, city: e.city || "Paris", lat: e.lat, lon: e.lon, n: 0 };
+        VENUES[k].n++;
+        if (e.venue && e.venue.length < VENUES[k].name.length) VENUES[k].name = e.venue; // nom le plus court = le plus lisible
+      }
     });
-    if (META.generated_at) $("#updated").textContent = `Données mises à jour le ${new Date(META.generated_at).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })} · ${ALL.length} entrées`;
     update();
+    window.addEventListener("hashchange", () => { readHash(); renderRail(); render(); });
   }
   init();
 })();

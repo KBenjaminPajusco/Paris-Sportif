@@ -6,8 +6,8 @@ Le calendrier de **tous les événements sportifs à Paris et dans le Grand Pari
 
 ## Fonctionnalités
 
-- Vues **Liste**, **Calendrier** (mois) et **Carte** (OpenStreetMap)
-- Filtres : recherche plein texte, période (aujourd'hui, week-end, 7/30/90 jours, dates libres), type d'événement, sport, ville, gratuit, activités régulières, dates non confirmées
+- **Carte de Paris plein écran** au centre, épinglée par stade ; programme façon « tableau de paris » (domicile / extérieur), bandeau défilant, « À la une » avec compte à rebours
+- Mode **À voir** (matchs pro, grands événements, spectacles) ou **Tout le sport** ; onglets par sport, filtre par jour / mois, recherche, tri
 - Tri : date, sport, nom, type
 - Fiche détaillée avec lien officiel, ajout Google Agenda, export `.ics` (un événement ou toute la sélection), itinéraire
 - Filtres partageables via l'URL, thème clair/sombre, responsive mobile
