@@ -1,0 +1,3 @@
+@font-face { font-family: "Heros"; src: local("Helvetica Neue"), local("HelveticaNeue"), url(../fonts/heros-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Heros"; src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url(../fonts/heros-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Heros Cn"; src: local("Helvetica Neue Condensed Bold"), local("HelveticaNeue-CondensedBold"), url(../fonts/heros-cn-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }

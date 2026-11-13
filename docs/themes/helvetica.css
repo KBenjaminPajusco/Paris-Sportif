@@ -1,0 +1,84 @@
+/* Proposition 5 — HELVETICA : affiche suisse (Müller-Brockmann) — grille stricte, minuscules, aplats */
+@import url("_heros.css");
+:root[data-ui="helvetica"] {
+  --green: #00965e; --green-d: #007a4d; --red: #ff2a1f; --red-d: #d61d14; --yellow: #000;
+  --ink: #000; --bg: #fff; --panel: #fff; --panel-2: #f2f2f2; --line: #000; --text: #000; --muted: #777;
+  --head: "Helvetica Neue", Helvetica, "Heros", Arial, sans-serif; --body: "Helvetica Neue", Helvetica, "Heros", Arial, sans-serif;
+  color-scheme: light;
+}
+[data-ui="helvetica"] body { background: #fff; letter-spacing: -.01em; }
+[data-ui="helvetica"] .bar { background: #fff; border-bottom: 1px solid #000; min-height: 64px; }
+[data-ui="helvetica"] .logo { font: 700 30px/1 var(--head); letter-spacing: -.045em; text-transform: lowercase; }
+[data-ui="helvetica"] .logo-g, [data-ui="helvetica"] .logo-r { clip-path: none; margin: 0; background: none; padding: 0 !important; }
+[data-ui="helvetica"] .logo-g { color: #000; padding-left: 20px !important; }
+[data-ui="helvetica"] .logo-r { color: var(--red); padding-left: 4px !important; }
+[data-ui="helvetica"] .logo-r::after { content: "."; color: var(--green); }
+[data-ui="helvetica"] .mode, [data-ui="helvetica"] .sport, [data-ui="helvetica"] .day, [data-ui="helvetica"] .dayhead, [data-ui="helvetica"] .board-head h2, [data-ui="helvetica"] .ticker-tag, [data-ui="helvetica"] .ticker-move, [data-ui="helvetica"] .row .teams, [data-ui="helvetica"] .row .when, [data-ui="helvetica"] .feat .t, [data-ui="helvetica"] .feat .cd, [data-ui="helvetica"] .tool, [data-ui="helvetica"] .btn, [data-ui="helvetica"] .pin, [data-ui="helvetica"] .row .comp, [data-ui="helvetica"] .m-top h2, [data-ui="helvetica"] .m-vs, [data-ui="helvetica"] .m-cell .v, [data-ui="helvetica"] .m-aff .v, [data-ui="helvetica"] .m-tk .lab, [data-ui="helvetica"] .tk, [data-ui="helvetica"] .tag, [data-ui="helvetica"] .feat .k, [data-ui="helvetica"] .m-top .comp, [data-ui="helvetica"] .map-legend, [data-ui="helvetica"] .fresh, [data-ui="helvetica"] .gauge { font-family: var(--head); font-style: normal; text-transform: none; letter-spacing: -.01em; }
+[data-ui="helvetica"] .mode { font-weight: 700; font-size: 17px; color: #999; }
+[data-ui="helvetica"] .mode.active { color: #000; background: none; border-bottom-color: #000; }
+[data-ui="helvetica"] .search { background: #f2f2f2; border: 0; }
+[data-ui="helvetica"] .rail { background: #fff; border-bottom: 1px solid #000; }
+[data-ui="helvetica"] .sport { font-weight: 700; font-size: 15px; color: #000; border-right: 0; padding: 12px 14px; }
+[data-ui="helvetica"] .sport .n { background: none; color: #999; font-weight: 400; }
+[data-ui="helvetica"] .sport.active { background: #000; color: #fff; }
+[data-ui="helvetica"] .sport.active .n { background: none; color: #aaa; }
+[data-ui="helvetica"] .days { background: #fff; border-top: 1px solid #e5e5e5; }
+[data-ui="helvetica"] .day { font-weight: 400; font-size: 14px; color: #000; border-right: 0; }
+[data-ui="helvetica"] .day.active { background: var(--red); color: #fff; }
+[data-ui="helvetica"] .leaflet-tile-pane { filter: grayscale(1) contrast(.9) brightness(1.08); }
+[data-ui="helvetica"] .mapzone::after { box-shadow: none; }
+[data-ui="helvetica"] .mapzone { border-right: 1px solid #000; }
+[data-ui="helvetica"] .pin { font-weight: 700; font-size: 13px; background: #000; border-color: #000; box-shadow: none; }
+[data-ui="helvetica"] .pin.white { background: #fff; color: #000; }
+[data-ui="helvetica"] .pin.hot::before { border-color: var(--red); }
+[data-ui="helvetica"] .pin.sel, [data-ui="helvetica"] .pin.hover { border-color: #000; outline: 2px solid #fff; }
+[data-ui="helvetica"] .map-legend, [data-ui="helvetica"] .venue-card { background: #fff; color: #000; border: 1px solid #000; }
+[data-ui="helvetica"] .venue-card { border-top: 6px solid var(--red); }
+[data-ui="helvetica"] .board { background: #fff; border-left: 0; }
+[data-ui="helvetica"] .feat { background: var(--red); padding: 18px 20px 22px; }
+[data-ui="helvetica"] .feat::before { background: none; border-left: 0; }
+[data-ui="helvetica"] .feat::after { content: ""; position: absolute; right: -60px; bottom: -60px; width: 200px; height: 200px; border-radius: 50% !important; background: var(--green); }
+[data-ui="helvetica"] .feat .k { background: none; color: #fff; padding: 0; font-weight: 400; font-size: 13px; }
+[data-ui="helvetica"] .feat .t { font-weight: 700; font-size: 34px; line-height: .98; letter-spacing: -.035em; padding-right: 90px; text-shadow: none; }
+[data-ui="helvetica"] .feat .cd { font-weight: 700; font-size: 44px; letter-spacing: -.05em; z-index: 1; }
+[data-ui="helvetica"] .feat .cd small { font-weight: 400; letter-spacing: 0; text-transform: none; }
+[data-ui="helvetica"] .board-head { background: #fff; border-bottom: 1px solid #000; }
+[data-ui="helvetica"] .board-head h2 { font-weight: 700; font-size: 22px; letter-spacing: -.03em; }
+[data-ui="helvetica"] .board-head h2 span { color: var(--red); }
+[data-ui="helvetica"] .board-tools select, [data-ui="helvetica"] .tool { background: #f2f2f2; color: #000; border: 0; font-weight: 400; }
+[data-ui="helvetica"] .tool.on { background: var(--green); color: #fff; }
+[data-ui="helvetica"] .dayhead { background: #fff; border-bottom: 1px solid #000; font-weight: 700; font-size: 15px; padding-top: 16px; }
+[data-ui="helvetica"] .dayhead.today { background: #fff; color: var(--red); }
+[data-ui="helvetica"] .dayhead span { font-weight: 400; color: #999; }
+[data-ui="helvetica"] .row { background: #fff; border-bottom: 1px solid #e5e5e5; grid-template-columns: 64px minmax(0, 1fr) 28px; }
+[data-ui="helvetica"] .row:hover, [data-ui="helvetica"] .row.hover { background: #f6f6f6; }
+[data-ui="helvetica"] .row .when { background: none; border-right: 0; font-weight: 700; font-size: 18px; letter-spacing: -.03em; align-items: flex-start; padding-left: 16px; }
+[data-ui="helvetica"] .row.cat-pro .when, [data-ui="helvetica"] .row.cat-big .when { box-shadow: none; }
+[data-ui="helvetica"] .row .teams { font-weight: 700; font-size: 18px; line-height: 1.12; letter-spacing: -.02em; }
+[data-ui="helvetica"] .row .teams .h::before, [data-ui="helvetica"] .row .teams .a::before { width: 8px; height: 8px; border-radius: 50% !important; }
+[data-ui="helvetica"] .row .comp { font-size: 12px; color: #999; }
+[data-ui="helvetica"] .row .comp .s { color: #000; }
+[data-ui="helvetica"] .row .go { border-left: 0; }
+[data-ui="helvetica"] .row:hover .go { background: none; color: var(--red); }
+[data-ui="helvetica"] .gauge i { background: #e5e5e5; }
+[data-ui="helvetica"] .tk { border-radius: 99px !important; padding: 2px 8px; font-weight: 700; }
+[data-ui="helvetica"] .tag { border-radius: 99px !important; }
+[data-ui="helvetica"] .ticker { background: #fff; color: #000; border-top: 1px solid #000; }
+[data-ui="helvetica"] .ticker-tag { background: #000; font-weight: 700; }
+[data-ui="helvetica"] .ticker-move { font-weight: 400; font-size: 14px; }
+[data-ui="helvetica"] .ticker-move button { border-right-color: #e5e5e5; }
+[data-ui="helvetica"] .ticker-move button b { color: var(--red); }
+[data-ui="helvetica"] .fresh { background: #fff; color: #999; border-left-color: #e5e5e5; }
+[data-ui="helvetica"] .modal { background: #fff; color: #000; }
+[data-ui="helvetica"] .m-top { background: var(--green); }
+[data-ui="helvetica"] .m-top .comp { background: none; color: #fff; padding: 0; font-weight: 400; }
+[data-ui="helvetica"] .m-top h2, [data-ui="helvetica"] .m-vs { font-weight: 700; font-size: 34px; letter-spacing: -.035em; }
+[data-ui="helvetica"] .m-vs .vs { background: none; color: #fff; font-weight: 400; }
+[data-ui="helvetica"] .m-aff, [data-ui="helvetica"] .m-tk { background: #fff; }
+[data-ui="helvetica"] .m-cell { border-color: #e5e5e5; }
+[data-ui="helvetica"] .m-aff .v, [data-ui="helvetica"] .m-cell .v { font-weight: 700; letter-spacing: -.02em; }
+[data-ui="helvetica"] .btn { background: #f2f2f2; color: #000; border: 0; font-weight: 700; margin: 0 6px 6px 0; }
+[data-ui="helvetica"] .btn.go { background: #000; color: #fff; }
+[data-ui="helvetica"] .x { background: #fff; color: #000; }
+[data-ui="helvetica"] .feat .m { position: relative; z-index: 1; padding-right: 120px; display: block; }
+[data-ui="helvetica"] .feat::after { right: -80px; bottom: -90px; }

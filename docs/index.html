@@ -11,9 +11,9 @@
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="style.css">
 <script>
-  /* Propositions d'UI : ?ui=turf|tabac|tableau|stade (mémorisé) */
+  /* Propositions d'UI : ?ui=turf|tabac|tableau|stade|helvetica|maillot|varsity|olympia (mémorisé) */
   (function () {
-    var ok = ["turf", "tabac", "tableau", "stade"], q = new URLSearchParams(location.search).get("ui"), ui;
+    var ok = ["turf", "tabac", "tableau", "stade", "helvetica", "maillot", "varsity", "olympia"], q = new URLSearchParams(location.search).get("ui"), ui;
     try { ui = q !== null ? q : localStorage.getItem("ui"); if (q !== null) localStorage.setItem("ui", q); } catch (e) { ui = q; }
     if (ok.indexOf(ui) >= 0) {
       document.documentElement.setAttribute("data-ui", ui);
@@ -90,6 +90,10 @@
   <a href="?ui=tabac" data-ui="tabac">2 · Tabac</a>
   <a href="?ui=tableau" data-ui="tableau">3 · Tableau</a>
   <a href="?ui=stade" data-ui="stade">4 · Stade</a>
+  <a href="?ui=helvetica" data-ui="helvetica">5 · Helvetica</a>
+  <a href="?ui=maillot" data-ui="maillot">6 · Maillot</a>
+  <a href="?ui=varsity" data-ui="varsity">7 · Varsity</a>
+  <a href="?ui=olympia" data-ui="olympia">8 · Olympia</a>
 </nav>
 <script>
   document.querySelectorAll(".ui-pick a").forEach(function (a) {

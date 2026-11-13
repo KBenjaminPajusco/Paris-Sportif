@@ -1,0 +1,78 @@
+/* Proposition 8 — OLYMPIA : signalétique olympique années 70 (Sumpfdeutschen Sportschrift, OFL) — couleurs pastel franches */
+@font-face { font-family: "Sportschrift"; src: url(../fonts/sportschrift-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Sportschrift"; src: url(../fonts/sportschrift-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+:root[data-ui="olympia"] {
+  --green: #3aa86b; --green-d: #2a8a55; --red: #ef4a3c; --red-d: #c93a2e; --yellow: #1d2b4a;
+  --ink: #1d2b4a; --bg: #eef1ee; --panel: #ffffff; --panel-2: #e3e8e4; --line: #cfd8d2; --text: #1d2b4a; --muted: #6c7a8e;
+  --head: "Sportschrift", "Avenir Next", sans-serif; --body: "Sportschrift", "Avenir Next", sans-serif;
+  color-scheme: light;
+}
+[data-ui="olympia"] body { background: var(--bg); }
+[data-ui="olympia"] * { text-transform: lowercase !important; }
+[data-ui="olympia"] .bar { background: var(--panel); border-bottom: 0; box-shadow: 0 6px 0 var(--green), 0 12px 0 var(--red); margin-bottom: 12px; }
+[data-ui="olympia"] .logo { font: 700 30px/1 var(--head); letter-spacing: -.02em; }
+[data-ui="olympia"] .logo-g, [data-ui="olympia"] .logo-r { clip-path: none; margin: 0; background: none; }
+[data-ui="olympia"] .logo-g { color: var(--green); }
+[data-ui="olympia"] .logo-r { color: var(--red); padding-left: 0 !important; }
+[data-ui="olympia"] .mode, [data-ui="olympia"] .sport, [data-ui="olympia"] .day, [data-ui="olympia"] .dayhead, [data-ui="olympia"] .board-head h2, [data-ui="olympia"] .ticker-tag, [data-ui="olympia"] .ticker-move, [data-ui="olympia"] .row .teams, [data-ui="olympia"] .row .when, [data-ui="olympia"] .feat .t, [data-ui="olympia"] .feat .cd, [data-ui="olympia"] .tool, [data-ui="olympia"] .btn, [data-ui="olympia"] .pin, [data-ui="olympia"] .row .comp, [data-ui="olympia"] .m-top h2, [data-ui="olympia"] .m-vs, [data-ui="olympia"] .m-cell .v, [data-ui="olympia"] .m-aff .v, [data-ui="olympia"] .m-tk .lab, [data-ui="olympia"] .tk, [data-ui="olympia"] .tag, [data-ui="olympia"] .feat .k, [data-ui="olympia"] .m-top .comp, [data-ui="olympia"] .map-legend, [data-ui="olympia"] .fresh, [data-ui="olympia"] .gauge, [data-ui="olympia"] .m-cell .k, [data-ui="olympia"] .m-aff .k { font-family: var(--head); font-style: normal; letter-spacing: 0; }
+[data-ui="olympia"] .mode { color: var(--muted); font-weight: 700; font-size: 18px; }
+[data-ui="olympia"] .mode.active { color: var(--ink); border-bottom-color: var(--green); background: none; }
+[data-ui="olympia"] .search { background: var(--bg); border: 0; }
+[data-ui="olympia"] .live { color: var(--muted); } [data-ui="olympia"] .live b { color: var(--ink); }
+[data-ui="olympia"] .rail { background: var(--bg); border-bottom: 0; }
+[data-ui="olympia"] .sport { color: var(--ink); border-right: 0; font-size: 16px; }
+[data-ui="olympia"] .sport .n { background: var(--panel); color: var(--muted); }
+[data-ui="olympia"] .sport.active { background: var(--ink); color: #fff; }
+[data-ui="olympia"] .days { background: var(--bg); border-top: 0; }
+[data-ui="olympia"] .day { color: var(--ink); border-right: 0; font-size: 14px; }
+[data-ui="olympia"] .day.active { background: var(--green); color: #fff; }
+[data-ui="olympia"] .leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.1); }
+[data-ui="olympia"] .mapzone::after { box-shadow: none; }
+[data-ui="olympia"] .pin { font-weight: 700; font-size: 14px; border-radius: 99px !important; padding: 4px 10px 4px 6px; box-shadow: none; }
+[data-ui="olympia"] .pin::after { display: none; }
+[data-ui="olympia"] .pin.white { background: var(--ink); color: #fff; border-color: var(--ink); }
+[data-ui="olympia"] .pin.hot::before { border-radius: 99px !important; border-color: var(--red); }
+[data-ui="olympia"] .pin.sel, [data-ui="olympia"] .pin.hover { border-color: var(--ink); }
+[data-ui="olympia"] .map-legend, [data-ui="olympia"] .venue-card { background: var(--panel); color: var(--ink); border: 0; box-shadow: 0 6px 20px rgba(29,43,74,.15); }
+[data-ui="olympia"] .venue-card { border-top: 6px solid var(--green); }
+[data-ui="olympia"] .board { background: var(--panel); border-left: 0; }
+[data-ui="olympia"] .feat { background: var(--ink); }
+[data-ui="olympia"] .feat::before { background: none; }
+[data-ui="olympia"] .feat::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: linear-gradient(90deg, var(--green) 0 50%, var(--red) 50%); }
+[data-ui="olympia"] .feat .k { background: var(--green); color: #fff; border-radius: 99px !important; }
+[data-ui="olympia"] .feat .t { font-weight: 700; font-size: 30px; line-height: 1.02; text-shadow: none; }
+[data-ui="olympia"] .feat .cd { font-weight: 700; font-size: 42px; color: var(--red); }
+[data-ui="olympia"] .board-head { background: var(--panel); border-bottom: 2px solid var(--bg); }
+[data-ui="olympia"] .board-head h2 { font-weight: 700; }
+[data-ui="olympia"] .board-head h2 span { color: var(--red); }
+[data-ui="olympia"] .board-tools select, [data-ui="olympia"] .tool { background: var(--bg); color: var(--ink); border: 0; border-radius: 99px !important; }
+[data-ui="olympia"] .tool.on { background: var(--green); color: #fff; }
+[data-ui="olympia"] .dayhead { background: var(--panel); border-bottom: 2px solid var(--bg); font-weight: 700; font-size: 16px; }
+[data-ui="olympia"] .dayhead.today { background: var(--red); color: #fff; }
+[data-ui="olympia"] .row { background: var(--panel); border-bottom: 2px solid var(--bg); }
+[data-ui="olympia"] .row:hover, [data-ui="olympia"] .row.hover { background: #f6f8f6; }
+[data-ui="olympia"] .row .when { background: none; border-right: 0; font-weight: 700; font-size: 19px; color: var(--ink); }
+[data-ui="olympia"] .row.cat-pro .when { box-shadow: inset 6px 0 0 var(--red); }
+[data-ui="olympia"] .row.cat-big .when { box-shadow: inset 6px 0 0 var(--green); }
+[data-ui="olympia"] .row .teams { font-weight: 700; font-size: 19px; }
+[data-ui="olympia"] .row .teams .h::before, [data-ui="olympia"] .row .teams .a::before { width: 10px; height: 10px; border-radius: 50% !important; }
+[data-ui="olympia"] .row .go { border-left: 0; }
+[data-ui="olympia"] .gauge i { background: var(--panel-2); }
+[data-ui="olympia"] .tk, [data-ui="olympia"] .tag { border-radius: 99px !important; padding: 2px 8px; }
+[data-ui="olympia"] .ticker { background: var(--ink); border-top: 0; }
+[data-ui="olympia"] .ticker-tag { background: var(--green); }
+[data-ui="olympia"] .ticker-move { font-size: 15px; }
+[data-ui="olympia"] .ticker-move button b { color: #ffb4ad; }
+[data-ui="olympia"] .modal { background: var(--panel); color: var(--ink); }
+[data-ui="olympia"] .m-top { background: var(--ink); }
+[data-ui="olympia"] .m-top .comp { background: var(--green); color: #fff; border-radius: 99px !important; }
+[data-ui="olympia"] .m-top h2, [data-ui="olympia"] .m-vs { font-weight: 700; font-size: 32px; }
+[data-ui="olympia"] .m-vs .vs { background: var(--red); color: #fff; border-radius: 99px !important; }
+[data-ui="olympia"] .m-aff, [data-ui="olympia"] .m-tk { background: var(--bg); }
+[data-ui="olympia"] .m-cell { border-color: var(--line); }
+[data-ui="olympia"] .btn { background: var(--bg); color: var(--ink); border: 0; border-radius: 99px !important; margin: 0 6px 6px 0; }
+[data-ui="olympia"] .btn.go { background: var(--green); color: #fff; }
+[data-ui="olympia"] .x { background: var(--bg); color: var(--ink); border-radius: 99px !important; }
+[data-ui="olympia"] .feat, [data-ui="olympia"] .feat .t, [data-ui="olympia"] .feat .m { color: #fff; }
+[data-ui="olympia"] .ticker, [data-ui="olympia"] .ticker-move button { color: #fff; }
+[data-ui="olympia"] .m-top, [data-ui="olympia"] .m-top h2, [data-ui="olympia"] .m-vs { color: #fff; }
