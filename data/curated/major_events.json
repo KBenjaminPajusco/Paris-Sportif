@@ -1,0 +1,1308 @@
+[
+  {
+    "title": "France – Afrique du Sud (Nations Championship)",
+    "sport": "Rugby",
+    "category": "Match pro",
+    "competition": "World Rugby Nations Championship",
+    "federation": "FFR / World Rugby",
+    "date_start": "2026-11-13T21:10",
+    "date_end": "2026-11-13",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.stadefrance.com/en/ticket/france-south-africa-2026",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le XV de France reçoit les champions du monde sud-africains au Stade de France dans le nouveau Nations Championship.",
+    "tags": [
+      "International",
+      "XV de France"
+    ]
+  },
+  {
+    "title": "Supercross de Paris 2026",
+    "sport": "Sports mécaniques",
+    "category": "Spectacle sportif",
+    "competition": "Supercross de Paris (43e édition)",
+    "federation": "FFM",
+    "date_start": "2026-11-21",
+    "date_end": "2026-11-22",
+    "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+    "address": "99 Jardins de l'Arche, 92000 Nanterre",
+    "city": "Nanterre",
+    "url": "https://www.parisladefense-arena.com/en/evenement/supercross-de-paris-2026-en",
+    "price": "Payant",
+    "tentative": false,
+    "description": "43e édition du mythique Supercross de Paris avec les jumeaux Coenen (Red Bull KTM) et les meilleurs pilotes mondiaux.",
+    "tags": [
+      "International",
+      "Moto"
+    ]
+  },
+  {
+    "title": "France – Argentine (Nations Championship)",
+    "sport": "Rugby",
+    "category": "Match pro",
+    "competition": "World Rugby Nations Championship",
+    "federation": "FFR / World Rugby",
+    "date_start": "2026-11-21T21:10",
+    "date_end": "2026-11-21",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.stadefrance.com/fr",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Dernière journée de la phase de poules du Nations Championship : le XV de France affronte l'Argentine à Saint-Denis.",
+    "tags": [
+      "International",
+      "XV de France"
+    ]
+  },
+  {
+    "title": "Prix de Bretagne – Amérique Races Q1",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Amérique Races",
+    "federation": "LeTrot",
+    "date_start": "2026-11-22",
+    "date_end": "2026-11-22",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Première qualificative des Amérique Races vers le Prix d'Amérique, au cœur du meeting d'hiver de Vincennes.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Championnat du monde du cheval arabe (WAHC Supreme)",
+    "sport": "Équitation",
+    "category": "Grand événement",
+    "competition": "World Arabian Horse Championship",
+    "federation": "ECAHO",
+    "date_start": "2026-11-25",
+    "date_end": "2026-11-27",
+    "venue": "Grand Palais",
+    "address": "Avenue Winston-Churchill, 75008 Paris",
+    "city": "Paris",
+    "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/284259-2026-world-arabian-horse-championship-the-world-s-most-beautiful-horses-at-the-grand-palais-in-paris",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Les plus beaux chevaux arabes du monde se disputent le titre mondial sous la nef du Grand Palais (dès 15 € la journée).",
+    "tags": [
+      "International",
+      "Cheval"
+    ]
+  },
+  {
+    "title": "Paris Nautic Show 2026",
+    "sport": "Nautisme",
+    "category": "Salon",
+    "competition": "Salon nautique de Paris",
+    "federation": "FIN (Fédération des industries nautiques)",
+    "date_start": "2026-11-25",
+    "date_end": "2026-11-29",
+    "venue": "Parc des Expositions Paris-Le Bourget",
+    "address": "Carrefour Charles Lindbergh, 93350 Le Bourget",
+    "city": "Le Bourget",
+    "url": "https://www.parisnauticshow.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le salon nautique de Paris réunit voiliers, bateaux à moteur, multicoques et équipements au Parc des expositions du Bourget.",
+    "tags": [
+      "Salon",
+      "Voile"
+    ]
+  },
+  {
+    "title": "Horse GP Paris",
+    "sport": "Équitation",
+    "category": "Spectacle sportif",
+    "competition": "CSI 5* Horse GP",
+    "federation": "FEI",
+    "date_start": "2026-12-01",
+    "date_end": "2026-12-02",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.accorarena.com/fr/programmation/horse-gp--5661f",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Nouveau concept de saut d'obstacles CSI 5* inspiré du sport automobile : sprint, Grand Prix avec le top 40 mondial, show et concert.",
+    "tags": [
+      "International",
+      "Saut d'obstacles"
+    ]
+  },
+  {
+    "title": "Championnats du monde de Breaking & Hip-Hop Freestyle",
+    "sport": "Breaking",
+    "category": "Grand événement",
+    "competition": "WDSF World Championships",
+    "federation": "FFD / WDSF",
+    "date_start": "2026-12-04",
+    "date_end": "2026-12-06",
+    "venue": "Adidas Arena (Arena Porte de la Chapelle)",
+    "address": "Boulevard Ney, Porte de la Chapelle, 75018 Paris",
+    "city": "Paris",
+    "url": "https://www.paris.fr/evenements/world-championships-breaking-hip-hop-freestyle-123883",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Pour la première fois, les Mondiaux de breaking et de hip-hop freestyle réunis à Paris, discipline olympique de Paris 2024.",
+    "tags": [
+      "International",
+      "Héritage Paris 2024",
+      "Championnat du monde"
+    ]
+  },
+  {
+    "title": "Salon du Cheval de Paris 2026",
+    "sport": "Équitation",
+    "category": "Salon",
+    "competition": "Salon du Cheval de Paris",
+    "federation": null,
+    "date_start": "2026-12-04",
+    "date_end": "2026-12-06",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.salon-cheval.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le grand rendez-vous des passionnés d'équitation : exposants, démonstrations, compétitions et spectacles équestres.",
+    "tags": [
+      "Salon",
+      "Cheval"
+    ]
+  },
+  {
+    "title": "HYROX Paris (Porte de Versailles)",
+    "sport": "Fitness",
+    "category": "Grand événement",
+    "competition": "HYROX World Series – saison 26/27",
+    "federation": "HYROX",
+    "date_start": "2026-12-12",
+    "date_end": "2026-12-20",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://hyrox.com/event/hyrox-paris-s26-27/",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Course de fitness HYROX sur deux fenêtres (12-13 et 16-20 décembre) avec épreuves Youngstars les 19-20 décembre.",
+    "tags": [
+      "International",
+      "Participatif"
+    ]
+  },
+  {
+    "title": "Prix du Bourbonnais – Amérique Races Q2",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Amérique Races",
+    "federation": "LeTrot",
+    "date_start": "2026-12-13",
+    "date_end": "2026-12-13",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Deuxième qualificative pour le Prix d'Amérique, couplée au Prix Ready Cash pour les futurs 4 ans.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Critérium Continental – Amérique Races Q3",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Amérique Races",
+    "federation": "LeTrot",
+    "date_start": "2026-12-27",
+    "date_end": "2026-12-27",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Troisième étape des Amérique Races à Vincennes, réservée aux jeunes trotteurs de 4 ans.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "All Star Game LNB 2027",
+    "sport": "Basketball",
+    "category": "Spectacle sportif",
+    "competition": "All Star Game Betclic Élite (24e édition)",
+    "federation": "LNB",
+    "date_start": "2027-01-02",
+    "date_end": "2027-01-02",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.fnacspectacles.com/event/all-star-game-lnb-2027-accor-arena-22121752/",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le show annuel des meilleurs joueurs de Betclic Élite à Bercy : match des étoiles, concours de dunks et de tirs.",
+    "tags": [
+      "Show",
+      "Basket français"
+    ]
+  },
+  {
+    "title": "Hexagone MMA Winamax – Zénith de Paris",
+    "sport": "MMA",
+    "category": "Match pro",
+    "competition": "Hexagone MMA",
+    "federation": "FMMAF",
+    "date_start": "2027-01-08T19:00",
+    "date_end": "2027-01-08",
+    "venue": "Zénith Paris – La Villette",
+    "address": "211 Avenue Jean Jaurès, 75019 Paris",
+    "city": "Paris",
+    "url": "https://www.billetreduc.com/spectacle/hexagone-mma-winamax-412310",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Soirée de combats de la principale organisation française de MMA, diffusée sur RMC Sport et DAZN.",
+    "tags": [
+      "Combat"
+    ]
+  },
+  {
+    "title": "Prix du Calvados (préparatoire au Cornulier)",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes",
+    "federation": "LeTrot",
+    "date_start": "2027-01-10",
+    "date_end": "2027-01-10",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Épreuve de trot monté préparatoire au Prix de Cornulier.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "NBA Paris Game 2027 : Spurs – Pelicans",
+    "sport": "Basketball",
+    "category": "Match pro",
+    "competition": "NBA Global Games – saison régulière",
+    "federation": "NBA",
+    "date_start": "2027-01-14",
+    "date_end": "2027-01-14",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.accorarena.com/fr/programmation/nba-paris-games-2027--998d6",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Match de saison régulière NBA à Bercy entre les San Antonio Spurs de Victor Wembanyama et les New Orleans Pelicans.",
+    "tags": [
+      "International",
+      "NBA"
+    ]
+  },
+  {
+    "title": "Salon international de la plongée sous-marine 2027",
+    "sport": "Plongée",
+    "category": "Salon",
+    "competition": "Salon de la Plongée",
+    "federation": null,
+    "date_start": "2027-01-14",
+    "date_end": "2027-01-17",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.salon-de-la-plongee.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le plus grand salon de plongée d'Europe : clubs, destinations, matériel, photo sous-marine et conférences.",
+    "tags": [
+      "Salon"
+    ]
+  },
+  {
+    "title": "Paris International Challenge – Coupe du monde de fleuret",
+    "sport": "Escrime",
+    "category": "Grand événement",
+    "competition": "FIE World Cup – fleuret masculin",
+    "federation": "FFE / FIE",
+    "date_start": "2027-01-15",
+    "date_end": "2027-01-17",
+    "venue": "Stade Pierre de Coubertin",
+    "address": "82 Avenue Georges Lafont, 75016 Paris",
+    "city": "Paris",
+    "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/337795-paris-international-challenge-2027-the-foil-world-cup",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Étape parisienne de la Coupe du monde de fleuret masculin, en individuel et par équipes.",
+    "tags": [
+      "International",
+      "Coupe du monde"
+    ]
+  },
+  {
+    "title": "Salon de l'Escalade 2027",
+    "sport": "Escalade",
+    "category": "Salon",
+    "competition": "Salon de l'Escalade",
+    "federation": null,
+    "date_start": "2027-01-15",
+    "date_end": "2027-01-17",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.salon-escalade.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Salon dédié à l'escalade : murs d'essai, démonstrations, marques, salles et destinations grimpe.",
+    "tags": [
+      "Salon"
+    ]
+  },
+  {
+    "title": "Salon Paris Randos Nature 2027",
+    "sport": "Randonnée",
+    "category": "Salon",
+    "competition": "Paris Randos Nature",
+    "federation": "FFRandonnée",
+    "date_start": "2027-01-22",
+    "date_end": "2027-01-24",
+    "venue": "Parc Floral de Paris",
+    "address": "Route de la Pyramide, Bois de Vincennes, 75012 Paris",
+    "city": "Paris",
+    "url": "https://parisjetaime.com/evenement/salon-paris-randos-nature-e1123",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Salon de la randonnée et des activités de pleine nature au Parc Floral (dates annoncées par les agendas, à confirmer).",
+    "tags": [
+      "Salon",
+      "Outdoor"
+    ]
+  },
+  {
+    "title": "Prix de Cornulier",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Groupe 1 trot monté",
+    "federation": "LeTrot",
+    "date_start": "2027-01-24",
+    "date_end": "2027-01-24",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le championnat du monde du trot monté, Groupe 1 et Quinté+ à Vincennes.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Prix d'Amérique Festival 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Prix d'Amérique Races",
+    "federation": "LeTrot",
+    "date_start": "2027-01-29",
+    "date_end": "2027-01-31",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Trois jours de courses et de festivités à Vincennes, avec le Prix Ourasi et le Prix Bold Eagle le samedi.",
+    "tags": [
+      "Trot",
+      "Courses hippiques",
+      "Festival"
+    ]
+  },
+  {
+    "title": "Prix Ourasi & Prix Bold Eagle",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Prix d'Amérique Festival – Groupe 1",
+    "federation": "LeTrot",
+    "date_start": "2027-01-30",
+    "date_end": "2027-01-30",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Samedi du Prix d'Amérique Festival : Groupes 1 réservés aux 4 ans (Ourasi) et aux 5 ans (Bold Eagle).",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Prix d'Amérique – Legend Race 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Prix d'Amérique Races – Groupe 1",
+    "federation": "LeTrot",
+    "date_start": "2027-01-31",
+    "date_end": "2027-01-31",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "La course de trot attelé la plus prestigieuse du monde, point d'orgue du meeting d'hiver de Vincennes.",
+    "tags": [
+      "International",
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Paris Grand Slam de judo 2027",
+    "sport": "Judo",
+    "category": "Grand événement",
+    "competition": "IJF World Tour – Grand Slam",
+    "federation": "FFJDA / IJF",
+    "date_start": "2027-02-05",
+    "date_end": "2027-02-07",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.ffjudo.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le tournoi de judo le plus prestigieux du circuit mondial ouvre la saison internationale à Bercy (dates du calendrier IJF provisoire).",
+    "tags": [
+      "International",
+      "Judo"
+    ]
+  },
+  {
+    "title": "France – Pays de Galles (Tournoi des Six Nations)",
+    "sport": "Rugby",
+    "category": "Match pro",
+    "competition": "Guinness Six Nations 2027",
+    "federation": "FFR / Six Nations Rugby",
+    "date_start": "2027-02-06T17:40",
+    "date_end": "2027-02-06",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.stadefrance.com/fr",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Entrée en lice du XV de France dans le Tournoi 2027 face au pays de Galles au Stade de France.",
+    "tags": [
+      "International",
+      "XV de France",
+      "Six Nations"
+    ]
+  },
+  {
+    "title": "Holiday on Ice – Cinema of Dreams",
+    "sport": "Patinage",
+    "category": "Spectacle sportif",
+    "competition": "Holiday on Ice",
+    "federation": null,
+    "date_start": "2027-02-11",
+    "date_end": "2027-02-14",
+    "venue": "Zénith Paris – La Villette",
+    "address": "211 Avenue Jean Jaurès, 75019 Paris",
+    "city": "Paris",
+    "url": "https://75.agendaculturel.fr/arts-du-spectacle/holiday-on-ice-cinema-of-dreams.html",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le célèbre spectacle de patinage artistique revient au Zénith avec un show sur le thème du cinéma.",
+    "tags": [
+      "Show",
+      "Famille"
+    ]
+  },
+  {
+    "title": "Meeting de Paris Indoor 2027",
+    "sport": "Athlétisme",
+    "category": "Grand événement",
+    "competition": "World Athletics Indoor Tour",
+    "federation": "FFA / World Athletics",
+    "date_start": "2027-02-14",
+    "date_end": "2027-02-14",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.athle.fr",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Meeting international d'athlétisme en salle à Bercy (date relayée par Paris je t'aime, non confirmée officiellement).",
+    "tags": [
+      "International"
+    ]
+  },
+  {
+    "title": "Prix de France – Speed Race",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Groupe 1",
+    "federation": "LeTrot",
+    "date_start": "2027-02-14",
+    "date_end": "2027-02-14",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Groupe 1 de trot attelé sur 2 100 m, deuxième grand rendez-vous de la Triple Couronne de Vincennes.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Prix Comte Pierre de Montesson",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes",
+    "federation": "LeTrot",
+    "date_start": "2027-02-21",
+    "date_end": "2027-02-21",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Grand rendez-vous des futurs 3 ans au trot attelé à Vincennes.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "France – Écosse (Tournoi des Six Nations)",
+    "sport": "Rugby",
+    "category": "Match pro",
+    "competition": "Guinness Six Nations 2027",
+    "federation": "FFR / Six Nations Rugby",
+    "date_start": "2027-02-21T16:10",
+    "date_end": "2027-02-21",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.stadefrance.com/fr",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le XV de France reçoit l'Écosse pour son deuxième match à domicile du Tournoi 2027.",
+    "tags": [
+      "International",
+      "XV de France",
+      "Six Nations"
+    ]
+  },
+  {
+    "title": "SuperEnduro – Grand Prix de France",
+    "sport": "Sports mécaniques",
+    "category": "Grand événement",
+    "competition": "FIM SuperEnduro World Championship",
+    "federation": "FFM / FIM",
+    "date_start": "2027-02-27",
+    "date_end": "2027-02-27",
+    "venue": "Arena Grand Paris",
+    "address": "Tremblay-en-France (93)",
+    "city": "Tremblay-en-France",
+    "url": "https://superenduro.org/schedule/gp-france/",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Manche du championnat du monde d'enduro indoor en salle à l'Arena Grand Paris de Tremblay-en-France.",
+    "tags": [
+      "International",
+      "Moto"
+    ]
+  },
+  {
+    "title": "Prix de Paris – Marathon Race",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Meeting d'hiver Paris-Vincennes – Groupe 1",
+    "federation": "LeTrot",
+    "date_start": "2027-02-28",
+    "date_end": "2027-02-28",
+    "venue": "Hippodrome de Paris-Vincennes",
+    "address": "2 Route de la Ferme, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.letrot.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Groupe 1 de trot attelé sur 4 150 m, dernier volet de la Triple Couronne de Vincennes.",
+    "tags": [
+      "Trot",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Semi-marathon de Paris 2027",
+    "sport": "Course à pied",
+    "category": "Grand événement",
+    "competition": "Semi de Paris",
+    "federation": "ASO / FFA",
+    "date_start": "2027-03-07",
+    "date_end": "2027-03-07",
+    "venue": "Avenue des Champs-Élysées",
+    "address": "Avenue des Champs-Élysées, 75008 Paris",
+    "city": "Paris",
+    "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/210126-paris-half-marathon-2027-when-it-takes-place-and-how-to-register",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le Semi de Paris, plus grand semi-marathon de France, dans les rues de la capitale (départ/arrivée selon parcours officiel).",
+    "tags": [
+      "Participatif",
+      "Running"
+    ]
+  },
+  {
+    "title": "Salon Destinations Nature 2027",
+    "sport": "Randonnée",
+    "category": "Salon",
+    "competition": "Destinations Nature",
+    "federation": null,
+    "date_start": "2027-03-11",
+    "date_end": "2027-03-14",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/shows-and-fairs/articles/272250-destinations-nature-2027-in-paris-the-expo-dedicated-to-hiking-and-outdoor-leisure",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le salon de la randonnée et des loisirs de plein air : destinations, trek, équipements et conférences.",
+    "tags": [
+      "Salon",
+      "Outdoor"
+    ]
+  },
+  {
+    "title": "Saut Hermès au Grand Palais 2027",
+    "sport": "Équitation",
+    "category": "Grand événement",
+    "competition": "CSI 5* Saut Hermès (17e édition)",
+    "federation": "FFE / FEI",
+    "date_start": "2027-03-19",
+    "date_end": "2027-03-21",
+    "venue": "Grand Palais",
+    "address": "Avenue Winston-Churchill, 75008 Paris",
+    "city": "Paris",
+    "url": "https://www.sauthermes.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Concours international de saut d'obstacles CSI 5* sous la verrière du Grand Palais, avec les meilleurs cavaliers mondiaux.",
+    "tags": [
+      "International",
+      "Saut d'obstacles"
+    ]
+  },
+  {
+    "title": "Hot Wheels Monster Trucks Live – Colour Bash",
+    "sport": "Sports mécaniques",
+    "category": "Spectacle sportif",
+    "competition": "Hot Wheels Monster Trucks Live",
+    "federation": null,
+    "date_start": "2027-03-20",
+    "date_end": "2027-03-20",
+    "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+    "address": "99 Jardins de l'Arche, 92000 Nanterre",
+    "city": "Nanterre",
+    "url": "https://www.sortiraparis.com/en/what-to-see-in-paris/articles/303566-hot-wheels-monster-trucks-live-colour-bash-the-wild-show-to-catch-in-2027-at-la-defense-arena",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Show familial de monster trucks, cascades, freestyle motocross et robot dinosaure cracheur de feu.",
+    "tags": [
+      "Show",
+      "Famille"
+    ]
+  },
+  {
+    "title": "Finales de la Coupe de France de volley 2027",
+    "sport": "Volley-ball",
+    "category": "Match pro",
+    "competition": "Coupe de France",
+    "federation": "FFVolley",
+    "date_start": "2027-03-27T15:15",
+    "date_end": "2027-03-27",
+    "venue": "Adidas Arena (Arena Porte de la Chapelle)",
+    "address": "Boulevard Ney, Porte de la Chapelle, 75018 Paris",
+    "city": "Paris",
+    "url": "https://www.ffvolley.org",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Finales féminine (15h15) et masculine (20h15) de la Coupe de France de volley (horaires prévisionnels).",
+    "tags": [
+      "Finale",
+      "Coupe de France"
+    ]
+  },
+  {
+    "title": "Run Experience – Salon du Running 2027",
+    "sport": "Course à pied",
+    "category": "Salon",
+    "competition": "Salon du Running du Marathon de Paris",
+    "federation": "ASO",
+    "date_start": "2027-04-01",
+    "date_end": "2027-04-03",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.jds.fr/paris/foires-salons-brocantes/foires-et-salons/run-experience-salon-du-running-de-paris-265626_A",
+    "price": "Gratuit",
+    "tentative": true,
+    "description": "Salon du running et retrait des dossards du 50e Marathon de Paris (4 avril 2027) ; dates estimées sur le modèle des éditions précédentes.",
+    "tags": [
+      "Salon",
+      "Running"
+    ]
+  },
+  {
+    "title": "ASICS Marathon de Paris 2027 (50e édition)",
+    "sport": "Course à pied",
+    "category": "Grand événement",
+    "competition": "Marathon de Paris – World Athletics Gold Label",
+    "federation": "ASO / FFA",
+    "date_start": "2027-04-04",
+    "date_end": "2027-04-04",
+    "venue": "Avenue des Champs-Élysées",
+    "address": "Avenue des Champs-Élysées, 75008 Paris",
+    "city": "Paris",
+    "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/50290-paris-marathon-2027-the-date-of-the-city-s-biggest-race-and-the-registration-details",
+    "price": "Payant",
+    "tentative": false,
+    "description": "50e édition du Marathon de Paris, départ des Champs-Élysées : plus de 50 000 coureurs attendus.",
+    "tags": [
+      "International",
+      "Participatif",
+      "Running"
+    ]
+  },
+  {
+    "title": "HYROX Paris Grand Palais 2027",
+    "sport": "Fitness",
+    "category": "Grand événement",
+    "competition": "HYROX World Series – saison 26/27",
+    "federation": "HYROX",
+    "date_start": "2027-04-08",
+    "date_end": "2027-04-12",
+    "venue": "Grand Palais",
+    "address": "Avenue Winston-Churchill, 75008 Paris",
+    "city": "Paris",
+    "url": "https://hyrox.com/event/hyrox-paris-grand-palais-s26-27/",
+    "price": "Payant",
+    "tentative": false,
+    "description": "La course de fitness HYROX investit la nef du Grand Palais pendant cinq jours.",
+    "tags": [
+      "International",
+      "Participatif"
+    ]
+  },
+  {
+    "title": "Salon des Sports de Raquettes",
+    "sport": "Multisports",
+    "category": "Salon",
+    "competition": "Salon des Sports de Raquettes (1re édition)",
+    "federation": null,
+    "date_start": "2027-04-16",
+    "date_end": "2027-04-18",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://parisjetaime.com/evenement/salon-des-sports-de-raquettes-paris-e2176",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Nouveau salon géant réunissant tennis, padel, pickleball, badminton, tennis de table et squash : essais, démonstrations de pros.",
+    "tags": [
+      "Salon",
+      "Raquettes"
+    ]
+  },
+  {
+    "title": "Finales de la Coupe de France de basket 2027",
+    "sport": "Basketball",
+    "category": "Match pro",
+    "competition": "Coupe de France de basket",
+    "federation": "FFBB",
+    "date_start": "2027-04-23",
+    "date_end": "2027-04-24",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.ffbb.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Les finales masculine, féminine et du Trophée Coupe de France réunies à Bercy.",
+    "tags": [
+      "Finale",
+      "Coupe de France"
+    ]
+  },
+  {
+    "title": "Finale de la Coupe de France de football 2027",
+    "sport": "Football",
+    "category": "Match pro",
+    "competition": "Coupe de France Crédit Agricole",
+    "federation": "FFF",
+    "date_start": "2027-05-15",
+    "date_end": "2027-05-15",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.fff.fr",
+    "price": "Payant",
+    "tentative": true,
+    "description": "La finale de la plus populaire des coupes nationales au Stade de France (date relayée par la presse, en attente de confirmation FFF).",
+    "tags": [
+      "Finale",
+      "Coupe de France"
+    ]
+  },
+  {
+    "title": "Le Défi des Haras – Grand Steeple-Chase de Paris 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Grand Steeple-Chase Masters – Groupe 1",
+    "federation": "France Galop",
+    "date_start": "2027-05-16",
+    "date_end": "2027-05-16",
+    "venue": "Hippodrome d'Auteuil",
+    "address": "Route des Lacs à Passy, 75016 Paris",
+    "city": "Paris",
+    "url": "https://billetterie.france-galop.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "La plus grande course d'obstacles de France à Auteuil, traditionnellement le troisième dimanche de mai.",
+    "tags": [
+      "International",
+      "Obstacle",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Roland-Garros 2027",
+    "sport": "Tennis",
+    "category": "Grand événement",
+    "competition": "Grand Chelem – Internationaux de France",
+    "federation": "FFT / ITF",
+    "date_start": "2027-05-17",
+    "date_end": "2027-06-06",
+    "venue": "Stade Roland-Garros",
+    "address": "2 Avenue Gordon Bennett, 75016 Paris",
+    "city": "Paris",
+    "url": "https://www.rolandgarros.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le Grand Chelem sur terre battue : qualifications du 17 au 21 mai, tableau principal à partir du 23 mai, finales les 5 et 6 juin.",
+    "tags": [
+      "International",
+      "Grand Chelem"
+    ]
+  },
+  {
+    "title": "Longines Paris Eiffel Jumping 2027",
+    "sport": "Équitation",
+    "category": "Grand événement",
+    "competition": "Longines Global Champions Tour",
+    "federation": "FEI",
+    "date_start": "2027-06-18",
+    "date_end": "2027-06-20",
+    "venue": "Champ-de-Mars – Place Joffre",
+    "address": "Place Joffre, 75007 Paris",
+    "city": "Paris",
+    "url": "https://www.pariseiffeljumping.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "13e édition du concours CSI 5* au pied de la Tour Eiffel, étape du Longines Global Champions Tour (village gratuit).",
+    "tags": [
+      "International",
+      "Saut d'obstacles"
+    ]
+  },
+  {
+    "title": "Journée olympique et paralympique 2027",
+    "sport": "Multisports",
+    "category": "Grand événement",
+    "competition": "Journée olympique",
+    "federation": "CNOSF / CPSF",
+    "date_start": "2027-06-23",
+    "date_end": "2027-06-23",
+    "venue": "Avenue des Champs-Élysées",
+    "address": "Avenue des Champs-Élysées, 75008 Paris",
+    "city": "Paris",
+    "url": "https://cnosf.franceolympique.com",
+    "price": "Gratuit",
+    "tentative": true,
+    "description": "Célébration annuelle du 23 juin (anniversaire de la rénovation des Jeux à la Sorbonne) : initiations et animations gratuites dans Paris.",
+    "tags": [
+      "Héritage Paris 2024",
+      "Gratuit"
+    ]
+  },
+  {
+    "title": "Meeting de Paris 2027 – Wanda Diamond League",
+    "sport": "Athlétisme",
+    "category": "Grand événement",
+    "competition": "Wanda Diamond League",
+    "federation": "FFA / World Athletics",
+    "date_start": "2027-06-25",
+    "date_end": "2027-06-25",
+    "venue": "Stade Charléty",
+    "address": "99 Boulevard Kellermann, 75013 Paris",
+    "city": "Paris",
+    "url": "https://paris.diamondleague.com",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Étape parisienne de la Diamond League au stade Charléty avec les stars mondiales de l'athlétisme.",
+    "tags": [
+      "International",
+      "Diamond League"
+    ]
+  },
+  {
+    "title": "Finale du Top 14 2027",
+    "sport": "Rugby",
+    "category": "Match pro",
+    "competition": "Top 14",
+    "federation": "LNR",
+    "date_start": "2027-06-27",
+    "date_end": "2027-06-27",
+    "venue": "Stade de France",
+    "address": "ZAC du Cornillon Nord, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://top14.lnr.fr",
+    "price": "Payant",
+    "tentative": true,
+    "description": "La finale du championnat de France de rugby pour le Bouclier de Brennus au Stade de France.",
+    "tags": [
+      "Finale",
+      "Top 14"
+    ]
+  },
+  {
+    "title": "Grand Prix de Saint-Cloud 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Arc Races – Groupe 1",
+    "federation": "France Galop",
+    "date_start": "2027-07-04",
+    "date_end": "2027-07-04",
+    "venue": "Hippodrome de Saint-Cloud",
+    "address": "1 Rue du Camp Canadien, 92210 Saint-Cloud",
+    "city": "Saint-Cloud",
+    "url": "https://billetterie.france-galop.com/en/event/grand-prix-de-saint-cloud/",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Grand Prix de Groupe 1 de l'été au galop, étape des Arc Races (date estimée début juillet).",
+    "tags": [
+      "Galop",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Cygames Grand Prix de Paris 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Groupe 1 – plat",
+    "federation": "France Galop",
+    "date_start": "2027-07-14",
+    "date_end": "2027-07-14",
+    "venue": "Hippodrome de ParisLongchamp",
+    "address": "2 Route des Tribunes, 75016 Paris",
+    "city": "Paris",
+    "url": "https://billetterie.france-galop.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le Grand Prix de Paris, Groupe 1 traditionnel du 14 juillet à ParisLongchamp, avec garden party et concert.",
+    "tags": [
+      "Galop",
+      "Courses hippiques",
+      "14 juillet"
+    ]
+  },
+  {
+    "title": "Tour de France 2027 – arrivée sur les Champs-Élysées",
+    "sport": "Cyclisme",
+    "category": "Grand événement",
+    "competition": "Tour de France – 21e étape",
+    "federation": "ASO / UCI",
+    "date_start": "2027-07-25",
+    "date_end": "2027-07-25",
+    "venue": "Avenue des Champs-Élysées",
+    "address": "Avenue des Champs-Élysées, 75008 Paris",
+    "city": "Paris",
+    "url": "https://www.letour.fr",
+    "price": "Gratuit",
+    "tentative": false,
+    "description": "Étape finale Saint-Quentin-en-Yvelines – Paris (116 km) avec trois passages par Montmartre avant l'arrivée sur les Champs-Élysées.",
+    "tags": [
+      "International",
+      "Gratuit"
+    ]
+  },
+  {
+    "title": "Championnats du monde de cyclisme sur piste 2027",
+    "sport": "Cyclisme",
+    "category": "Grand événement",
+    "competition": "UCI Cycling World Championships 2027 – piste élite",
+    "federation": "FFC / UCI",
+    "date_start": "2027-08-26",
+    "date_end": "2027-08-30",
+    "venue": "Vélodrome National de Saint-Quentin-en-Yvelines",
+    "address": "1 Rue Laurent Fignon, 78180 Montigny-le-Bretonneux",
+    "city": "Montigny-le-Bretonneux",
+    "url": "https://www.uci.org",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Épreuves élite sur piste des Mondiaux UCI combinés Haute-Savoie Mont-Blanc 2027, au Vélodrome national.",
+    "tags": [
+      "International",
+      "Championnat du monde"
+    ]
+  },
+  {
+    "title": "Championnats du monde de para-cyclisme sur piste 2027",
+    "sport": "Handisport",
+    "category": "Grand événement",
+    "competition": "UCI Cycling World Championships 2027 – para-piste",
+    "federation": "FFH / UCI",
+    "date_start": "2027-09-01",
+    "date_end": "2027-09-05",
+    "venue": "Vélodrome National de Saint-Quentin-en-Yvelines",
+    "address": "1 Rue Laurent Fignon, 78180 Montigny-le-Bretonneux",
+    "city": "Montigny-le-Bretonneux",
+    "url": "https://www.uci.org",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Les Mondiaux de para-cyclisme sur piste au Vélodrome national de Saint-Quentin-en-Yvelines.",
+    "tags": [
+      "International",
+      "Handisport",
+      "Championnat du monde"
+    ]
+  },
+  {
+    "title": "UFC Fight Night Paris 2027",
+    "sport": "MMA",
+    "category": "Match pro",
+    "competition": "UFC Fight Night",
+    "federation": "UFC",
+    "date_start": "2027-09-04",
+    "date_end": "2027-09-04",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.ufc.com/events",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le retour annuel de l'UFC à Bercy, organisé chaque début septembre depuis 2022 (date non encore annoncée).",
+    "tags": [
+      "International",
+      "Combat"
+    ]
+  },
+  {
+    "title": "Paris Major Premier Padel 2027",
+    "sport": "Padel",
+    "category": "Grand événement",
+    "competition": "Premier Padel – Major",
+    "federation": "FFT / FIP",
+    "date_start": "2027-09-06",
+    "date_end": "2027-09-12",
+    "venue": "Stade Roland-Garros",
+    "address": "2 Avenue Gordon Bennett, 75016 Paris",
+    "city": "Paris",
+    "url": "https://premierpadel.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le Major de padel à Roland-Garros, fixé la deuxième semaine de septembre (contrat jusqu'en 2029).",
+    "tags": [
+      "International"
+    ]
+  },
+  {
+    "title": "FedEx Open de France de golf 2027",
+    "sport": "Golf",
+    "category": "Grand événement",
+    "competition": "DP World Tour",
+    "federation": "ffgolf / DP World Tour",
+    "date_start": "2027-09-09",
+    "date_end": "2027-09-12",
+    "venue": "Le Golf National",
+    "address": "2 Avenue du Golf, 78280 Guyancourt",
+    "city": "Guyancourt",
+    "url": "https://www.ffgolf.org",
+    "price": "Payant",
+    "tentative": false,
+    "description": "Le plus ancien open national d'Europe continentale au Golf National, la semaine précédant la Ryder Cup 2027.",
+    "tags": [
+      "International",
+      "DP World Tour"
+    ]
+  },
+  {
+    "title": "Internationaux de France de gymnastique 2027",
+    "sport": "Gymnastique",
+    "category": "Grand événement",
+    "competition": "FIG World Challenge Cup",
+    "federation": "FFGym / FIG",
+    "date_start": "2027-09-25",
+    "date_end": "2027-09-26",
+    "venue": "Accor Arena",
+    "address": "8 Boulevard de Bercy, 75012 Paris",
+    "city": "Paris",
+    "url": "https://www.ffgym.fr",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Étape de Coupe du monde de gymnastique artistique à Bercy, traditionnellement fin septembre.",
+    "tags": [
+      "International",
+      "Coupe du monde"
+    ]
+  },
+  {
+    "title": "Qatar Prix de l'Arc de Triomphe 2027",
+    "sport": "Hippisme",
+    "category": "Grand événement",
+    "competition": "Groupe 1 – Arc Races",
+    "federation": "France Galop",
+    "date_start": "2027-10-02",
+    "date_end": "2027-10-03",
+    "venue": "Hippodrome de ParisLongchamp",
+    "address": "2 Route des Tribunes, 75016 Paris",
+    "city": "Paris",
+    "url": "https://billetterie.france-galop.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le week-end de l'Arc, plus grande course de galop du monde, le premier dimanche d'octobre ; ouvert aux hongres pour la première fois en 2027.",
+    "tags": [
+      "International",
+      "Galop",
+      "Courses hippiques"
+    ]
+  },
+  {
+    "title": "Coupe du monde de natation – étape de Paris",
+    "sport": "Natation",
+    "category": "Grand événement",
+    "competition": "World Aquatics Swimming World Cup 2027",
+    "federation": "FFN / World Aquatics",
+    "date_start": "2027-10-22",
+    "date_end": "2027-10-24",
+    "venue": "Centre Aquatique Olympique",
+    "address": "Plaine Saulnier, 93200 Saint-Denis",
+    "city": "Saint-Denis",
+    "url": "https://www.ffnatation.fr",
+    "price": "Payant",
+    "tentative": false,
+    "description": "L'une des trois étapes de la Coupe du monde de natation 2027, au Centre aquatique olympique de Saint-Denis.",
+    "tags": [
+      "International",
+      "Héritage Paris 2024",
+      "Coupe du monde"
+    ]
+  },
+  {
+    "title": "EVO France 2027",
+    "sport": "Esport",
+    "category": "Grand événement",
+    "competition": "EVO – tournoi de jeux de combat",
+    "federation": "EVO / N.E.O.",
+    "date_start": "2027-10-22",
+    "date_end": "2027-10-24",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://parisjetaime.com/evenement/evo-france-a-paris-e2656",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le plus grand tournoi de jeux de combat arrive à Paris après Nice (lieu exact non annoncé ; Paris Expo indiqué à titre indicatif).",
+    "tags": [
+      "International",
+      "Esport"
+    ]
+  },
+  {
+    "title": "Rolex Paris Masters 2027",
+    "sport": "Tennis",
+    "category": "Grand événement",
+    "competition": "ATP Masters 1000",
+    "federation": "FFT / ATP",
+    "date_start": "2027-10-30",
+    "date_end": "2027-11-07",
+    "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+    "address": "99 Jardins de l'Arche, 92000 Nanterre",
+    "city": "Nanterre",
+    "url": "https://www.rolexparismasters.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Dernier Masters 1000 de la saison en salle, à la Plenitude Arena (dates estimées selon le calendrier ATP habituel).",
+    "tags": [
+      "International",
+      "ATP"
+    ]
+  },
+  {
+    "title": "Supercross de Paris 2027",
+    "sport": "Sports mécaniques",
+    "category": "Spectacle sportif",
+    "competition": "Supercross de Paris (44e édition)",
+    "federation": "FFM",
+    "date_start": "2027-11-20",
+    "date_end": "2027-11-21",
+    "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+    "address": "99 Jardins de l'Arche, 92000 Nanterre",
+    "city": "Nanterre",
+    "url": "https://www.parisladefense-arena.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Le Supercross de Paris revient à Nanterre en novembre, comme chaque année depuis 2017 (dates à confirmer).",
+    "tags": [
+      "International",
+      "Moto"
+    ]
+  },
+  {
+    "title": "Salon du Cheval de Paris 2027",
+    "sport": "Équitation",
+    "category": "Salon",
+    "competition": "Salon du Cheval de Paris",
+    "federation": null,
+    "date_start": "2027-12-03",
+    "date_end": "2027-12-05",
+    "venue": "Paris Expo Porte de Versailles",
+    "address": "1 Place de la Porte de Versailles, 75015 Paris",
+    "city": "Paris",
+    "url": "https://www.salon-cheval.com",
+    "price": "Payant",
+    "tentative": true,
+    "description": "Rendez-vous annuel de début décembre des cavaliers et passionnés à la Porte de Versailles (dates estimées).",
+    "tags": [
+      "Salon",
+      "Cheval"
+    ]
+  }
+]

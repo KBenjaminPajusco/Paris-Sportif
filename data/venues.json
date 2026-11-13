@@ -1,80 +1,422 @@
 {
- "Parc des Princes": {"lat": 48.8414, "lon": 2.2530, "city": "Paris"},
- "Stade Jean-Bouin": {"lat": 48.8433, "lon": 2.2526, "city": "Paris"},
- "Stade Jean Bouin": {"lat": 48.8433, "lon": 2.2526, "city": "Paris"},
- "Stade de France": {"lat": 48.9245, "lon": 2.3602, "city": "Saint-Denis"},
- "Paris La Défense Arena": {"lat": 48.8956, "lon": 2.2290, "city": "Nanterre"},
- "Accor Arena": {"lat": 48.8386, "lon": 2.3785, "city": "Paris"},
- "Adidas Arena": {"lat": 48.8998, "lon": 2.3587, "city": "Paris"},
- "Stade Pierre de Coubertin": {"lat": 48.8394, "lon": 2.2513, "city": "Paris"},
- "Stade Pierre-de-Coubertin": {"lat": 48.8394, "lon": 2.2513, "city": "Paris"},
- "Stade Charléty": {"lat": 48.8189, "lon": 2.3465, "city": "Paris"},
- "Stade Roland-Garros": {"lat": 48.8469, "lon": 2.2490, "city": "Paris"},
- "Roland-Garros": {"lat": 48.8469, "lon": 2.2490, "city": "Paris"},
- "Stade Bauer": {"lat": 48.9065, "lon": 2.3381, "city": "Saint-Ouen"},
- "Halle Georges Carpentier": {"lat": 48.8248, "lon": 2.3720, "city": "Paris"},
- "Halle Georges-Carpentier": {"lat": 48.8248, "lon": 2.3720, "city": "Paris"},
- "Carreau du Temple": {"lat": 48.8644, "lon": 2.3617, "city": "Paris"},
- "Grand Palais": {"lat": 48.8661, "lon": 2.3125, "city": "Paris"},
- "Paris Expo Porte de Versailles": {"lat": 48.8320, "lon": 2.2875, "city": "Paris"},
- "Hippodrome de Longchamp": {"lat": 48.8579, "lon": 2.2340, "city": "Paris"},
- "ParisLongchamp": {"lat": 48.8579, "lon": 2.2340, "city": "Paris"},
- "Hippodrome d'Auteuil": {"lat": 48.8500, "lon": 2.2550, "city": "Paris"},
- "Hippodrome de Paris-Vincennes": {"lat": 48.8248, "lon": 2.4547, "city": "Paris"},
- "Hippodrome de Vincennes": {"lat": 48.8248, "lon": 2.4547, "city": "Paris"},
- "Hippodrome de Saint-Cloud": {"lat": 48.8564, "lon": 2.1912, "city": "Saint-Cloud"},
- "Vélodrome National": {"lat": 48.7880, "lon": 2.0347, "city": "Montigny-le-Bretonneux"},
- "Golf National": {"lat": 48.7546, "lon": 2.0756, "city": "Guyancourt"},
- "Le Golf National": {"lat": 48.7546, "lon": 2.0756, "city": "Guyancourt"},
- "Champs-Élysées": {"lat": 48.8698, "lon": 2.3075, "city": "Paris"},
- "Avenue des Champs-Élysées": {"lat": 48.8698, "lon": 2.3075, "city": "Paris"},
- "Tour Eiffel": {"lat": 48.8584, "lon": 2.2945, "city": "Paris"},
- "Champ de Mars": {"lat": 48.8556, "lon": 2.2986, "city": "Paris"},
- "Château de Vincennes": {"lat": 48.8428, "lon": 2.4358, "city": "Vincennes"},
- "Bois de Vincennes": {"lat": 48.8322, "lon": 2.4330, "city": "Paris"},
- "Bois de Boulogne": {"lat": 48.8625, "lon": 2.2490, "city": "Paris"},
- "Hippodrome de Longchamp (Bois de Boulogne)": {"lat": 48.8579, "lon": 2.2340, "city": "Paris"},
- "Parc de Saint-Cloud": {"lat": 48.8366, "lon": 2.2120, "city": "Saint-Cloud"},
- "Domaine national de Saint-Cloud": {"lat": 48.8366, "lon": 2.2120, "city": "Saint-Cloud"},
- "Place de la Concorde": {"lat": 48.8656, "lon": 2.3212, "city": "Paris"},
- "Hôtel de Ville": {"lat": 48.8566, "lon": 2.3522, "city": "Paris"},
- "Parvis de l'Hôtel de Ville": {"lat": 48.8566, "lon": 2.3522, "city": "Paris"},
- "Bassin de la Villette": {"lat": 48.8861, "lon": 2.3720, "city": "Paris"},
- "Parc de la Villette": {"lat": 48.8938, "lon": 2.3904, "city": "Paris"},
- "Grande Halle de la Villette": {"lat": 48.8913, "lon": 2.3906, "city": "Paris"},
- "Paris La Défense": {"lat": 48.8920, "lon": 2.2380, "city": "Puteaux"},
- "Parvis de La Défense": {"lat": 48.8920, "lon": 2.2380, "city": "Puteaux"},
- "Stade Sébastien Charléty": {"lat": 48.8189, "lon": 2.3465, "city": "Paris"},
- "Centre sportif Suzanne Lenglen": {"lat": 48.8320, "lon": 2.2750, "city": "Paris"},
- "Palais des Sports Marcel Cerdan": {"lat": 48.8925, "lon": 2.2847, "city": "Levallois-Perret"},
- "Palais des sports Maurice Thorez": {"lat": 48.8889, "lon": 2.2125, "city": "Nanterre"},
- "Stade Yves-du-Manoir": {"lat": 48.9290, "lon": 2.2480, "city": "Colombes"},
- "Stade olympique Yves-du-Manoir": {"lat": 48.9290, "lon": 2.2480, "city": "Colombes"},
- "Arena Porte de La Chapelle": {"lat": 48.8998, "lon": 2.3587, "city": "Paris"},
- "Piscine Georges-Vallerey": {"lat": 48.8770, "lon": 2.4060, "city": "Paris"},
- "Centre aquatique olympique": {"lat": 48.9216, "lon": 2.3564, "city": "Saint-Denis"},
- "Bercy": {"lat": 48.8386, "lon": 2.3785, "city": "Paris"},
- "Zénith Paris": {"lat": 48.8941, "lon": 2.3936, "city": "Paris"},
- "Salle Wagram": {"lat": 48.8781, "lon": 2.2980, "city": "Paris"},
- "Cirque d'Hiver": {"lat": 48.8633, "lon": 2.3672, "city": "Paris"},
- "Stade Émile-Anthoine": {"lat": 48.8550, "lon": 2.2900, "city": "Paris"},
- "Patinoire de Bercy": {"lat": 48.8386, "lon": 2.3785, "city": "Paris"},
- "Patinoire Sonja Henie": {"lat": 48.8386, "lon": 2.3785, "city": "Paris"},
- "Stade Georges Carcassonne": {"lat": 48.8920, "lon": 2.2950, "city": "Levallois-Perret"},
- "Pont d'Iéna": {"lat": 48.8600, "lon": 2.2930, "city": "Paris"},
- "Trocadéro": {"lat": 48.8616, "lon": 2.2893, "city": "Paris"},
- "Esplanade des Invalides": {"lat": 48.8610, "lon": 2.3140, "city": "Paris"},
- "Place de la Bastille": {"lat": 48.8532, "lon": 2.3691, "city": "Paris"},
- "Parc de Sceaux": {"lat": 48.7700, "lon": 2.2970, "city": "Sceaux"},
- "Stade Louis Lumière": {"lat": 48.8550, "lon": 2.4080, "city": "Paris"},
- "Stade Jules Ladoumègue": {"lat": 48.8857, "lon": 2.3990, "city": "Paris"},
- "Stade Pershing": {"lat": 48.8340, "lon": 2.4370, "city": "Paris"},
- "Stade Déjerine": {"lat": 48.8577, "lon": 2.4130, "city": "Paris"},
- "Le Dôme de Paris": {"lat": 48.8320, "lon": 2.2875, "city": "Paris"},
- "Dôme de Paris - Palais des Sports": {"lat": 48.8320, "lon": 2.2875, "city": "Paris"},
- "Palais des Sports": {"lat": 48.8320, "lon": 2.2875, "city": "Paris"},
- "Gymnase Japy": {"lat": 48.8556, "lon": 2.3791, "city": "Paris"},
- "Institut national du sport (INSEP)": {"lat": 48.8340, "lon": 2.4560, "city": "Paris"},
- "INSEP": {"lat": 48.8340, "lon": 2.4560, "city": "Paris"},
- "Base nautique de Vaires-sur-Marne": {"lat": 48.8635, "lon": 2.6260, "city": "Vaires-sur-Marne"}
+ "Parc des Princes": {
+  "lat": 48.8414,
+  "lon": 2.253,
+  "city": "Paris"
+ },
+ "Stade Jean-Bouin": {
+  "lat": 48.8433,
+  "lon": 2.2526,
+  "city": "Paris"
+ },
+ "Stade Jean Bouin": {
+  "lat": 48.8433,
+  "lon": 2.2526,
+  "city": "Paris"
+ },
+ "Stade de France": {
+  "lat": 48.9245,
+  "lon": 2.3602,
+  "city": "Saint-Denis"
+ },
+ "Paris La Défense Arena": {
+  "lat": 48.8956,
+  "lon": 2.229,
+  "city": "Nanterre"
+ },
+ "Accor Arena": {
+  "lat": 48.8386,
+  "lon": 2.3785,
+  "city": "Paris"
+ },
+ "Adidas Arena": {
+  "lat": 48.8998,
+  "lon": 2.3587,
+  "city": "Paris"
+ },
+ "Stade Pierre de Coubertin": {
+  "lat": 48.8394,
+  "lon": 2.2513,
+  "city": "Paris"
+ },
+ "Stade Pierre-de-Coubertin": {
+  "lat": 48.8394,
+  "lon": 2.2513,
+  "city": "Paris"
+ },
+ "Stade Charléty": {
+  "lat": 48.8189,
+  "lon": 2.3465,
+  "city": "Paris"
+ },
+ "Stade Roland-Garros": {
+  "lat": 48.8469,
+  "lon": 2.249,
+  "city": "Paris"
+ },
+ "Roland-Garros": {
+  "lat": 48.8469,
+  "lon": 2.249,
+  "city": "Paris"
+ },
+ "Stade Bauer": {
+  "lat": 48.9065,
+  "lon": 2.3381,
+  "city": "Saint-Ouen"
+ },
+ "Halle Georges Carpentier": {
+  "lat": 48.8248,
+  "lon": 2.372,
+  "city": "Paris"
+ },
+ "Halle Georges-Carpentier": {
+  "lat": 48.8248,
+  "lon": 2.372,
+  "city": "Paris"
+ },
+ "Carreau du Temple": {
+  "lat": 48.8644,
+  "lon": 2.3617,
+  "city": "Paris"
+ },
+ "Grand Palais": {
+  "lat": 48.8661,
+  "lon": 2.3125,
+  "city": "Paris"
+ },
+ "Paris Expo Porte de Versailles": {
+  "lat": 48.832,
+  "lon": 2.2875,
+  "city": "Paris"
+ },
+ "Hippodrome de Longchamp": {
+  "lat": 48.8579,
+  "lon": 2.234,
+  "city": "Paris"
+ },
+ "ParisLongchamp": {
+  "lat": 48.8579,
+  "lon": 2.234,
+  "city": "Paris"
+ },
+ "Hippodrome d'Auteuil": {
+  "lat": 48.85,
+  "lon": 2.255,
+  "city": "Paris"
+ },
+ "Hippodrome de Paris-Vincennes": {
+  "lat": 48.8248,
+  "lon": 2.4547,
+  "city": "Paris"
+ },
+ "Hippodrome de Vincennes": {
+  "lat": 48.8248,
+  "lon": 2.4547,
+  "city": "Paris"
+ },
+ "Hippodrome de Saint-Cloud": {
+  "lat": 48.8564,
+  "lon": 2.1912,
+  "city": "Saint-Cloud"
+ },
+ "Vélodrome National": {
+  "lat": 48.788,
+  "lon": 2.0347,
+  "city": "Montigny-le-Bretonneux"
+ },
+ "Golf National": {
+  "lat": 48.7546,
+  "lon": 2.0756,
+  "city": "Guyancourt"
+ },
+ "Le Golf National": {
+  "lat": 48.7546,
+  "lon": 2.0756,
+  "city": "Guyancourt"
+ },
+ "Champs-Élysées": {
+  "lat": 48.8698,
+  "lon": 2.3075,
+  "city": "Paris"
+ },
+ "Avenue des Champs-Élysées": {
+  "lat": 48.8698,
+  "lon": 2.3075,
+  "city": "Paris"
+ },
+ "Tour Eiffel": {
+  "lat": 48.8584,
+  "lon": 2.2945,
+  "city": "Paris"
+ },
+ "Champ de Mars": {
+  "lat": 48.8556,
+  "lon": 2.2986,
+  "city": "Paris"
+ },
+ "Château de Vincennes": {
+  "lat": 48.8428,
+  "lon": 2.4358,
+  "city": "Vincennes"
+ },
+ "Bois de Vincennes": {
+  "lat": 48.8322,
+  "lon": 2.433,
+  "city": "Paris"
+ },
+ "Bois de Boulogne": {
+  "lat": 48.8625,
+  "lon": 2.249,
+  "city": "Paris"
+ },
+ "Hippodrome de Longchamp (Bois de Boulogne)": {
+  "lat": 48.8579,
+  "lon": 2.234,
+  "city": "Paris"
+ },
+ "Parc de Saint-Cloud": {
+  "lat": 48.8366,
+  "lon": 2.212,
+  "city": "Saint-Cloud"
+ },
+ "Domaine national de Saint-Cloud": {
+  "lat": 48.8366,
+  "lon": 2.212,
+  "city": "Saint-Cloud"
+ },
+ "Place de la Concorde": {
+  "lat": 48.8656,
+  "lon": 2.3212,
+  "city": "Paris"
+ },
+ "Hôtel de Ville": {
+  "lat": 48.8566,
+  "lon": 2.3522,
+  "city": "Paris"
+ },
+ "Parvis de l'Hôtel de Ville": {
+  "lat": 48.8566,
+  "lon": 2.3522,
+  "city": "Paris"
+ },
+ "Bassin de la Villette": {
+  "lat": 48.8861,
+  "lon": 2.372,
+  "city": "Paris"
+ },
+ "Parc de la Villette": {
+  "lat": 48.8938,
+  "lon": 2.3904,
+  "city": "Paris"
+ },
+ "Grande Halle de la Villette": {
+  "lat": 48.8913,
+  "lon": 2.3906,
+  "city": "Paris"
+ },
+ "Paris La Défense": {
+  "lat": 48.892,
+  "lon": 2.238,
+  "city": "Puteaux"
+ },
+ "Parvis de La Défense": {
+  "lat": 48.892,
+  "lon": 2.238,
+  "city": "Puteaux"
+ },
+ "Stade Sébastien Charléty": {
+  "lat": 48.8189,
+  "lon": 2.3465,
+  "city": "Paris"
+ },
+ "Centre sportif Suzanne Lenglen": {
+  "lat": 48.832,
+  "lon": 2.275,
+  "city": "Paris"
+ },
+ "Palais des Sports Marcel Cerdan": {
+  "lat": 48.8925,
+  "lon": 2.2847,
+  "city": "Levallois-Perret"
+ },
+ "Palais des sports Maurice Thorez": {
+  "lat": 48.8889,
+  "lon": 2.2125,
+  "city": "Nanterre"
+ },
+ "Stade Yves-du-Manoir": {
+  "lat": 48.929,
+  "lon": 2.248,
+  "city": "Colombes"
+ },
+ "Stade olympique Yves-du-Manoir": {
+  "lat": 48.929,
+  "lon": 2.248,
+  "city": "Colombes"
+ },
+ "Arena Porte de La Chapelle": {
+  "lat": 48.8998,
+  "lon": 2.3587,
+  "city": "Paris"
+ },
+ "Piscine Georges-Vallerey": {
+  "lat": 48.877,
+  "lon": 2.406,
+  "city": "Paris"
+ },
+ "Centre aquatique olympique": {
+  "lat": 48.9216,
+  "lon": 2.3564,
+  "city": "Saint-Denis"
+ },
+ "Bercy": {
+  "lat": 48.8386,
+  "lon": 2.3785,
+  "city": "Paris"
+ },
+ "Zénith Paris": {
+  "lat": 48.8941,
+  "lon": 2.3936,
+  "city": "Paris"
+ },
+ "Salle Wagram": {
+  "lat": 48.8781,
+  "lon": 2.298,
+  "city": "Paris"
+ },
+ "Cirque d'Hiver": {
+  "lat": 48.8633,
+  "lon": 2.3672,
+  "city": "Paris"
+ },
+ "Stade Émile-Anthoine": {
+  "lat": 48.855,
+  "lon": 2.29,
+  "city": "Paris"
+ },
+ "Patinoire de Bercy": {
+  "lat": 48.8386,
+  "lon": 2.3785,
+  "city": "Paris"
+ },
+ "Patinoire Sonja Henie": {
+  "lat": 48.8386,
+  "lon": 2.3785,
+  "city": "Paris"
+ },
+ "Stade Georges Carcassonne": {
+  "lat": 48.892,
+  "lon": 2.295,
+  "city": "Levallois-Perret"
+ },
+ "Pont d'Iéna": {
+  "lat": 48.86,
+  "lon": 2.293,
+  "city": "Paris"
+ },
+ "Trocadéro": {
+  "lat": 48.8616,
+  "lon": 2.2893,
+  "city": "Paris"
+ },
+ "Esplanade des Invalides": {
+  "lat": 48.861,
+  "lon": 2.314,
+  "city": "Paris"
+ },
+ "Place de la Bastille": {
+  "lat": 48.8532,
+  "lon": 2.3691,
+  "city": "Paris"
+ },
+ "Parc de Sceaux": {
+  "lat": 48.77,
+  "lon": 2.297,
+  "city": "Sceaux"
+ },
+ "Stade Louis Lumière": {
+  "lat": 48.855,
+  "lon": 2.408,
+  "city": "Paris"
+ },
+ "Stade Jules Ladoumègue": {
+  "lat": 48.8857,
+  "lon": 2.399,
+  "city": "Paris"
+ },
+ "Stade Pershing": {
+  "lat": 48.834,
+  "lon": 2.437,
+  "city": "Paris"
+ },
+ "Stade Déjerine": {
+  "lat": 48.8577,
+  "lon": 2.413,
+  "city": "Paris"
+ },
+ "Le Dôme de Paris": {
+  "lat": 48.832,
+  "lon": 2.2875,
+  "city": "Paris"
+ },
+ "Dôme de Paris - Palais des Sports": {
+  "lat": 48.832,
+  "lon": 2.2875,
+  "city": "Paris"
+ },
+ "Palais des Sports": {
+  "lat": 48.832,
+  "lon": 2.2875,
+  "city": "Paris"
+ },
+ "Gymnase Japy": {
+  "lat": 48.8556,
+  "lon": 2.3791,
+  "city": "Paris"
+ },
+ "Institut national du sport (INSEP)": {
+  "lat": 48.834,
+  "lon": 2.456,
+  "city": "Paris"
+ },
+ "INSEP": {
+  "lat": 48.834,
+  "lon": 2.456,
+  "city": "Paris"
+ },
+ "Base nautique de Vaires-sur-Marne": {
+  "lat": 48.8635,
+  "lon": 2.626,
+  "city": "Vaires-sur-Marne"
+ },
+ "Parc des Expositions Paris-Le Bourget": {
+  "lat": 48.95,
+  "lon": 2.43,
+  "city": "Le Bourget"
+ },
+ "Parc Floral de Paris": {
+  "lat": 48.838,
+  "lon": 2.442,
+  "city": "Paris"
+ },
+ "Arena Grand Paris": {
+  "lat": 48.959,
+  "lon": 2.55,
+  "city": "Tremblay-en-France"
+ },
+ "Plenitude Arena": {
+  "lat": 48.8956,
+  "lon": 2.229,
+  "city": "Nanterre"
+ },
+ "Stade Sébastien-Charléty": {
+  "lat": 48.8189,
+  "lon": 2.3465,
+  "city": "Paris"
+ },
+ "Centre Aquatique Olympique": {
+  "lat": 48.9216,
+  "lon": 2.3564,
+  "city": "Saint-Denis"
+ }
 }
