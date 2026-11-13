@@ -237,3 +237,5 @@ input, select { font: inherit; color: var(--text); }
 .m-aff .cap { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .m-aff .basis { margin-top: 8px; font-size: 12px; color: var(--muted); }
 .m-aff .basis a { color: var(--green); }
+.gauge.capo { color: var(--muted); font: 700 12px var(--head); text-transform: uppercase; }
+.gauge.capo b { color: var(--text); }

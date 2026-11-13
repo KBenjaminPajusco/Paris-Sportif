@@ -63,3 +63,14 @@ En local :
 python3 scripts/fetch_opendata.py && python3 scripts/build.py
 cd docs && python3 -m http.server 8000
 ```
+
+## Indicateur d'affluence
+
+Chaque événement porte une estimation du public attendu (jauge 1 à 5 barres, chiffre, taux de remplissage) calculée par `scripts/affluence.py` à partir de `data/attendance.json` :
+
+- **Matchs** : affluence moyenne 2025-26 du club qui reçoit (PSG, Paris FC, Stade Français, Racing 92, Paris Basketball…), plafonnée à la capacité du stade ; « guichets fermés » quand le club joue habituellement à guichets fermés (PSG, XV de France).
+- **Grands événements** : fréquentation de la dernière édition (par jour si l'événement dure plusieurs jours).
+- **Courses** : nombre de participants de la dernière édition.
+- Sinon : capacité du lieu seule (« max »).
+
+Badges : *Complet probable* (≥ 95 %), *Places rares* (≥ 80 %), *Places dispo*. Le **nombre exact de places restantes n'est pas publié** par les billetteries (aucune source publique sans clé d'API / accord partenaire) : c'est une estimation, chaque chiffre renvoie à sa source.

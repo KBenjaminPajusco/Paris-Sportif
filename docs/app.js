@@ -101,9 +101,10 @@
 
   // ---------- affluence ----------
   const fmtN = n => n >= 10000 ? Math.round(n / 1000) + "k" : n >= 1000 ? (n / 1000).toFixed(1).replace(".0", "").replace(".", ",") + "k" : String(n);
-  const fullN = n => Math.round(n).toLocaleString("fr-FR");
+  const fullN = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0");
   function gauge(a, big) {
-    if (!a || !a.level) return "";
+    if (!a) return "";
+    if (!a.level) return a.cap && !big ? `<span class="gauge capo" title="Capacité du lieu : ${fullN(a.cap)} places (affluence moyenne inconnue)">max <b>${fmtN(a.cap)}</b></span>` : "";
     const bars = [1, 2, 3, 4, 5].map(i => `<i class="${i <= a.level ? "on l" + a.level : ""}"></i>`).join("");
     return `<span class="gauge ${big ? "big" : ""}" title="Affluence attendue : ${a.n ? "≈ " + fullN(a.n) + " " + a.unit : "—"}${a.cap ? " · capacité " + fullN(a.cap) : ""}"><span class="bars">${bars}</span>${a.n ? `<b>${fmtN(a.n)}</b>` : ""}</span>`;
   }
@@ -282,7 +283,7 @@
       </div>
       ${e.aff ? `<div class="m-aff">
         <div class="k">Affluence attendue</div>
-        <div class="row-aff">${gauge(e.aff, true)}<div><div class="v">${e.aff.n ? `≈ ${fullN(e.aff.n)} <small>${esc(e.aff.unit)}</small>` : "—"}</div>
+        <div class="row-aff">${gauge(e.aff, true)}<div><div class="v">${e.aff.n ? `≈ ${fullN(e.aff.n)} <small>${esc(e.aff.unit)}</small>` : `<small>Affluence moyenne non publiée</small>`}</div>
         ${e.aff.cap ? `<div class="capbar"><span style="width:${Math.round((e.aff.fill || 0) * 100)}%"></span></div><div class="cap">Capacité ${fullN(e.aff.cap)} places${e.aff.fill ? ` · remplissage estimé ${Math.round(e.aff.fill * 100)} %` : ""} ${availability(e.aff)}</div>` : ""}</div></div>
         <div class="basis">${e.aff.basis ? "Base : " + esc(e.aff.basis) + (e.aff.approx ? " (approx.)" : "") : "Capacité du lieu uniquement"}${e.aff.src ? ` · <a href="${esc(e.aff.src)}" target="_blank" rel="noopener">source</a>` : ""}. Estimation : le nombre exact de places restantes n'est pas publié, vérifiez sur la billetterie.</div>
       </div>` : ""}

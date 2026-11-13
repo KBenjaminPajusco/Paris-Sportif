@@ -1,0 +1,970 @@
+{
+ "_meta": {
+  "compiled": "2026-11-13",
+  "notes": "null = no sourced figure found. approx=true when the figure is an organiser estimate, a rounded/pre-event figure, a third-party listing, or derived (derivation explained in 'note'). fill_rate values are avg_attendance / venue capacity unless the source states a rate."
+ },
+ "venues": {
+  "Parc des Princes": {
+   "capacity": 47929,
+   "by_sport": {
+    "Football": 47929
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Parc_des_Princes"
+  },
+  "Stade Jean-Bouin": {
+   "capacity": 20000,
+   "by_sport": {
+    "Football": 20000,
+    "Rugby": 20000
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Stade_Jean-Bouin_(Paris)",
+   "aliases": [
+    "Stade Jean Bouin"
+   ]
+  },
+  "Stade de France": {
+   "capacity": 81338,
+   "by_sport": {
+    "Football": 81338,
+    "Rugby": 81338,
+    "Athletics": 77083
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Stade_de_France"
+  },
+  "Plenitude Arena": {
+   "aliases": [
+    "Paris La Défense Arena",
+    "Paris La Defense Arena",
+    "U Arena"
+   ],
+   "capacity": 30680,
+   "by_sport": {
+    "Rugby": 30680,
+    "Concert": 45000,
+    "Basketball": 17487,
+    "Tennis": 23000,
+    "Supercross": 20000
+   },
+   "approx": false,
+   "note": "Renamed Plenitude Arena 1 July 2026. Rugby 30,680 (infobox) / 30,681 (body); concerts 45,000. Basketball value = record crowd Nanterre 92 v Monaco 2025-26 (LNB), not an official configuration capacity (approx). Tennis = 'up to 23,000 per session' for Rolex Paris Masters (approx). Supercross = 'more than 20,000 per day' per organisers (approx). Minimum modular config ~5,000. Racing 92 leaves the arena end of Dec 2026.",
+   "source": "https://en.wikipedia.org/wiki/Paris_La_D%C3%A9fense_Arena",
+   "sources_extra": [
+    "https://www.sportbusiness.club/?p=199707",
+    "https://radiosports.fr/?p=12844",
+    "https://radiosports.fr/42%E1%B5%89-edition-du-supercross-de-paris-les-15-16-novembre-2025-a-paris-la-defense-arena.html"
+   ]
+  },
+  "Accor Arena": {
+   "capacity": 15609,
+   "by_sport": {
+    "Basketball": 15609,
+    "Handball": 15609,
+    "Tennis": 15609,
+    "Boxing": 16394,
+    "Ice hockey": 13877,
+    "Athletics": 10910,
+    "Concert": 20300,
+    "Judo": 12596
+   },
+   "approx": false,
+   "note": "Judo value is a per-day derivation (25,192 spectators over the 2-day Paris Grand Slam 2026 / 2), approx; no official judo configuration found. NBA Paris Game sold out at 15,979 (Jan 2025).",
+   "source": "https://en.wikipedia.org/wiki/Accor_Arena",
+   "sources_extra": [
+    "https://statsdmz.nba.com/pdfs/20250125/20250125_INDSAS_book.pdf"
+   ],
+   "aliases": [
+    "Bercy"
+   ]
+  },
+  "Adidas Arena": {
+   "aliases": [
+    "Arena Porte de la Chapelle"
+   ],
+   "capacity": 8000,
+   "by_sport": {
+    "Basketball": 8000,
+    "Concert": 9000
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Adidas_Arena"
+  },
+  "Stade Pierre de Coubertin": {
+   "capacity": 4200,
+   "by_sport": {
+    "Basketball": 4200,
+    "Handball": 4200,
+    "Boxing": 4836
+   },
+   "approx": false,
+   "note": "Wikipedia gives 4,200 for basketball; handball assumed identical court footprint (approx for handball). One wiki mirror cites 4,016.",
+   "source": "https://en.wikipedia.org/wiki/Stade_Pierre_de_Coubertin_(Paris)",
+   "aliases": [
+    "Pierre-de-Coubertin",
+    "Coubertin"
+   ]
+  },
+  "Stade Charléty": {
+   "capacity": 19142,
+   "by_sport": {
+    "Football": 19142,
+    "Athletics": 19142
+   },
+   "approx": false,
+   "note": "Infobox 19,142; lead says ~20,000. Meeting de Paris 2026 sold out at ~19,000.",
+   "source": "https://en.wikipedia.org/wiki/Stade_S%C3%A9bastien_Charl%C3%A9ty",
+   "aliases": [
+    "Stade Sébastien-Charléty",
+    "Stade Sebastien Charlety",
+    "Charléty"
+   ]
+  },
+  "Salle Pierre Charpy": {
+   "capacity": 1850,
+   "by_sport": {
+    "Volleyball": 1850
+   },
+   "approx": true,
+   "note": "1,400-1,850 depending on retractable stands.",
+   "source": "https://arenasmap.com/salle-pierre-charpy",
+   "aliases": [
+    "Salle Charpy"
+   ]
+  },
+  "Stade Bauer": {
+   "capacity": 6600,
+   "by_sport": {
+    "Football": 6600
+   },
+   "approx": false,
+   "note": "Capacity 4,600 during most of 2025-26; north stand opened late Oct 2026 raising it to 6,600; west stand rebuilt from Sept 2026 (more capacity later). Wikipedia EN still lists 5,600; LFP-derived tables list 10,000 (target).",
+   "source": "https://fr.wikipedia.org/wiki/Stade_Bauer",
+   "aliases": [
+    "Bauer"
+   ]
+  },
+  "Palais des Sports Marcel-Cerdan": {
+   "capacity": 4000,
+   "by_sport": {
+    "Basketball": 4000,
+    "Volleyball": 4000
+   },
+   "approx": true,
+   "note": "Most sources 4,000; one blog says 2,500 max for volley.",
+   "source": "https://en.wikipedia.org/wiki/Palais_des_sports_Marcel-Cerdan",
+   "aliases": [
+    "Marcel Cerdan"
+   ]
+  },
+  "Palais des Sports Maurice-Thorez": {
+   "capacity": 3000,
+   "by_sport": {
+    "Basketball": 3000
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Palais_des_Sports_Maurice_Thorez",
+   "aliases": [
+    "Maurice-Thorez",
+    "Maurice Thorez"
+   ]
+  },
+  "Gymnase Joliot-Curie": {
+   "capacity": null,
+   "by_sport": {},
+   "approx": true,
+   "note": "No published spectator capacity found for the Le Plessis-Robinson gym (a 600 figure found online refers to a different Joliot-Curie gym in Gennevilliers).",
+   "source": "https://www.sports.gouv.fr/gymnase-joliot-curie"
+  },
+  "Campus PSG": {
+   "aliases": [
+    "Campus PSG Poissy",
+    "Stade du Campus PSG"
+   ],
+   "capacity": 3000,
+   "by_sport": {
+    "Football": 3000
+   },
+   "approx": true,
+   "note": "Planned capacity from 2017 project (3,000, expandable to 5,000); no official current figure found. Big PSG Féminines matches (e.g. v OL Lyonnes) are moved to the Parc des Princes.",
+   "source": "https://www.culturepsg.com/news/club/le-futur-campus-psg-se-devoile-peu-a-peu/15897"
+  },
+  "Halle Georges-Carpentier": {
+   "capacity": 5009,
+   "by_sport": {
+    "Basketball": 5009
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/Halle_Georges_Carpentier",
+   "aliases": [
+    "Halle Carpentier",
+    "Georges Carpentier"
+   ]
+  },
+  "Stade Roland-Garros": {
+   "capacity": 15225,
+   "by_sport": {
+    "Tennis (Court Philippe-Chatrier)": 15225,
+    "Tennis (Court Suzanne-Lenglen)": 10068,
+    "Tennis (Court Simonne-Mathieu)": 5000
+   },
+   "site_daily_capacity": null,
+   "approx": false,
+   "note": "Daily site gauge sources conflict (one 2026 post-event article says 77,000, the FFT pre-event conference said 20,000 more/day); not reliable. See events.Roland-Garros for daily attendance derived from totals.",
+   "source": "https://en.wikipedia.org/wiki/Stade_Roland_Garros",
+   "aliases": [
+    "Roland-Garros"
+   ]
+  },
+  "Hippodrome de Paris-Vincennes": {
+   "capacity": 35000,
+   "by_sport": {
+    "Trot": 35000
+   },
+   "approx": false,
+   "note": "Operator figure 35,000; stands built for ~40,000 (Prix d'Amérique).",
+   "source": "https://en.wikipedia.org/wiki/Hippodrome_de_Vincennes",
+   "aliases": [
+    "Hippodrome de Vincennes",
+    "Vincennes (hippodrome)"
+   ]
+  },
+  "ParisLongchamp": {
+   "capacity": 50000,
+   "by_sport": {
+    "Galop": 50000
+   },
+   "approx": true,
+   "note": "Press figure; France Galop says capacity is modular.",
+   "source": "https://www.sudradio.fr/lhippodrome-de-longchamp-decouvrez-les-secrets-du-plus-celebre-turf-au-monde",
+   "aliases": [
+    "Hippodrome de Longchamp",
+    "Paris Longchamp",
+    "Longchamp"
+   ]
+  },
+  "Hippodrome d'Auteuil": {
+   "capacity": 40000,
+   "by_sport": {
+    "Obstacle": 40000
+   },
+   "approx": true,
+   "note": "Tourist-site figure (40,000 incl. 4,800 seated); not confirmed by France Galop.",
+   "source": "https://www.sudradio.fr/lhippodrome-dauteuil-le-temple-de-lobstacle",
+   "aliases": [
+    "Auteuil"
+   ]
+  },
+  "Hippodrome de Saint-Cloud": {
+   "capacity": 15000,
+   "by_sport": {
+    "Galop": 15000
+   },
+   "approx": true,
+   "note": "15,000 incl. 5,000 seated (betting site, unverified).",
+   "source": "https://www.turfoo.fr/hippodromes/saint-cloud/"
+  },
+  "Grand Palais": {
+   "capacity": null,
+   "by_sport": {
+    "Show jumping (Saut Hermès)": null
+   },
+   "approx": true,
+   "note": "No published stand capacity for the Saut Hermès configuration found.",
+   "source": "https://www.sauthermes.com/en/"
+  },
+  "Vélodrome National SQY": {
+   "aliases": [
+    "Vélodrome de Saint-Quentin-en-Yvelines",
+    "Vélodrome National"
+   ],
+   "capacity": 5000,
+   "by_sport": {
+    "Track cycling": 5000
+   },
+   "approx": false,
+   "source": "https://en.wikipedia.org/wiki/V%C3%A9lodrome_de_Saint-Quentin-en-Yvelines"
+  },
+  "Centre Aquatique Olympique": {
+   "capacity": 2500,
+   "by_sport": {
+    "Swimming/Diving (legacy)": 2500,
+    "Olympic mode 2024": 5000
+   },
+   "approx": false,
+   "note": "Post-Games legacy capacity 2,500.",
+   "source": "https://en.wikipedia.org/wiki/Paris_Aquatic_Centre",
+   "aliases": [
+    "Centre aquatique olympique"
+   ]
+  },
+  "Golf National": {
+   "capacity": 80000,
+   "by_sport": {
+    "Golf": 80000
+   },
+   "approx": true,
+   "note": "'Capacity for 80,000 spectators' (site/event cap, not daily seated). Ryder Cup 2018 drew >270,000 over the week.",
+   "source": "https://en.wikipedia.org/wiki/Le_Golf_National",
+   "aliases": [
+    "Le Golf National"
+   ]
+  },
+  "Zénith Paris": {
+   "capacity": 6300,
+   "by_sport": {
+    "Concert/Show": 6300
+   },
+   "approx": false,
+   "note": "Infobox 6,300; text 6,293; some standing configs >7,000.",
+   "source": "https://en.wikipedia.org/wiki/Z%C3%A9nith_Paris",
+   "aliases": [
+    "Zénith"
+   ]
+  },
+  "Arena Grand Paris": {
+   "aliases": [
+    "Arena Grand Paris Tremblay"
+   ],
+   "capacity": 7500,
+   "by_sport": {
+    "Handball": 7500,
+    "Concert seated": 6500,
+    "Concert standing": 8000
+   },
+   "approx": false,
+   "note": "Second hall up to 2,000 (handball).",
+   "source": "https://www.pss-archi.eu/immeubles/FR-93073-72893.html"
+  },
+  "Paris Expo Porte de Versailles": {
+   "capacity": null,
+   "by_sport": {
+    "HYROX": null
+   },
+   "approx": true,
+   "note": "No hall seating capacity found. HYROX Paris Oct 2025 hosted 17,000+ athletes over 4 days (see events.HYROX Paris).",
+   "source": "https://france.hyrox.com/event/hyrox-paris-porte-de-versailles-i-season-25-26-5r4il4"
+  }
+ },
+ "clubs": {
+  "PSG": {
+   "match": "PSG|Paris Saint-Germain|Paris SG",
+   "sport": "Football",
+   "competition": "Ligue 1",
+   "venue": "Parc des Princes",
+   "avg_attendance": 47577,
+   "season": "2025-26",
+   "fill_rate": 0.99,
+   "sold_out_usual": true,
+   "approx": false,
+   "note": "Mid-season LFP-based ranking: 47,703 avg, 100% fill. Sold-out streak >170 consecutive matches (Oct 2025).",
+   "source": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Paris_Saint-Germain_FC_season",
+   "sources_extra": [
+    "https://www.90min.com/fr/ligue-1-le-classement-des-meilleures-affluences-de-la-saison-devoile-avec-l-om-et-le-psg-tres-bien-places-13-01-2026"
+   ]
+  },
+  "Paris FC": {
+   "match": "Paris FC|PFC",
+   "sport": "Football",
+   "competition": "Ligue 1",
+   "venue": "Stade Jean-Bouin",
+   "avg_attendance": 16899,
+   "season": "2025-26",
+   "fill_rate": 0.89,
+   "sold_out_usual": false,
+   "approx": false,
+   "note": "Full-season avg 16,899 (Wikipedia infobox). Fill rate 89% is the mid-season LFP figure (17,434 avg over first half). One home match drew 39,053 (likely moved to a bigger stadium).",
+   "source": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Paris_FC_season",
+   "sources_extra": [
+    "https://www.90min.com/fr/ligue-1-le-classement-des-meilleures-affluences-de-la-saison-devoile-avec-l-om-et-le-psg-tres-bien-places-13-01-2026"
+   ]
+  },
+  "Red Star": {
+   "match": "Red Star",
+   "sport": "Football",
+   "competition": "Ligue 2",
+   "venue": "Stade Bauer",
+   "avg_attendance": 4563,
+   "season": "2025-26",
+   "fill_rate": 0.99,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "Avg 4,563 (14th of 18 in L2). fill_rate derived vs 4,600 capacity in force during 2025-26 (approx). Capacity now 6,600 (Oct 2026), so 2026-27 fill should be lower. | Capacité portée à 6 600 fin oct. 2026 : on retient la moyenne 2025-26 plutôt qu'un guichets fermés.",
+   "source": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Ligue_2"
+  },
+  "PSG Féminines": {
+   "match": "(PSG|Paris Saint-Germain) F[ée]minines?",
+   "sport": "Football",
+   "competition": "Arkema Première Ligue",
+   "venue": "Campus PSG",
+   "avg_attendance": null,
+   "league_avg_attendance": 2086,
+   "season": "2025-26 (first half, league-wide)",
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "No club average found. League first-half avg 2,086/match (FFF). PSG v OL Lyonnes moved to Parc des Princes: >13,000 tickets sold (Jan 2026); 20,489 in 2024-25.",
+   "source": "https://www.fff.fr/article/16021-les-grands-stades-boosteurs-d-affluences.html"
+  },
+  "Paris FC Féminines": {
+   "match": "Paris FC F[ée]minines?",
+   "sport": "Football",
+   "competition": "Arkema Première Ligue",
+   "venue": "Stade Charléty",
+   "avg_attendance": null,
+   "league_avg_attendance": 2086,
+   "season": "2025-26 (first half, league-wide)",
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "No club average found; Paris FC not among the top-3 league averages (Nantes 5,776, OL Lyonnes 5,001, Lens 4,277).",
+   "source": "https://www.fff.fr/article/16021-les-grands-stades-boosteurs-d-affluences.html"
+  },
+  "Stade Français Paris": {
+   "match": "Stade Français|Stade Francais",
+   "sport": "Rugby",
+   "competition": "Top 14",
+   "venue": "Stade Jean-Bouin",
+   "avg_attendance": 14357,
+   "season": "2025-26",
+   "fill_rate": 0.72,
+   "sold_out_usual": false,
+   "approx": false,
+   "note": "fill_rate derived vs 20,000. Some big matches sold out (e.g. v La Rochelle, June 2026). Occasional matches at Stade de France.",
+   "source": "https://www.rugbypass.com/fr/news/stade-francais-top-14-2026-2027/"
+  },
+  "Racing 92": {
+   "match": "Racing 92|Racing",
+   "sport": "Rugby",
+   "competition": "Top 14",
+   "venue": "Plenitude Arena",
+   "avg_attendance": 11194,
+   "season": "2025-26",
+   "fill_rate": 0.36,
+   "sold_out_usual": false,
+   "approx": false,
+   "note": "fill_rate derived vs 30,680 full rugby capacity (arena is often configured smaller). Club leaves the arena end Dec 2026 (last match: derby v Stade Français); early 2026-27 matches relocated (3 at Créteil); new Yves-du-Manoir stadium (Colombes) in 2027.",
+   "source": "https://www.rugbypass.com/news/racing-92-top-14-2026-2027/"
+  },
+  "Paris Basketball (Betclic Élite)": {
+   "match": "Paris Basketball|Paris Basket",
+   "sport": "Basketball",
+   "competition": "Betclic Élite",
+   "venue": "Adidas Arena",
+   "avg_attendance": 6200,
+   "season": "2025-26",
+   "fill_rate": 0.78,
+   "sold_out_usual": false,
+   "approx": false,
+   "note": "Highest average in Betclic Élite (league avg 4,237, 93% fill). fill_rate derived vs 8,000. Mid-season avg 5,928.",
+   "source": "https://www.sportbusiness.club/?p=199707",
+   "sources_extra": [
+    "https://cdn.lnb.fr/uploads/content-library/687ea1e199dab29092ca8ac72dc0937673aa5b25b224170756a37d8b45bf1623.pdf"
+   ]
+  },
+  "Paris Basketball (EuroLeague)": {
+   "match": "Paris Basketball|Paris Basket",
+   "sport": "Basketball",
+   "competition": "EuroLeague",
+   "venue": "Adidas Arena",
+   "avg_attendance": null,
+   "season": "2025-26",
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "No club EuroLeague average found. Sample: v Bayern 6 Nov 2025 = 5,043. EuroLeague regular-season league avg 10,589 (Sportcal). Some games moved to Accor Arena.",
+   "source": "https://fcbayern.com/basketball/en/games/profis/euroleague/25-26/paris-basketball-fc-bayern-basketball-06-11-2025/standings",
+   "sources_extra": [
+    "https://www.sportcal.com/news/euroleague-sets-viewership-and-attendance-records-for-2025-26-season/"
+   ]
+  },
+  "Nanterre 92": {
+   "match": "Nanterre",
+   "sport": "Basketball",
+   "competition": "Betclic Élite",
+   "venue": "Palais des Sports Maurice-Thorez",
+   "avg_attendance": null,
+   "season": "2025-26",
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "No average found. Record league crowd of 2025-26: 17,487 for Nanterre 92 v Monaco at Paris La Défense Arena (one-off). Usual venue capacity 3,000.",
+   "source": "https://www.sportbusiness.club/?p=199707"
+  },
+  "PSG Handball": {
+   "match": "PSG Handball|Paris Saint-Germain Handball|PSG Hand",
+   "sport": "Handball",
+   "competition": "Starligue",
+   "venue": "Stade Pierre de Coubertin",
+   "avg_attendance": null,
+   "season": "2025-26",
+   "fill_rate": null,
+   "sold_out_usual": null,
+   "approx": true,
+   "note": "No LNH average found. Some matches relocated to Accor Arena (e.g. v Nantes 27 May 2026) or Arena Grand Paris (at Tremblay).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/339430-handball-paris-saint-germain-vs-nantes-an-exceptional-league-showdown-at-the-accor-arena"
+  },
+  "Paris Volley": {
+   "match": "Paris Volley",
+   "sport": "Volleyball",
+   "competition": "Marmara SpikeLigue",
+   "venue": "Salle Pierre Charpy",
+   "avg_attendance": 1169,
+   "season": "2025-26",
+   "fill_rate": 0.63,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "Mean of two sampled home matches only (988 v Toulouse 28 Oct 2025; 1,350 v Tours 3 Jan 2026, Global Sports Archive). fill_rate derived vs 1,850.",
+   "source": "https://globalsportsarchive.com/match/volleyball/2025-10-28/paris-volley-vs-spacers-toulouse-vb/3876669/",
+   "sources_extra": [
+    "https://globalsportsarchive.com/match/volleyball/2026-01-03/paris-volley-vs-tours-vb/3877032/"
+   ]
+  },
+  "Plessis-Robinson Volley": {
+   "match": "Plessis-Robinson|Plessis Robinson",
+   "sport": "Volleyball",
+   "competition": "Ligue A / Ligue B",
+   "venue": "Gymnase Joliot-Curie",
+   "avg_attendance": null,
+   "season": null,
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "No attendance data found.",
+   "source": "https://www.sports.gouv.fr/gymnase-joliot-curie"
+  },
+  "Mariannes 92": {
+   "match": "Mariannes 92|Levallois Paris Saint-Cloud|LPSC",
+   "sport": "Volleyball",
+   "competition": "Saforelle Power 6 (women)",
+   "venue": "Palais des Sports Marcel-Cerdan",
+   "avg_attendance": null,
+   "sample_attendances": {
+    "regular season 7 Dec 2024 v Cannes": 350,
+    "playoff QF 5 Apr 2025 v Bordeaux": 1079,
+    "playoff final 3 May 2025 v Nantes": 2452
+   },
+   "season": "2024-25 (samples)",
+   "fill_rate": null,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "Official LNV match sheets; no season average published.",
+   "source": "https://lnv.fr/pdf/2024/DataVolley/Women/LAF079-2025.pdf",
+   "sources_extra": [
+    "https://www.lnv.fr/pdf/2024/DataVolley/Women/FAZ001-2025.pdf"
+   ]
+  },
+  "France rugby (Stade de France)": {
+   "match": "France\\s*(-|v|vs|–)\\s*(Irlande|Ireland|Angleterre|England|Écosse|Scotland|Pays de Galles|Wales|Italie|Italy|Nouvelle-Zélande|New Zealand|Afrique du Sud|South Africa|Australie|Australia|Argentine|Argentina|Fidji|Fiji|Japon|Japan)",
+   "sport": "Rugby",
+   "competition": "Six Nations / Autumn Nations Series",
+   "venue": "Stade de France",
+   "avg_attendance": 80000,
+   "season": "2026 Six Nations",
+   "fill_rate": 0.98,
+   "sold_out_usual": true,
+   "approx": true,
+   "note": "France v Ireland 5 Feb 2026: 80,000, sold out. France v England 14 Mar 2026: 80,895 (Sky Sports, less certain).",
+   "source": "https://www.stadefrance.com/en/ticket/france-vs-ireland-2026",
+   "sources_extra": [
+    "https://www.skysports.com/rugby-union/france-vs-england/form/50113"
+   ]
+  },
+  "France football (Stade de France)": {
+   "match": "France\\s*(-|v|vs|–)\\s*\\w+|Équipe de France|Les Bleus",
+   "sport": "Football",
+   "competition": "Nations League / qualifiers / friendlies",
+   "venue": "Stade de France",
+   "avg_attendance": 77118,
+   "season": "2026 (France v Italy, 2 Oct 2026)",
+   "fill_rate": 0.95,
+   "sold_out_usual": false,
+   "approx": true,
+   "note": "Single-match figure. Big opponents sell out; low-profile games can be far lower (France v Israel Nov 2024: 16,611, a record low).",
+   "source": "https://footballgroundguide.com/news/biggest-football-attendances-in-europe-this-week-77000-at-stade-de-france-for-france-vs-italy-thrilling-draw.html",
+   "sources_extra": [
+    "https://www.75secondes.fr/actualites/16-611-spectateurs-au-stade-de-france-pour-france-israel"
+   ]
+  }
+ },
+ "events": {
+  "Roland-Garros": {
+   "match": "Roland[- ]Garros|French Open",
+   "attendance": 727500,
+   "daily": 39300,
+   "edition": "2026",
+   "unit": "spectateurs (entrées, incl. Opening Week qualifs)",
+   "approx": false,
+   "note": "Total 727,500 (record, +6%), incl. 138,000 during Opening Week. 'daily' = (727,500 - 138,000) / 15 main-draw days ≈ 39,300, a derived approximation. Court Philippe-Chatrier holds 15,225.",
+   "source": "https://info.fr/roland-garros-2026-bilan-record-727500-spectateurs/",
+   "sources_extra": [
+    "https://www.rolandgarros.com/fr-fr/article/journee-yannick-noah-2026-opening-week-record-affluence-fonds"
+   ]
+  },
+  "Rolex Paris Masters": {
+   "match": "Rolex Paris Masters|Paris Masters",
+   "attendance": 200000,
+   "daily": 23000,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "2026: 'over 200,000' (2nd year above 200k). 2025: ~220,000 of 228,000 tickets available. 'daily' = max per session (up to 23,000).",
+   "source": "https://www.tennismajors.com/?p=866391",
+   "sources_extra": [
+    "https://www.defense-92.fr/sport/rolex-paris-masters-2025-litalien-jannik-sinner-remporte-le-tournoi-face-au-canadien-felix-auger-aliassime-85372",
+    "https://radiosports.fr/?p=12844"
+   ]
+  },
+  "Prix d'Amérique": {
+   "match": "Prix d'Am[ée]rique",
+   "attendance": 55000,
+   "daily": null,
+   "edition": "2026",
+   "unit": "spectateurs (3-day Prix d'Amérique Festival)",
+   "approx": false,
+   "note": "Sunday race-day crowd 'highest since the Ourasi era' (no number); stands sized for ~40,000. Winter meeting 2025-26 total >225,000.",
+   "source": "https://statics.letrot.com/wletrotcom/uploads/media/05032026-cp-bilan-meeting-dhiver-2025-2026-69a95ff526771761628150.pdf"
+  },
+  "Prix de l'Arc de Triomphe": {
+   "match": "Arc de Triomphe|Qatar Prix de l'Arc",
+   "attendance": 33000,
+   "daily": 33000,
+   "edition": "2025",
+   "unit": "spectateurs (race day)",
+   "approx": false,
+   "note": "2026 (4 Oct) official figure not found; ~35,000 were expected (M6 pre-race).",
+   "source": "https://www.france-galop.com/en/content/qatar-prix-de-larc-de-triomphe-2025-look-back-weekend-remarkable-achievements-and"
+  },
+  "Grand Steeple-Chase de Paris": {
+   "match": "Grand Steeple[- ]Chase",
+   "attendance": 18000,
+   "daily": 18000,
+   "edition": "2025",
+   "unit": "spectateurs",
+   "approx": false,
+   "note": "Record 18,000 in 2025 (France Galop). 2026 figure (17 May) not found.",
+   "source": "https://www.francegalop-live.com/app/uploads/2025/05/CP-France-Galop-Grand-Steeple-Chase-de-Paris-Frequentation-record-pour-le-WE-Grand-Steeple-Chase-de-Paris-Boucle-video.pdf"
+  },
+  "Meeting de Paris": {
+   "match": "Meeting de Paris(?! Indoor)|Diamond League",
+   "attendance": 19000,
+   "daily": 19000,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "Sold out three weeks before (28 June 2026, Charléty).",
+   "source": "https://www.runblogrun.com/?p=110591",
+   "sources_extra": [
+    "https://paris.diamondleague.com/en/news/"
+   ]
+  },
+  "Paris Grand Slam judo": {
+   "match": "Paris Grand Slam|Grand Slam de judo|Judo",
+   "attendance": 25192,
+   "daily": 12596,
+   "edition": "2026",
+   "unit": "spectateurs (2 days)",
+   "approx": false,
+   "note": "Record (7-8 Feb 2026, Accor Arena). daily = total/2 (derived).",
+   "source": "https://www.sportbusiness.club/?p=193505"
+  },
+  "Saut Hermès": {
+   "match": "Saut Herm[eè]s",
+   "attendance": null,
+   "daily": null,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "No attendance figure published (20-22 Mar 2026, Grand Palais).",
+   "source": "https://www.sauthermes.com/en/?p=15955"
+  },
+  "Longines Paris Eiffel Jumping": {
+   "match": "Eiffel Jumping",
+   "attendance": null,
+   "daily": null,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "No figure found; free village + paid arena (19-21 June 2026).",
+   "source": "https://www.paris.fr/evenements/le-longines-paris-eiffel-jumping-2026-110338"
+  },
+  "Supercross Paris": {
+   "match": "Supercross",
+   "attendance": 40000,
+   "daily": 20000,
+   "edition": "2025",
+   "unit": "spectateurs (2 days)",
+   "approx": true,
+   "note": "Organisers: 'more than 20,000 spectators each day'; total = 2 x 20,000 (derived lower bound). 2026 edition 21-22 Nov.",
+   "source": "https://radiosports.fr/42%E1%B5%89-edition-du-supercross-de-paris-les-15-16-novembre-2025-a-paris-la-defense-arena.html"
+  },
+  "NBA Paris Game": {
+   "match": "NBA Paris",
+   "attendance": 15979,
+   "daily": 15979,
+   "edition": "2025 (25 Jan; 23 Jan game 15,935)",
+   "unit": "spectateurs",
+   "approx": false,
+   "note": "Sold out. No Paris game in 2026; 2027 game (14 Jan 2027, Spurs v Pelicans) already sold out.",
+   "source": "https://statsdmz.nba.com/pdfs/20250125/20250125_INDSAS_book.pdf",
+   "sources_extra": [
+    "https://www.eurohoops.net/en/nba-news/2010980/paris-manchester-nba-games-sold-out/"
+   ]
+  },
+  "Coupe de France final": {
+   "match": "finale.*Coupe de France|Coupe de France.*finale",
+   "attendance": 76000,
+   "daily": 76000,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "Lens 3-1 Nice, 22 May 2026, sold out; FFF 'environ 76,000'. 2025: 77,101.",
+   "source": "https://www.fff.fr/article/16838-la-finale-a-guichet-ferme.html"
+  },
+  "Top 14 final": {
+   "match": "finale.*Top 14|Top 14.*finale",
+   "attendance": 78411,
+   "daily": 78411,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": false,
+   "note": "Toulouse 28-20 Montpellier, 27 June 2026, Stade de France.",
+   "source": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Top_14_season"
+  },
+  "Tour de France final stage": {
+   "match": "Tour de France",
+   "attendance": null,
+   "daily": null,
+   "edition": "2026",
+   "unit": "spectateurs le long du parcours",
+   "approx": true,
+   "note": "No crowd count published for 2025/2026 Champs-Élysées/Montmartre finales. Reference: ASO said ~500,000 for the Paris 2024 Olympic road races on similar streets.",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/54458-arrival-of-the-2026-tour-de-france-in-paris-from-montmartre-to-the-champs-elysees-the-hotspots"
+  },
+  "Open de France golf": {
+   "match": "Open de France",
+   "attendance": null,
+   "daily": null,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "No attendance published (24-27 Sept 2026, Golf National; site cap 80,000). 2025 edition was at Saint-Nom-la-Bretèche.",
+   "source": "https://www.infosyvelines.fr/articles/guyancourt-open-de-france-golf-national-2026"
+  },
+  "HYROX Paris": {
+   "match": "HYROX",
+   "attendance": 17000,
+   "daily": 4250,
+   "edition": "Oct 2025 (Paris Expo, 4 days)",
+   "unit": "participants (athletes, excl. spectators)",
+   "approx": true,
+   "note": "'over 17,000 athletes' across four days; daily = 17,000/4 (derived). Dec 2026 edition runs 7 race days (12-20 Dec).",
+   "source": "https://france.hyrox.com/event/hyrox-paris-porte-de-versailles-i-season-25-26-5r4il4",
+   "sources_extra": [
+    "https://www.redbull.com/fr-fr/hyrox-paris-guide"
+   ]
+  },
+  "Holiday on Ice": {
+   "match": "Holiday on Ice",
+   "attendance": null,
+   "daily": 6300,
+   "edition": "2026",
+   "unit": "spectateurs",
+   "approx": true,
+   "note": "No attendance published; 'daily' = Zénith Paris capacity per show (upper bound). Feb 12-15 2026 at Zénith.",
+   "source": "https://www.sortiraparis.com/en/what-to-see-in-paris/shows/articles/321372-holiday-on-ice-figure-skating-show-zenith-de-paris"
+  },
+  "Salon du Cheval": {
+   "match": "Salon du Cheval",
+   "attendance": null,
+   "daily": null,
+   "edition": "2025",
+   "unit": "visiteurs",
+   "approx": true,
+   "note": "No 2025 figure found (12-14 Dec 2025, Paris Expo halls 4 & 6).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/shows-and-fairs/articles/42776-salon-du-cheval-de-paris-2025-date-and-program"
+  },
+  "Paris Nautic Show": {
+   "match": "Nautic",
+   "attendance": 40000,
+   "daily": 8000,
+   "edition": "2025",
+   "unit": "visiteurs (5 days, Le Bourget)",
+   "approx": true,
+   "note": "'près de 40,000'; daily = /5 (derived). 2026 edition 25-29 Nov at Le Bourget.",
+   "source": "https://www.tourmag.com/Le-Paris-Nautic-Show-2025-a-rassemble-pres-de-40-000-visiteurs_a129586.html"
+  },
+  "Breaking World Championships": {
+   "match": "Breaking|Hip[- ]Hop Freestyle",
+   "attendance": 12000,
+   "daily": null,
+   "edition": "2026 (4-6 Dec, Adidas Arena) - expected",
+   "unit": "spectateurs attendus",
+   "approx": true,
+   "note": "Pre-event expectation, not a count.",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/352918-hip-hop-breaking-freestyle-world-championships-at-arena-porte-de-la-chapelle"
+  }
+ },
+ "races": {
+  "Marathon de Paris": {
+   "match": "Marathon de Paris|Schneider Electric Marathon",
+   "participants": 57464,
+   "edition": "2026",
+   "unit": "finishers",
+   "registered": 58880,
+   "approx": false,
+   "source": "https://www.marathons.com/fr/divers/marathon-de-paris-2026-notre-recit-au-coeur-du-peloton-avec-57-464-finishers_6jo1",
+   "sources_extra": [
+    "https://info.fr/marathon-paris-2026-record-coureurs-58880/"
+   ]
+  },
+  "Semi de Paris": {
+   "match": "Semi de Paris|Semi-marathon de Paris",
+   "participants": 50000,
+   "edition": "2026",
+   "unit": "partants",
+   "approx": true,
+   "source": "https://www.hokasemideparis.fr/en/news/inclusive-united-in-solidarity-massive-50-000-runners-at-the-heart-of-paris-for-the-worlds-largest-half-marathon"
+  },
+  "20 km de Paris": {
+   "match": "20 ?km de Paris",
+   "participants": 35000,
+   "edition": "2026",
+   "unit": "participants",
+   "approx": true,
+   "source": "https://reference-trail.fr/resultats-20-km-de-paris-2026-les-podiums-dune-48e-edition-historique/"
+  },
+  "Paris-Versailles": {
+   "match": "Paris[- ]Versailles",
+   "participants": 25000,
+   "edition": "2026",
+   "unit": "inscrits (dossards, sold out)",
+   "approx": true,
+   "source": "https://www.marathons.com/en/paris-versailles/paris-versailles-melody-julien-completes-the-hat-trick-as-baptiste-jard-wins-on-his-debut_73j0"
+  },
+  "10 km Paris Centre": {
+   "match": "10 ?km (HOKA )?Paris Centre",
+   "participants": 16000,
+   "edition": "2026",
+   "unit": "participants",
+   "approx": true,
+   "source": "https://www.marathons.com/en/10-km/the-hoka-paris-centre-10k-keeps-getting-better_qe76"
+  },
+  "adidas 10K Paris": {
+   "match": "adidas 10K|10K Paris",
+   "participants": 44503,
+   "edition": "2026",
+   "unit": "finishers",
+   "approx": false,
+   "source": "https://www.marathons.com/news/adidas-10k-paris-2026-margaux-sieracki-retrouve-son-trone-mehdi-frere-signe-un-retour-gagnant/"
+  },
+  "La Parisienne": {
+   "match": "La Parisienne",
+   "participants": 21000,
+   "edition": "2025",
+   "unit": "participantes",
+   "approx": true,
+   "note": "2026 edition (13 Sept) announced ~20,000; no final count found.",
+   "source": "https://www.marathons.com/news/la-parisienne-2025-une-armee-de-super-heroines-dans-les-rues-de-paris/"
+  },
+  "Odyssea Paris": {
+   "match": "Odyss[ée]a",
+   "participants": null,
+   "edition": "2025",
+   "unit": "participants",
+   "approx": true,
+   "note": "No Paris-specific figure found (national Odysséa 2024: 45,000 across all French events).",
+   "source": "https://www.sortiraparis.com/en/what-to-do-in-paris/sport-wellness/articles/41756-odyssea-paris-2024-the-race-against-breast-cancer-returns-to-the-chateau-de-vincennes"
+  },
+  "Ekiden de Paris": {
+   "match": "Ekiden de Paris",
+   "participants": 9327,
+   "edition": "2025",
+   "unit": "inscrits (1,630 teams of 6)",
+   "approx": false,
+   "note": "2026 edition reported ~9,400 runners / 1,600 teams.",
+   "source": "https://www.marathons.com/news/le-decines-meyzieu-athletisme-sempare-du-record-de-france-au-maif-ekiden-de-paris/"
+  },
+  "EcoTrail Paris": {
+   "match": "Eco[Tt]rail",
+   "participants": 18500,
+   "edition": "2026 (spring, 9 races)",
+   "unit": "participants",
+   "approx": true,
+   "source": "https://www.marathons.com/fr/marathon/au-salomon-ecotrail-de-paris-blandine-l-hirondel-et-les-cols-verts-sensibilisent-a-l-environnement_k6y3"
+  },
+  "Urban Trail de Paris": {
+   "match": "Urban Trail",
+   "participants": null,
+   "edition": null,
+   "unit": null,
+   "approx": true,
+   "note": "No Paris Urban Trail participant figure found.",
+   "source": null
+  },
+  "Corrida de Noël d'Issy": {
+   "match": "Corrida.*Issy|Corrida de No[eë]l",
+   "participants": 12000,
+   "edition": "2025",
+   "unit": "participants (all races)",
+   "approx": true,
+   "note": "Miles Republic lists 9,030. 2026 edition 13 Dec.",
+   "source": "https://www.marathons.com/news/corrida-de-noel-dissy-les-moulineaux-12-000-coureurs-pour-celebrer-la-course-a-pied/"
+  },
+  "Cross du Figaro": {
+   "match": "Cross du Figaro",
+   "participants": 8221,
+   "edition": "2025",
+   "unit": "participants (registration platform)",
+   "approx": true,
+   "note": "Le Parisien expected ~12,000; Challenge Entreprises separate (3,751). 2026 edition 27-29 Nov.",
+   "source": "https://fr.milesrepublic.com/event/cross-du-figaro-7756"
+  },
+  "Course des Héros": {
+   "match": "Course des H[ée]ros",
+   "participants": null,
+   "edition": "2026",
+   "unit": null,
+   "approx": true,
+   "note": "No participant count found.",
+   "source": "https://www.coursedesheros.com/landing/paris.html"
+  },
+  "Saucony 10 km Tour Eiffel": {
+   "match": "10 ?km (de la )?Tour Eiffel",
+   "participants": 18771,
+   "edition": "2025",
+   "unit": "finishers",
+   "approx": false,
+   "note": "2026 edition 6 Dec.",
+   "source": "https://www.marathons.com/news/10-km-de-la-tour-eiffel-saucony-brahim-bakkou-et-mathilde-senechal-triomphent/"
+  },
+  "Grande Course du Grand Paris": {
+   "match": "Grande Course du Grand Paris",
+   "participants": 19200,
+   "edition": "2026",
+   "unit": "participants",
+   "approx": true,
+   "note": "Another report cites 16,000.",
+   "source": "https://www.marathons.com/fr/divers/la-grande-course-ratp-du-grand-paris-saint-denis-2026-19-200-coureurs-sur-la-piste-du-stade-de-france_58z5"
+  },
+  "Lions Paris 9 Run": {
+   "match": "Lions Paris 9|10 ?km du Neuf",
+   "participants": 3000,
+   "edition": "2026",
+   "unit": "participants",
+   "approx": true,
+   "source": "https://www.marathons.com/en/10-km/10-km-du-neuf-delivers-a-festive-21st-edition-with-3-000-runners_qg66"
+  },
+  "Run for Climate": {
+   "match": "Run for Climate",
+   "participants": 700,
+   "edition": "2025 (1st edition)",
+   "unit": "participants",
+   "approx": true,
+   "note": "2026 edition 29 Nov, Bois de Boulogne.",
+   "source": "https://www.marathons.com/en/10-km/run-for-climate-brings-700-runners-together-for-the-planet-in-paris_qep6"
+  }
+ },
+ "tickets_note": "No public source exposes remaining-ticket counts for these events without an API key. Ticketmaster Discovery API (free key, 5k calls/day) returns event status (onsale/offsale/cancelled), on-sale dates and sometimes price ranges, but not seats remaining. Inventory-level data (SeatGeek Platform API needs a client_id; StubHub/viagogo and Ticketmaster Partner/Inventory APIs need partner approval) shows resale listing counts/prices, not primary stock. Club/venue shops (PSG, Paris FC, Stade de France, Accor Arena, Roland-Garros) show only 'complet'/'dernières places' flags in HTML, and scraping them is usually against their terms. Practical keyless proxy: treat 'sold out' signals from official news pages plus the historical fill rates in this file as the availability estimate."
+}
