@@ -25,7 +25,8 @@ SPORT_ALIASES = {
     "kickboxing": "Boxe / Sports de combat", "boxe / mma": "Boxe / Sports de combat",
     "karate": "Arts martiaux", "karaté": "Arts martiaux", "taekwondo": "Arts martiaux", "judo": "Judo",
     "esport": "Esport", "e-sport": "Esport", "esports": "Esport",
-    "multisport": "Multisports", "multi-sports": "Multisports",
+    "multisport": "Multisports", "multi-sports": "Multisports", "roller": "Roller / Skate", "karting": "Sports mécaniques",
+    "breaking": "Danse", "cross country": "Course à pied", "randonnee": "Marche",
 }
 
 
@@ -39,6 +40,31 @@ def norm_sport(s: str | None) -> str:
         return "Autre"
     s = s.strip()
     return SPORT_ALIASES.get(norm_key(s), SPORT_ALIASES.get(s.lower(), s[0].upper() + s[1:]))
+
+
+CATEGORY_ALIASES = {
+    "competition spectateurs": "Grand événement", "competition": "Grand événement",
+    "course epreuve participative": "Course / épreuve participative", "course": "Course / épreuve participative",
+    "match": "Match pro", "match pro": "Match pro", "salon": "Salon", "spectacle": "Spectacle sportif",
+}
+VALID_CATEGORIES = ["Match pro", "Grand événement", "Course / épreuve participative", "Sport entreprise",
+                    "Sport universitaire", "Tournoi amateur", "Événement communautaire", "Spectacle sportif",
+                    "Salon", "Activité / initiation"]
+STOP = set("de du des la le les l d et a au aux en paris the 2026 2027 edition".split())
+
+
+def norm_category(c):
+    if c in VALID_CATEGORIES:
+        return c
+    k = norm_key(c or "")
+    for v in VALID_CATEGORIES:
+        if norm_key(v) == k:
+            return v
+    return CATEGORY_ALIASES.get(k, "Événement communautaire")
+
+
+def tokens(title):
+    return {w for w in norm_key(title).split() if w not in STOP and len(w) > 1}
 
 
 def norm_date(s):
@@ -80,7 +106,7 @@ def main():
         events += load_json(OPENDATA)
 
     today = (datetime.now(timezone.utc) + timedelta(hours=1)).strftime("%Y-%m-%d")
-    out, seen = [], {}
+    out, seen, by_day = [], {}, {}
     for e in events:
         title = (e.get("title") or "").strip()
         start = norm_date(e.get("date_start"))
@@ -95,7 +121,7 @@ def main():
             "id": e.get("id"),
             "title": title,
             "sport": norm_sport(e.get("sport")),
-            "category": e.get("category") or "Événement communautaire",
+            "category": norm_category(e.get("category")),
             "competition": e.get("competition"),
             "federation": e.get("federation"),
             "start": start,
@@ -116,6 +142,8 @@ def main():
             "image": e.get("image"),
             "source": e.get("source"),
         }
+        if ev["sport"] in ("Athlétisme", "Cross-country", "Multisports") and re.search(r"\b(run|course|corrida|cross|km|marathon|foulees)\b", norm_key(title)):
+            ev["sport"] = "Course à pied"
         if ev["lat"] is None and ev["venue"]:
             v = venue_index.get(norm_key(ev["venue"]))
             if not v:
@@ -130,15 +158,28 @@ def main():
             ev["id"] = "ev-" + hashlib.sha1(f"{title}|{start}|{ev['venue']}".encode()).hexdigest()[:10]
         # Dédoublonnage : même jour + titre proche
         key = (start[:10], norm_key(title))
-        if key in seen:
-            prev = seen[key]
+        prev = seen.get(key)
+        if not prev and not ev["recurring"]:
+            tk = tokens(title)
+            d0 = datetime.strptime(start[:10], "%Y-%m-%d")
+            near = [(d0 + timedelta(days=k)).strftime("%Y-%m-%d") for k in (0, -1, 1)]
+            for other in [o for d in near for o in by_day.get(d, [])]:
+                ot = tokens(other["title"])
+                if tk and ot and not other["recurring"] and other.get("_origin") != e.get("_file", "opendata") and len(tk & ot) / min(len(tk), len(ot)) >= 0.6:
+                    prev = other
+                    break
+        if prev:
             for k, v in ev.items():  # complète les champs manquants
                 if not prev.get(k) and v:
                     prev[k] = v
             continue
+        ev["_origin"] = e.get("_file", "opendata")
         seen[key] = ev
+        by_day.setdefault(start[:10], []).append(ev)
         out.append(ev)
 
+    for ev in out:
+        ev.pop("_origin", None)
     out.sort(key=lambda e: (e["start"], e["title"]))
     meta = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
