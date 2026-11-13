@@ -418,5 +418,100 @@
   "lat": 48.9216,
   "lon": 2.3564,
   "city": "Saint-Denis"
+ },
+ "Gymnase Joliot-Curie": {
+  "lat": 48.788,
+  "lon": 2.265,
+  "city": "Le Plessis-Robinson"
+ },
+ "Campus PSG": {
+  "lat": 48.917,
+  "lon": 2.03,
+  "city": "Poissy"
+ },
+ "Boulogne-Billancourt": {
+  "lat": 48.8352,
+  "lon": 2.241,
+  "city": "Boulogne-Billancourt"
+ },
+ "Centre-ville d'Issy-les-Moulineaux": {
+  "lat": 48.824,
+  "lon": 2.27,
+  "city": "Issy-les-Moulineaux"
+ },
+ "Butte Montmartre": {
+  "lat": 48.8867,
+  "lon": 2.3431,
+  "city": "Paris"
+ },
+ "Parc des Buttes-Chaumont": {
+  "lat": 48.8809,
+  "lon": 2.3828,
+  "city": "Paris"
+ },
+ "Place Raoul-Dautry": {
+  "lat": 48.842,
+  "lon": 2.321,
+  "city": "Paris"
+ },
+ "Panthéon": {
+  "lat": 48.8462,
+  "lon": 2.3464,
+  "city": "Paris"
+ },
+ "Stade Suzanne-Lenglen": {
+  "lat": 48.832,
+  "lon": 2.275,
+  "city": "Paris"
+ },
+ "Jardin des Tuileries": {
+  "lat": 48.8635,
+  "lon": 2.3275,
+  "city": "Paris"
+ },
+ "Rue de Rivoli": {
+  "lat": 48.86,
+  "lon": 2.34,
+  "city": "Paris"
+ },
+ "Hôpital Pitié-Salpêtrière": {
+  "lat": 48.838,
+  "lon": 2.364,
+  "city": "Paris"
+ },
+ "Paris 14e": {
+  "lat": 48.8331,
+  "lon": 2.3264,
+  "city": "Paris"
+ },
+ "Paris 15e": {
+  "lat": 48.8412,
+  "lon": 2.3003,
+  "city": "Paris"
+ },
+ "Paris 19e": {
+  "lat": 48.8817,
+  "lon": 2.3822,
+  "city": "Paris"
+ },
+ "Paris 20e": {
+  "lat": 48.8646,
+  "lon": 2.3984,
+  "city": "Paris"
+ },
+ "Télécom Paris": {
+  "lat": 48.713,
+  "lon": 2.2,
+  "city": "Palaiseau"
+ },
+ "Marcel-Cerdan": {
+  "lat": 48.8925,
+  "lon": 2.2847,
+  "city": "Levallois-Perret"
+ },
+ "La Seine": {
+  "lat": 48.85,
+  "lon": 2.27,
+  "city": "Paris"
  }
 }

@@ -1,0 +1,3108 @@
+[
+ {
+  "title": "Paris Volley – Tourcoing Lille Métropole",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J6",
+  "federation": "LNV",
+  "date_start": "2026-11-14T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Tourcoing Lille Métropole (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Stade Poitevin Volley Beach",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J6",
+  "federation": "LNV",
+  "date_start": "2026-11-14T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Stade Poitevin Volley Beach (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – HB Køge",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue des champions féminine",
+  "federation": "UEFA",
+  "date_start": "2026-11-19T18:45",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent HB Køge au Stade Charléty.",
+  "tags": [
+   "Féminin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Hapoel IBI Tel Aviv",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J13",
+  "federation": "Euroleague Basketball",
+  "date_start": "2026-11-19T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Hapoel IBI Tel Aviv à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – Pau FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J13",
+  "federation": "LFP",
+  "date_start": "2026-11-20T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Red Star FC reçoit Pau FC au Stade Bauer en Ligue 2.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Bordeaux-Mérignac Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J9",
+  "federation": "LNV",
+  "date_start": "2026-11-21T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Bordeaux-Mérignac Volley (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – SIG Strasbourg",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J9",
+  "federation": "LNB",
+  "date_start": "2026-11-21T20:30",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit SIG Strasbourg au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – US Saint-Malo",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J10",
+  "federation": "FFF / LFFP",
+  "date_start": "2026-11-21T21:00",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent US Saint-Malo au Campus PSG (Poissy).",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris FC – Angers SCO",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J11",
+  "federation": "LFP",
+  "date_start": "2026-11-22T15:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris FC reçoit Angers SCO au Stade Jean-Bouin en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – FC Fleury 91",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J10",
+  "federation": "FFF / LFFP",
+  "date_start": "2026-11-22T15:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent FC Fleury 91 au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – BCM Gravelines-Dunkerque",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J9",
+  "federation": "LNB",
+  "date_start": "2026-11-22T16:30",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit BCM Gravelines-Dunkerque à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – Tremblay en France Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J11",
+  "federation": "LNH",
+  "date_start": "2026-11-22T17:00",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit Tremblay en France Handball au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – AS Roma",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue des champions – Phase de ligue J5",
+  "federation": "UEFA",
+  "date_start": "2026-11-25T21:00",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit AS Roma au Parc des Princes en Ligue des champions.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Wisła Płock",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "EHF Champions League",
+  "federation": "EHF",
+  "date_start": "2026-11-26T20:45",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit Wisła Płock au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – RC Vannes",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J10",
+  "federation": "LNR",
+  "date_start": "2026-11-28T16:35",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Stade Français Paris reçoit RC Vannes au Stade Jean-Bouin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Section Paloise",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J10",
+  "federation": "LNR",
+  "date_start": "2026-11-28T16:35",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Racing 92 reçoit Section Paloise à la Plenitude Arena (Paris La Défense Arena).",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Saint-Nazaire Volley-Ball Atlantique",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J8",
+  "federation": "LNV",
+  "date_start": "2026-11-28T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Saint-Nazaire Volley-Ball Atlantique (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – FC Lorient",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J12",
+  "federation": "LFP",
+  "date_start": "2026-11-28T20:45",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit FC Lorient au Parc des Princes en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Tours Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J9",
+  "federation": "LNV",
+  "date_start": "2026-12-05T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Tours Volley-Ball (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Arago de Sète",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J9",
+  "federation": "LNV",
+  "date_start": "2026-12-05T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Arago de Sète (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Volley-Ball Le Cannet",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J11",
+  "federation": "LNV",
+  "date_start": "2026-12-05T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Volley-Ball Le Cannet (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris FC – Le Mans FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J13",
+  "federation": "LFP",
+  "date_start": "2026-12-05T20:45",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris FC reçoit Le Mans FC au Stade Jean-Bouin en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – Sélestat Alsace Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J13",
+  "federation": "LNH",
+  "date_start": "2026-12-06T17:00",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit Sélestat Alsace Handball au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Sabah BC",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Basketball Champions League",
+  "federation": "FIBA",
+  "date_start": "2026-12-09T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Sabah BC au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Real Madrid",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J16",
+  "federation": "Euroleague Basketball",
+  "date_start": "2026-12-10T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Real Madrid à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – One Veszprém KC",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "EHF Champions League",
+  "federation": "EHF",
+  "date_start": "2026-12-10T20:45",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit One Veszprém KC au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Northampton Saints",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Champions Cup – J2",
+  "federation": "EPCR",
+  "date_start": "2026-12-11T21:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Stade Français Paris reçoit Northampton Saints au Stade Jean-Bouin.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – Grenoble Foot 38",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J15",
+  "federation": "LFP",
+  "date_start": "2026-12-12T14:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Red Star FC reçoit Grenoble Foot 38 au Stade Bauer en Ligue 2.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – Olympique de Marseille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J11",
+  "federation": "FFF / LFFP",
+  "date_start": "2026-12-12T17:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent Olympique de Marseille au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "PSG – Paris FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J14",
+  "federation": "LFP",
+  "date_start": "2026-12-12T17:15",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit Paris FC au Parc des Princes en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Limoges CSP",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J11",
+  "federation": "LNB",
+  "date_start": "2026-12-12T20:30",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Limoges CSP au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Gloucester Rugby",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Champions Cup – J2",
+  "federation": "EPCR",
+  "date_start": "2026-12-13T18:30",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Racing 92 reçoit Gloucester Rugby à la Plenitude Arena (Paris La Défense Arena).",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Olympiacos Le Pirée",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J17",
+  "federation": "Euroleague Basketball",
+  "date_start": "2026-12-15T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Olympiacos Le Pirée à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Féminines – Juventus FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue des champions féminine – J6",
+  "federation": "UEFA",
+  "date_start": "2026-12-16T21:00",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent Juventus FC au Parc des Princes.",
+  "tags": [
+   "Féminin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Le Mans Sarthe Basket",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J13",
+  "federation": "LNB",
+  "date_start": "2026-12-17T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Le Mans Sarthe Basket au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – Cesson-Rennes Métropole Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Coupe de France – Quart de finale",
+  "federation": "FFHandball",
+  "date_start": "2026-12-18T20:00",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit Cesson-Rennes Métropole Handball au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – RC Vannes",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J12",
+  "federation": "LNR",
+  "date_start": "2026-12-19",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit RC Vannes à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Royan Atlantique Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J11",
+  "federation": "LNV",
+  "date_start": "2026-12-19T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Royan Atlantique Volley-Ball (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Nice Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J11",
+  "federation": "LNV",
+  "date_start": "2026-12-19T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Nice Volley-Ball (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – SAEC Évreux Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J13",
+  "federation": "LNV",
+  "date_start": "2026-12-19T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit SAEC Évreux Volley-Ball (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Stade Toulousain",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J12",
+  "federation": "LNR",
+  "date_start": "2026-12-19T21:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Stade Français Paris reçoit Stade Toulousain au Stade Jean-Bouin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – JDA Dijon",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J12",
+  "federation": "LNB",
+  "date_start": "2026-12-20T19:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit JDA Dijon à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Trabzonspor",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Basketball Champions League",
+  "federation": "FIBA",
+  "date_start": "2026-12-22T18:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Trabzonspor au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – USAM Nîmes Gard",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J15",
+  "federation": "LNH",
+  "date_start": "2026-12-23T20:00",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit USAM Nîmes Gard au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Stade Français Paris",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J13",
+  "federation": "LNR",
+  "date_start": "2026-12-26",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit Stade Français Paris à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Saint-Quentin Basket-Ball",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J14",
+  "federation": "LNB",
+  "date_start": "2026-12-26T18:30",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Saint-Quentin Basket-Ball à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – VBC Chamalières",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J15",
+  "federation": "LNV",
+  "date_start": "2026-12-29T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit VBC Chamalières (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Plessis-Robinson Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J13",
+  "federation": "LNV",
+  "date_start": "2026-12-30T20:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Plessis-Robinson Volley-Ball (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Étoile Rouge de Belgrade",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J20",
+  "federation": "Euroleague Basketball",
+  "date_start": "2026-12-30T20:45",
+  "date_end": null,
+  "venue": "Accor Arena",
+  "address": "8 Boulevard de Bercy, 75012 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Étoile Rouge de Belgrade à l'Accor Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Castres Olympique",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J14",
+  "federation": "LNR",
+  "date_start": "2027-01-02",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit Castres Olympique au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – Le Havre AC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J15",
+  "federation": "LFP",
+  "date_start": "2027-01-02T21:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris FC reçoit Le Havre AC au Stade Jean-Bouin en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Paris Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J14",
+  "federation": "LNV",
+  "date_start": "2027-01-09T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Paris Volley (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Béziers Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J16",
+  "federation": "LNV",
+  "date_start": "2027-01-09T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Béziers Volley (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Paris Basketball",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J15",
+  "federation": "LNB",
+  "date_start": "2027-01-09T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Paris Basketball au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Cardiff Rugby",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Champions Cup – J3",
+  "federation": "EPCR",
+  "date_start": "2027-01-09T21:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Stade Français Paris reçoit Cardiff Rugby au Stade Jean-Bouin.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Racing 92 – Bristol Bears",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Champions Cup – J3",
+  "federation": "EPCR",
+  "date_start": "2027-01-10T13:00",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Racing 92 reçoit Bristol Bears à la Plenitude Arena (Paris La Défense Arena).",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Paris Volley – AS Cannes Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J15",
+  "federation": "LNV",
+  "date_start": "2027-01-12T20:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit AS Cannes Volley-Ball (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Montpellier HSC Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J15",
+  "federation": "LNV",
+  "date_start": "2027-01-12T20:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Montpellier HSC Volley (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Red Star – FC Annecy",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J17",
+  "federation": "LFP",
+  "date_start": "2027-01-15T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit FC Annecy au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – RC Lens",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J13",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-01-16T17:00",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent RC Lens au Campus PSG (Poissy).",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – OL Lyonnes",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J13",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-01-16T17:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent OL Lyonnes au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – LDLC ASVEL Lyon-Villeurbanne",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J16",
+  "federation": "LNB",
+  "date_start": "2027-01-16T20:00",
+  "date_end": null,
+  "venue": "Accor Arena",
+  "address": "8 Boulevard de Bercy, 75012 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit LDLC ASVEL Lyon-Villeurbanne à l'Accor Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – Toulouse FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J16",
+  "federation": "LFP",
+  "date_start": "2027-01-17T15:00",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris FC reçoit Toulouse FC au Stade Jean-Bouin en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Baskonia Vitoria-Gasteiz",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J24",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-01-21T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Baskonia Vitoria-Gasteiz à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Racing 92 – Union Bordeaux-Bègles",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J15",
+  "federation": "LNR",
+  "date_start": "2027-01-23",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit Union Bordeaux-Bègles à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Nice Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J17",
+  "federation": "LNV",
+  "date_start": "2027-01-23T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Nice Volley-Ball (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – AS Cannes Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J17",
+  "federation": "LNV",
+  "date_start": "2027-01-23T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit AS Cannes Volley-Ball (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Chorale Roanne",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J17",
+  "federation": "LNB",
+  "date_start": "2027-01-23T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Chorale Roanne au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – AJ Auxerre",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J17",
+  "federation": "LFP",
+  "date_start": "2027-01-23T20:45",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit AJ Auxerre au Parc des Princes en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Volley Mulhouse Alsace",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J18",
+  "federation": "LNV",
+  "date_start": "2027-01-24T17:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Volley Mulhouse Alsace (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "PSG – Galatasaray",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue des champions – Phase de ligue J8",
+  "federation": "UEFA",
+  "date_start": "2027-01-27T21:00",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit Galatasaray au Parc des Princes en Ligue des champions.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – Stade Lavallois",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J19",
+  "federation": "LFP",
+  "date_start": "2027-01-29T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit Stade Lavallois au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Castres Olympique",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J16",
+  "federation": "LNR",
+  "date_start": "2027-01-30",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit Castres Olympique à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – AJ Auxerre",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J18",
+  "federation": "LFP",
+  "date_start": "2027-01-30T20:45",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris FC reçoit AJ Auxerre au Stade Jean-Bouin en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Narbonne Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J19",
+  "federation": "LNV",
+  "date_start": "2027-02-02T20:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Narbonne Volley (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Royan Atlantique Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J19",
+  "federation": "LNV",
+  "date_start": "2027-02-02T20:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Royan Atlantique Volley-Ball (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Besiktas Istanbul",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J26",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-02-02T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Besiktas Istanbul à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – Montpellier HSC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J20",
+  "federation": "LFP",
+  "date_start": "2027-02-05T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit Montpellier HSC au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – Paris FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J15",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-02-06T17:00",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent Paris FC au Campus PSG (Poissy).",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "France – Pays de Galles",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Tournoi des Six Nations 2027 – J1",
+  "federation": "FFR",
+  "date_start": "2027-02-06T17:40",
+  "date_end": null,
+  "venue": "Stade de France",
+  "address": "ZAC du Cornillon Nord, 93216 Saint-Denis",
+  "city": "Saint-Denis",
+  "url": "https://www.sixnationsrugby.com/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le XV de France ouvre son Tournoi des Six Nations 2027 face au Pays de Galles au Stade de France.",
+  "tags": [
+   "Masculin",
+   "Équipe de France"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Vandœuvre-Nancy Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J20",
+  "federation": "LNV",
+  "date_start": "2027-02-06T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Vandœuvre-Nancy Volley-Ball (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Limoges CSP",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J19",
+  "federation": "LNB",
+  "date_start": "2027-02-06T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Limoges CSP à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – SLUC Nancy",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J19",
+  "federation": "LNB",
+  "date_start": "2027-02-06T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit SLUC Nancy au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Olympique de Marseille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J19",
+  "federation": "LFP",
+  "date_start": "2027-02-07T20:45",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit Olympique de Marseille au Parc des Princes en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – MT Melsungen",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "EHF Champions League",
+  "federation": "EHF",
+  "date_start": "2027-02-11T20:45",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le PSG Handball reçoit MT Melsungen au Stade Pierre de Coubertin.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Saran Loiret Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J17",
+  "federation": "LNH",
+  "date_start": "2027-02-12",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Saran Loiret Handball au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – ESTAC Troyes",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J20",
+  "federation": "LFP",
+  "date_start": "2027-02-13",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit ESTAC Troyes au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Arago de Sète",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J21",
+  "federation": "LNV",
+  "date_start": "2027-02-13T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Arago de Sète (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Toulouse Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J21",
+  "federation": "LNV",
+  "date_start": "2027-02-13T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Toulouse Volley (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Élan Béarnais Pau-Lacq-Orthez",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J20",
+  "federation": "LNB",
+  "date_start": "2027-02-13T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Élan Béarnais Pau-Lacq-Orthez à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Stade Brestois 29",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J21",
+  "federation": "LFP",
+  "date_start": "2027-02-20",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit Stade Brestois 29 au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Union Bordeaux-Bègles",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J17",
+  "federation": "LNR",
+  "date_start": "2027-02-20",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit Union Bordeaux-Bègles au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – Toulouse FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J16",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-02-20T17:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent Toulouse FC au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Chaumont Volley-Ball 52",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J22",
+  "federation": "LNV",
+  "date_start": "2027-02-20T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Chaumont Volley-Ball 52 (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Saint-Dié Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J22",
+  "federation": "LNV",
+  "date_start": "2027-02-20T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Saint-Dié Volley (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "France – Écosse",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Tournoi des Six Nations 2027 – J3",
+  "federation": "FFR",
+  "date_start": "2027-02-21T16:10",
+  "date_end": null,
+  "venue": "Stade de France",
+  "address": "ZAC du Cornillon Nord, 93216 Saint-Denis",
+  "city": "Saint-Denis",
+  "url": "https://www.sixnationsrugby.com/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le XV de France reçoit l'Écosse au Stade de France dans le Tournoi des Six Nations.",
+  "tags": [
+   "Masculin",
+   "Équipe de France"
+  ]
+ },
+ {
+  "title": "PSG Handball – Caen HB",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J19",
+  "federation": "LNH",
+  "date_start": "2027-02-26",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Caen HB au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Red Star – EA Guingamp",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J23",
+  "federation": "LFP",
+  "date_start": "2027-02-26T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit EA Guingamp au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Stade Toulousain",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J18",
+  "federation": "LNR",
+  "date_start": "2027-02-27",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit Stade Toulousain à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Tourcoing Lille Métropole",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J23",
+  "federation": "LNV",
+  "date_start": "2027-02-27T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Tourcoing Lille Métropole (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – RC Lens",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J22",
+  "federation": "LFP",
+  "date_start": "2027-02-28T20:45",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Le Paris Saint-Germain reçoit RC Lens au Parc des Princes en Ligue 1.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Maccabi Tel Aviv",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J29",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-03-04T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Maccabi Tel Aviv à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Chambéry Savoie Mont Blanc Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J20",
+  "federation": "LNH",
+  "date_start": "2027-03-05",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Chambéry Savoie Mont Blanc Handball au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Stade Rennais",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J23",
+  "federation": "LFP",
+  "date_start": "2027-03-06",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit Stade Rennais au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – Stade Brestois 29",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J23",
+  "federation": "LFP",
+  "date_start": "2027-03-06",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit Stade Brestois 29 au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Stade Poitevin Volley Beach",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J24",
+  "federation": "LNV",
+  "date_start": "2027-03-06T19:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Stade Poitevin Volley Beach (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Mariannes 92 (Levallois Paris Saint-Cloud) – Terville-Florange Olympique Club",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Saforelle VOLSTAR – J25",
+  "federation": "LNV",
+  "date_start": "2027-03-06T19:00",
+  "date_end": null,
+  "venue": "Palais des Sports Marcel-Cerdan",
+  "address": "141 Rue Danton, 92300 Levallois-Perret",
+  "city": "Levallois-Perret",
+  "url": "https://www.lnv.fr/d1f/equipes/levallois-paris-3319",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Mariannes 92 (Levallois Paris Saint-Cloud) reçoit Terville-Florange Olympique Club (Palais des Sports Marcel-Cerdan) en Saforelle VOLSTAR.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – LDLC ASVEL Lyon-Villeurbanne",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J21",
+  "federation": "LNB",
+  "date_start": "2027-03-06T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit LDLC ASVEL Lyon-Villeurbanne au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Panathinaikos Athènes",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J31",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-03-11T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Panathinaikos Athènes à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – Dijon FCO",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J25",
+  "federation": "LFP",
+  "date_start": "2027-03-12T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit Dijon FCO au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – FC Lorient",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J24",
+  "federation": "LFP",
+  "date_start": "2027-03-13",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit FC Lorient au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – Olympique de Marseille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J17",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-03-13",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Les Parisiennes reçoivent Olympique de Marseille au Campus PSG (Poissy). Date à confirmer.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Plessis-Robinson Volley-Ball – Tours Volley-Ball",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J25",
+  "federation": "LNV",
+  "date_start": "2027-03-13T19:00",
+  "date_end": null,
+  "venue": "Gymnase Joliot-Curie",
+  "address": "3 Allée Robert Debré, 92350 Le Plessis-Robinson",
+  "city": "Le Plessis-Robinson",
+  "url": "https://www.lnv.fr/d1m/equipes/plessis-robinson-3329",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Plessis-Robinson Volley-Ball reçoit Tours Volley-Ball (Gymnase Joliot-Curie) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – RC Strasbourg Alsace",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J25",
+  "federation": "LFP",
+  "date_start": "2027-03-20",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit RC Strasbourg Alsace au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Section Paloise",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J19",
+  "federation": "LNR",
+  "date_start": "2027-03-20",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit Section Paloise au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – FC Fleury 91",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J18",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-03-20T17:00",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent FC Fleury 91 au Campus PSG (Poissy).",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Volley – Toulouse Volley",
+  "sport": "Volley-ball",
+  "category": "Match pro",
+  "competition": "Alterna VOLSTAR – J26",
+  "federation": "LNV",
+  "date_start": "2027-03-20T17:00",
+  "date_end": null,
+  "venue": "Salle Charpy (Stade Charléty)",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://www.lnv.fr/d1m/equipes/paris-180",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Volley reçoit Toulouse Volley (Salle Charpy (Stade Charléty)) en Alterna VOLSTAR.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – SLUC Nancy",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J23",
+  "federation": "LNB",
+  "date_start": "2027-03-20T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit SLUC Nancy à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – JL Bourg-en-Bresse",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J23",
+  "federation": "LNB",
+  "date_start": "2027-03-20T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit JL Bourg-en-Bresse au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Olimpia Milan",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J33",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-03-23T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Olimpia Milan à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Limoges Hand 87",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J22",
+  "federation": "LNH",
+  "date_start": "2027-03-26",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Limoges Hand 87 au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – RC Toulon",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J20",
+  "federation": "LNR",
+  "date_start": "2027-03-27",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit RC Toulon à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – RC Strasbourg Alsace",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J19",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-03-27T17:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent RC Strasbourg Alsace au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Dubai Basketball",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J35",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-04-01T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Dubai Basketball à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Red Star – US Boulogne",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J27",
+  "federation": "LFP",
+  "date_start": "2027-04-02T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit US Boulogne au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – Paris Saint-Germain",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J26",
+  "federation": "LFP",
+  "date_start": "2027-04-03",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit Paris Saint-Germain au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Le Mans Sarthe Basket",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J25",
+  "federation": "LNB",
+  "date_start": "2027-04-03T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Le Mans Sarthe Basket à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Saint-Quentin Basket-Ball",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J25",
+  "federation": "LNB",
+  "date_start": "2027-04-03T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Saint-Quentin Basket-Ball au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Anadolu Efes Istanbul",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J36",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-04-06T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Anadolu Efes Istanbul à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – Le Havre AC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J20",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-04-07",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Les joueuses du Paris FC reçoivent Le Havre AC au Stade Charléty. Horaire à confirmer.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – FC Barcelone",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J37",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-04-08T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit FC Barcelone à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Dunkerque Handball Grand Littoral",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J24",
+  "federation": "LNH",
+  "date_start": "2027-04-09",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Dunkerque Handball Grand Littoral au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Le Havre AC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J27",
+  "federation": "LFP",
+  "date_start": "2027-04-10",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit Le Havre AC au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Cholet Basket",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J26",
+  "federation": "LNB",
+  "date_start": "2027-04-10T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Cholet Basket à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Bayern Munich",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "EuroLeague – J38",
+  "federation": "Euroleague Basketball",
+  "date_start": "2027-04-15T20:45",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Bayern Munich à l'Adidas Arena en EuroLeague.",
+  "tags": [
+   "Masculin",
+   "Coupe d'Europe"
+  ]
+ },
+ {
+  "title": "PSG Handball – Pays d'Aix Université Club Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J26",
+  "federation": "LNH",
+  "date_start": "2027-04-16",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Pays d'Aix Université Club Handball au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Red Star – FC Nantes",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J29",
+  "federation": "LFP",
+  "date_start": "2027-04-16T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit FC Nantes au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – LOSC Lille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J28",
+  "federation": "LFP",
+  "date_start": "2027-04-17",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit LOSC Lille au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – ASM Clermont Auvergne",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J21",
+  "federation": "LNR",
+  "date_start": "2027-04-17",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit ASM Clermont Auvergne au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – Boulazac Basket Dordogne",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J27",
+  "federation": "LNB",
+  "date_start": "2027-04-17T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit Boulazac Basket Dordogne au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Red Star – Rodez AF",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J30",
+  "federation": "LFP",
+  "date_start": "2027-04-23T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit Rodez AF au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – RC Lens",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J29",
+  "federation": "LFP",
+  "date_start": "2027-04-24",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit RC Lens au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Racing 92",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J22",
+  "federation": "LNR",
+  "date_start": "2027-04-24",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit Racing 92 au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Chorale Roanne",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J28",
+  "federation": "LNB",
+  "date_start": "2027-04-27T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Chorale Roanne à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – HBC Nantes",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J28",
+  "federation": "LNH",
+  "date_start": "2027-04-30",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit HBC Nantes au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Angers SCO",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J30",
+  "federation": "LFP",
+  "date_start": "2027-05-01",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit Angers SCO au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Féminines – Toulouse FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J21",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-05-01T17:00",
+  "date_end": null,
+  "venue": "Campus PSG",
+  "address": "Campus PSG, 78300 Poissy",
+  "city": "Poissy",
+  "url": "https://www.psg.fr/football-feminin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les Parisiennes reçoivent Toulouse FC au Campus PSG (Poissy).",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Nanterre 92 – JDA Dijon",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J29",
+  "federation": "LNB",
+  "date_start": "2027-05-01T20:00",
+  "date_end": null,
+  "venue": "Palais des Sports Maurice-Thorez",
+  "address": "92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.nanterre92.com/equipe-pro/matchs/calendrier/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Nanterre 92 reçoit JDA Dijon au Palais des Sports de Nanterre.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC Féminines – US Saint-Malo",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Première Ligue – J22",
+  "federation": "FFF / LFFP",
+  "date_start": "2027-05-04T17:00",
+  "date_end": null,
+  "venue": "Stade Sébastien-Charléty",
+  "address": "99 Boulevard Kellermann, 75013 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/pro-femme/calendriers-resultats/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Les joueuses du Paris FC reçoivent US Saint-Malo au Stade Charléty.",
+  "tags": [
+   "Féminin"
+  ]
+ },
+ {
+  "title": "Red Star – USL Dunkerque",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J32",
+  "federation": "LFP",
+  "date_start": "2027-05-07T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit USL Dunkerque au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – LOSC Lille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J31",
+  "federation": "LFP",
+  "date_start": "2027-05-08",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit LOSC Lille au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – Stade Rochelais",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J23",
+  "federation": "LNR",
+  "date_start": "2027-05-08",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit Stade Rochelais à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris Basketball – Nanterre 92",
+  "sport": "Basketball",
+  "category": "Match pro",
+  "competition": "Betclic Élite – J30",
+  "federation": "LNB",
+  "date_start": "2027-05-09T20:00",
+  "date_end": null,
+  "venue": "Adidas Arena",
+  "address": "Porte de la Chapelle, 75018 Paris",
+  "city": "Paris",
+  "url": "https://parisbasketball.com/calendrier-equipe-premiere/",
+  "price": "Payant",
+  "tentative": false,
+  "description": "Paris Basketball reçoit Nanterre 92 à l'Adidas Arena en Betclic Élite.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG Handball – Saint-Raphaël Var Handball",
+  "sport": "Handball",
+  "category": "Match pro",
+  "competition": "Daikin StarLigue – J29",
+  "federation": "LNH",
+  "date_start": "2027-05-14",
+  "date_end": null,
+  "venue": "Stade Pierre de Coubertin",
+  "address": "82 Avenue Georges Lafont, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/handball/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le PSG Handball reçoit Saint-Raphaël Var Handball au Stade Pierre de Coubertin. Date indicative, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – RC Toulon",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J24",
+  "federation": "LNR",
+  "date_start": "2027-05-15",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit RC Toulon au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – OGC Nice",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J32",
+  "federation": "LFP",
+  "date_start": "2027-05-16",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit OGC Nice au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Paris FC – Olympique de Marseille",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J33",
+  "federation": "LFP",
+  "date_start": "2027-05-22",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://parisfc.fr/calendrier-paris-fc/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris FC reçoit Olympique de Marseille au Stade Jean-Bouin en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Red Star – Clermont Foot 63",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 2 – J34",
+  "federation": "LFP",
+  "date_start": "2027-05-22T20:00",
+  "date_end": null,
+  "venue": "Stade Bauer",
+  "address": "1 Rue du Docteur Bauer, 93400 Saint-Ouen-sur-Seine",
+  "city": "Saint-Ouen-sur-Seine",
+  "url": "https://www.redstar.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Red Star FC reçoit Clermont Foot 63 au Stade Bauer en Ligue 2. Horaire indicatif, à confirmer par la LFP.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "PSG – Toulouse FC",
+  "sport": "Football",
+  "category": "Match pro",
+  "competition": "Ligue 1 – J34",
+  "federation": "LFP",
+  "date_start": "2027-05-29",
+  "date_end": null,
+  "venue": "Parc des Princes",
+  "address": "24 Rue du Commandant Guilbaud, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.psg.fr/football-masculin/calendrier/season/2026-2027",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Paris Saint-Germain reçoit Toulouse FC au Parc des Princes en Ligue 1. Date du week-end, horaire à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Stade Français Paris – Aviron Bayonnais",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J26",
+  "federation": "LNR",
+  "date_start": "2027-06-05",
+  "date_end": null,
+  "venue": "Stade Jean-Bouin",
+  "address": "20-40 Avenue du Général Sarrail, 75016 Paris",
+  "city": "Paris",
+  "url": "https://www.stade.fr/equipe-premiere-effectifs/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Stade Français Paris reçoit Aviron Bayonnais au Stade Jean-Bouin. Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Racing 92 – ASM Clermont Auvergne",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – J26",
+  "federation": "LNR",
+  "date_start": "2027-06-05",
+  "date_end": null,
+  "venue": "Plenitude Arena (ex-Paris La Défense Arena)",
+  "address": "99 Jardin de l'Arche, 92000 Nanterre",
+  "city": "Nanterre",
+  "url": "https://www.racing92.fr/calendrier/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "Le Racing 92 reçoit ASM Clermont Auvergne à la Plenitude Arena (Paris La Défense Arena). Week-end de la journée, date et horaire à définir.",
+  "tags": [
+   "Masculin"
+  ]
+ },
+ {
+  "title": "Finale du Top 14 2027",
+  "sport": "Rugby",
+  "category": "Match pro",
+  "competition": "Top 14 – Finale",
+  "federation": "LNR",
+  "date_start": "2027-06-26",
+  "date_end": null,
+  "venue": "Stade de France",
+  "address": "ZAC du Cornillon Nord, 93216 Saint-Denis",
+  "city": "Saint-Denis",
+  "url": "https://top14.lnr.fr/",
+  "price": "Payant",
+  "tentative": true,
+  "description": "La finale du championnat de France de rugby (bouclier de Brennus) se joue au Stade de France ; date annoncée fin juin, à confirmer.",
+  "tags": [
+   "Masculin"
+  ]
+ }
+]
