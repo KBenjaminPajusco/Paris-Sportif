@@ -192,6 +192,15 @@ def main():
                 ev["aff"] = a
     except Exception as exc:  # l'indicateur ne doit jamais casser le build
         print("! affluence :", exc)
+    try:
+        from tickets import Tickets
+        tix = Tickets()
+        for ev in out:
+            t = tix.compute(ev)
+            if t:
+                ev["ticket"] = t
+    except Exception as exc:
+        print("! billetterie :", exc)
     out.sort(key=lambda e: (e["start"], e["title"]))
     meta = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

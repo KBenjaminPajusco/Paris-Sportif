@@ -32,7 +32,7 @@
   const dayLabel = d => d === TODAY ? "Aujourd'hui" : d === TOMORROW ? "Demain" : parse(d).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
   const shortDay = d => parse(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short" }).replace(".", "");
 
-  const state = { mode: "spect", sport: "", period: "all", q: "", venue: "", sort: "date", limit: 60 };
+  const state = { mode: "spect", sport: "", period: "all", q: "", venue: "", sort: "date", limit: 60, onsale: false };
   let ALL = [], current = [], map, markers = {}, VENUES = {};
 
   // ---------- état <-> URL ----------
@@ -40,7 +40,7 @@
     const p = new URLSearchParams(location.hash.slice(1));
     state.mode = p.get("mode") === "all" ? "all" : "spect";
     state.sport = p.get("sport") || ""; state.period = p.get("p") || "all";
-    state.q = p.get("q") || ""; state.venue = p.get("lieu") || ""; state.sort = p.get("tri") || "date";
+    state.q = p.get("q") || ""; state.venue = p.get("lieu") || ""; state.sort = p.get("tri") || "date"; state.onsale = p.get("vente") === "1";
   }
   function writeHash() {
     const p = new URLSearchParams();
@@ -50,6 +50,7 @@
     if (state.q) p.set("q", state.q);
     if (state.venue) p.set("lieu", state.venue);
     if (state.sort !== "date") p.set("tri", state.sort);
+    if (state.onsale) p.set("vente", "1");
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname);
   }
@@ -68,6 +69,7 @@
     }
   }
   function base(e, skipSport) {
+    if (state.onsale && !(e.ticket && ["open", "free"].includes(e.ticket.status))) return false;
     if (e.recurring) return false;
     if (state.mode === "spect" && !e._spect) return false;
     const [a, b] = range();
@@ -97,6 +99,7 @@
     $$("#days .day").forEach(b => b.onclick = () => { state.period = b.dataset.p; state.limit = 60; update(); });
     if ($("#q").value !== state.q) $("#q").value = state.q;
     $("#sort").value = state.sort;
+    $("#onsale").classList.toggle("on", state.onsale);
   }
 
   // ---------- affluence ----------
@@ -113,6 +116,16 @@
     if (a.fill >= .95) return `<span class="tag full">Complet probable</span>`;
     if (a.fill >= .8) return `<span class="tag hot">Places rares</span>`;
     return `<span class="tag ok">Places dispo</span>`;
+  }
+
+  // ---------- billetterie ----------
+  const TCLS = { open: "t-open", soon: "t-soon", sold_out: "t-out", closed: "t-closed", free: "t-free", not_open: "t-closed" };
+  function ticketBadge(e) {
+    const t = e.ticket;
+    if (!t) return availability(e.aff);
+    // billetterie ouverte : on précise la tension (complet probable / places rares) si on la connaît
+    if (t.status === "open" && e.aff?.fill >= .95) return `<span class="tk t-hot" title="${esc(t.label)}">🎟 Ouverte · très demandé</span>`;
+    return `<span class="tk ${TCLS[t.status] || ""}" title="${esc(t.note || t.label)}">🎟 ${esc(t.label)}</span>`;
   }
 
   // ---------- ligne de programme ----------
@@ -136,7 +149,7 @@
       <span class="mid">
         <span class="comp"><span class="s">${icon(e.sport)} ${esc(e.sport)}</span>${e.competition ? `· ${esc(e.competition)}` : ""} ${tags}</span>
         <span class="teams">${teams ? `<span class="h">${esc(teams[0])}</span><span class="a">${esc(teams[1])}</span>` : `<span class="solo">${esc(e.title)}</span>`}</span>
-        <span class="place"><span class="pl">📍 ${esc(e.venue || e.city || "Paris")}${e.city && e.city !== "Paris" && !(e.venue || "").includes(e.city) ? " · " + esc(e.city) : ""}</span>${gauge(e.aff)}${availability(e.aff)}</span>
+        <span class="place"><span class="pl">📍 ${esc(e.venue || e.city || "Paris")}${e.city && e.city !== "Paris" && !(e.venue || "").includes(e.city) ? " · " + esc(e.city) : ""}</span>${gauge(e.aff)}${ticketBadge(e)}</span>
       </span>
       <span class="go">›</span>
     </button>`;
@@ -287,6 +300,7 @@
         ${e.aff.cap ? `<div class="capbar"><span style="width:${Math.round((e.aff.fill || 0) * 100)}%"></span></div><div class="cap">Capacité ${fullN(e.aff.cap)} places${e.aff.fill ? ` · remplissage estimé ${Math.round(e.aff.fill * 100)} %` : ""} ${availability(e.aff)}</div>` : ""}</div></div>
         <div class="basis">${e.aff.basis ? "Base : " + esc(e.aff.basis) + (e.aff.approx ? " (approx.)" : "") : "Capacité du lieu uniquement"}${e.aff.src ? ` · <a href="${esc(e.aff.src)}" target="_blank" rel="noopener">source</a>` : ""}. Estimation : le nombre exact de places restantes n'est pas publié, vérifiez sur la billetterie.</div>
       </div>` : ""}
+      ${e.ticket ? `<div class="m-tk ${TCLS[e.ticket.status] || ""}"><span class="lab">🎟 ${esc(e.ticket.label)}</span><span class="nt">${esc(e.ticket.note || "")}${e.ticket.how ? ` <em>(${e.ticket.how === "ticketmaster" ? "statut officiel Ticketmaster" : e.ticket.how === "règle" ? "estimation selon les règles de vente du club" : "relevé sur le site officiel"} · vérifié le ${esc(new Date(e.ticket.checked).toLocaleDateString("fr-FR"))})</em>` : ""}${e.ticket.src && e.ticket.how !== "ticketmaster" ? ` <a href="${esc(e.ticket.src)}" target="_blank" rel="noopener">source</a>` : ""}</span></div>` : ""}
       <div class="m-grid">
         <div class="m-cell"><div class="k">Date</div><div class="v">${esc(dayLabel(e.start.slice(0, 10)))}${multi ? `<small>jusqu'au ${esc(dayLabel(e.end.slice(0, 10)))}</small>` : ""}</div></div>
         <div class="m-cell"><div class="k">Heure</div><div class="v">${hasTime(e.start) ? hhmm(e.start) : "—"}${e.tentative ? `<small><span class="tag tbc">Date à confirmer</span></small>` : ""}</div></div>
@@ -295,7 +309,8 @@
       </div>
       ${e.description ? `<p class="m-desc">${esc(e.description)}</p>` : ""}
       <div class="m-act">
-        ${e.url ? `<a class="btn go" href="${esc(e.url)}" target="_blank" rel="noopener">Billets / infos ↗</a>` : ""}
+        ${e.ticket?.url && e.ticket.status !== "free" ? `<a class="btn go" href="${esc(e.ticket.url)}" target="_blank" rel="noopener">${e.category.startsWith("Course") ? "S'inscrire" : "Billetterie"} ↗</a>` : ""}
+        ${e.url && e.url !== e.ticket?.url ? `<a class="btn ${e.ticket?.url ? "" : "go"}" href="${esc(e.url)}" target="_blank" rel="noopener">Infos ↗</a>` : ""}
         <a class="btn" href="${esc(gcal(e))}" target="_blank" rel="noopener">+ Agenda</a>
         <button class="btn" id="icsOne">ICS ⤓</button>
         ${e._vkey ? `<button class="btn" id="onMap">Sur la carte</button>` : ""}
@@ -332,6 +347,7 @@
     $$(".mode").forEach(m => m.onclick = () => { state.mode = m.dataset.mode; state.sport = ""; state.limit = 60; update(); });
     let t; $("#q").addEventListener("input", e => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); state.limit = 60; update(); }, 160); });
     $("#sort").onchange = e => { state.sort = e.target.value; update(); };
+    $("#onsale").onclick = () => { state.onsale = !state.onsale; state.limit = 60; update(); };
     $("#icsAll").onclick = () => download("paris-sportif.ics", ics(state.venue ? current.filter(e => e._vkey === state.venue) : current));
     $("#boardToggle").onclick = () => $("#board").scrollIntoView({ behavior: "smooth" });
     document.addEventListener("click", ev => { const r = ev.target.closest("[data-id]"); if (r) { ev.preventDefault(); show(r.dataset.id); } });
@@ -347,6 +363,7 @@
     try { data = await (await fetch("events.json", { cache: "no-cache" })).json(); }
     catch (_) { $("#list").innerHTML = `<div class="empty">Impossible de charger le programme</div>`; return; }
     ALL = data.events || [];
+    if (data.meta?.generated_at) { const g = new Date(data.meta.generated_at); $("#fresh").textContent = "MàJ " + g.toLocaleDateString("fr-FR", { day: "numeric", month: "short" }) + " " + g.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }); }
     ALL.forEach(e => {
       e._spect = isSpect(e);
       e._search = norm([e.title, e.sport, e.category, e.competition, e.federation, e.venue, e.city, (e.tags || []).join(" ")].join(" "));

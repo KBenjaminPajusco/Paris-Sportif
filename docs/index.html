@@ -56,6 +56,7 @@
             <option value="venue">Par lieu</option>
             <option value="aff">Par affluence</option>
           </select>
+          <button id="onsale" class="tool" title="N'afficher que les événements en vente ou gratuits">🎟 En vente</button>
           <button id="icsAll" class="tool" title="Exporter la sélection (.ics)">ICS ⤓</button>
         </div>
       </div>
@@ -67,6 +68,7 @@
   <footer class="ticker" aria-label="Prochains événements">
     <span class="ticker-tag">Prochainement</span>
     <div class="ticker-track"><div class="ticker-move" id="ticker"></div></div>
+    <span class="fresh" id="fresh" title="Dernière mise à jour automatique des données"></span>
   </footer>
 </div>
 

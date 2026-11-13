@@ -4,7 +4,7 @@ on:
   push:
     branches: [main, "claude/**"]
   schedule:
-    - cron: "17 5 * * *"   # chaque jour : rafraîchit l'open data de la Ville de Paris
+    - cron: "17 5,11,17 * * *"   # 3 fois par jour : open data Ville de Paris + statuts billetterie (0 token)
   workflow_dispatch:
 
 permissions:
@@ -26,7 +26,9 @@ jobs:
           python-version: "3.12"
       - name: Récupérer l'open data (Que faire à Paris)
         run: python scripts/fetch_opendata.py || echo "open data indisponible, on garde la version du dépôt"
-      - name: Construire events.json
+      - name: Construire events.json (affluence + billetterie)
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: python scripts/build.py
       - uses: actions/configure-pages@v5
         with:
